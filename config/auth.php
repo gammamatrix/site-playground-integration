@@ -112,4 +112,16 @@ return [
 
     'password_timeout' => 10800,
 
+    /*
+    |--------------------------------------------------------------------------
+    | Password Settings for Testing
+    |--------------------------------------------------------------------------
+    |
+    */
+
+    'testing' => [
+        'password' => env('AUTH_TESTING_PASSWORD'),
+        'hashed' => (bool) env('AUTH_TESTING_HASHED', false),
+    ],
+
 ];

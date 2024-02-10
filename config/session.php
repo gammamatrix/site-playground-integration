@@ -126,10 +126,13 @@ return [
     |
     */
 
-    'cookie' => env(
-        'SESSION_COOKIE',
-        Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
-    ),
+    // 'cookie' => env(
+    //     'SESSION_COOKIE',
+    //     Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+    // ),
+    'cookie' => env('SESSION_COOKIE', Str::of(
+        is_string(env('APP_NAME', 'laravel')) ? env('APP_NAME', 'laravel') : 'laravel'
+    )->slug('_')->finish('_session')),
 
     /*
     |--------------------------------------------------------------------------
