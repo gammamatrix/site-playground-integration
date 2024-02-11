@@ -16,8 +16,17 @@
         "playground-site-blade"
     ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gammamatrix/playground-auth"
+        }
+    ],
     "require": {
         "php": "^8.1",
+        "gammamatrix/playground-auth": "dev-develop|dev-master|dev-feature/*|^73.0",
+        "gammamatrix/playground-login-blade": "dev-develop|dev-master|dev-feature/*|^73.0",
+        "gammamatrix/playground-site-blade": "dev-develop|dev-master|dev-feature/*|^73.0",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
@@ -25,23 +34,40 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
+        "friendsofphp/php-cs-fixer": "^3.41",
+        "gammamatrix/playground-test": "dev-develop",
+        "larastan/larastan": "^2.0",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
+        "phpstan/phpstan-phpunit": "^1.3",
         "phpunit/phpunit": "^10.5",
-        "spatie/laravel-ignition": "^2.0"
+        "spatie/laravel-ignition": "^2.0",
+        "timacdonald/log-fake": "^2.0.1",
+        "tomasvotruba/bladestan": "^0.4.1"
     },
     "autoload": {
         "psr-4": {
             "App\\": "app/",
+            "Database\\Factories\\Playground\\Models\\": "database/factories/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Tests\\Feature\\Playground\\": "vendor/gammamatrix/playground/tests/Feature/",
+            "Tests\\Unit\\Playground\\": "vendor/gammamatrix/playground/tests/Unit/",
+            "Tests\\Feature\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Feature/",
+            "Tests\\Unit\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Unit/",
+            "Tests\\Feature\\Playground\\Login\\Blade\\": "vendor/gammamatrix/playground-login-blade/tests/Feature/",
+            "Tests\\Feature\\Playground\\Site\\Blade\\": "vendor/gammamatrix/playground-site-blade/tests/Feature/",
+            "Tests\\Feature\\Playground\\Blade\\": "vendor/gammamatrix/playground-blade/tests/Feature/",
+            "Tests\\Unit\\Playground\\Blade\\": "vendor/gammamatrix/playground-blade/tests/Unit/",
+            "Tests\\Feature\\Playground\\Test\\": "vendor/gammamatrix/playground-test/tests/Feature/",
+            "Tests\\Unit\\Playground\\Test\\": "vendor/gammamatrix/playground-test/tests/Unit/"
         }
     },
     "scripts": {
@@ -57,7 +83,10 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ]
+        ],
+        "test": "vendor/bin/phpunit",
+        "format": "vendor/bin/php-cs-fixer fix",
+        "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max"
     },
     "extra": {
         "laravel": {
@@ -66,13 +95,16 @@
     },
     "config": {
         "optimize-autoloader": true,
-        "preferred-install": "dist",
+        "preferred-install": {
+            "gammamatrix/*": "source",
+            "*": "dist"
+        },
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
