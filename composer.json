@@ -16,10 +16,17 @@
         "playground-site-blade"
     ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gammamatrix/playground-auth"
+        }
+    ],
     "require": {
         "php": "^8.1",
-        "gammamatrix/playground-login-blade": "^73.0@dev",
-        "gammamatrix/playground-site-blade": "^73.0@dev",
+        "gammamatrix/playground-auth": "dev-develop|dev-master|dev-feature/*|^73.0",
+        "gammamatrix/playground-login-blade": "dev-develop|dev-master|dev-feature/*|^73.0",
+        "gammamatrix/playground-site-blade": "dev-develop|dev-master|dev-feature/*|^73.0",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
@@ -53,7 +60,10 @@
             "Tests\\": "tests/",
             "Tests\\Feature\\Playground\\": "vendor/gammamatrix/playground/tests/Feature/",
             "Tests\\Unit\\Playground\\": "vendor/gammamatrix/playground/tests/Unit/",
+            "Tests\\Feature\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Feature/",
+            "Tests\\Unit\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Unit/",
             "Tests\\Feature\\Playground\\Login\\Blade\\": "vendor/gammamatrix/playground-login-blade/tests/Feature/",
+            "Tests\\Feature\\Playground\\Site\\Blade\\": "vendor/gammamatrix/playground-site-blade/tests/Feature/",
             "Tests\\Feature\\Playground\\Blade\\": "vendor/gammamatrix/playground-blade/tests/Feature/",
             "Tests\\Unit\\Playground\\Blade\\": "vendor/gammamatrix/playground-blade/tests/Unit/",
             "Tests\\Feature\\Playground\\Test\\": "vendor/gammamatrix/playground-test/tests/Feature/",

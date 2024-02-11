@@ -1,10 +1,9 @@
 <?php
-
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
 /**
@@ -26,11 +25,12 @@ class UserFactory extends Factory
     {
         if (empty(static::$password)) {
             $password = config('auth.testing.password');
-            if (empty($password) || !is_string($password)) {
+            if (empty($password) || ! is_string($password)) {
                 $password = md5(Carbon::now()->format('c'));
             }
             static::$password = Hash::make($password);
         }
+
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),

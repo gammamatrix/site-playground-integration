@@ -1,20 +1,18 @@
 <?php
 /**
  * Playground
- *
  */
-
 namespace App\Models;
 
-use Laravel\Sanctum\HasApiTokens;
-use Playground\Models\User as Authenticatable;
+use Laravel\Sanctum;
+use Playground\Models\User as BaseUser;
 
 /**
  * \App\Models\User
  *
  * This model includes RBAC and supports Sanctum.
  */
-class User extends Authenticatable
+class User extends BaseUser implements Sanctum\Contracts\HasApiTokens
 {
-    use HasApiTokens;
+    use Sanctum\HasApiTokens;
 }
