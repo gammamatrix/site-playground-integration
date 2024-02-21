@@ -42,7 +42,7 @@
             <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-blade/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-http/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-login-blade/tests/Feature</directory>
+            <!-- <directory>vendor/gammamatrix/playground-login-blade/tests/Feature</directory> -->
             <directory>vendor/gammamatrix/playground-matrix/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-matrix-resource/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-site-blade/tests/Feature</directory>
@@ -78,7 +78,7 @@
             <directory suffix=".php">vendor/gammamatrix/playground-blade/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-cms/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-http/src</directory>
-            <directory suffix=".php">vendor/gammamatrix/playground-login-blade/src</directory>
+            <!-- <directory suffix=".php">vendor/gammamatrix/playground-login-blade/src</directory> -->
             <directory suffix=".php">vendor/gammamatrix/playground-matrix/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-matrix-resource/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-site-blade/src</directory>
