@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.65953675254077" branch-rate="0" lines-covered="5581" lines-valid="8462" branches-covered="0" branches-valid="0" complexity="2260" version="0.4" timestamp="1708495640">
+<coverage line-rate="0.65961470275381" branch-rate="0" lines-covered="5581" lines-valid="8461" branches-covered="0" branches-valid="0" complexity="2260" version="0.4" timestamp="1708497261">
   <sources>
     <source>/app</source>
   </sources>
@@ -17161,6 +17161,16 @@
       <classes>
         <class name="Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateJsonTrait" filename="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/CreateJsonTrait.php" line-rate="0" branch-rate="0" complexity="4">
           <methods>
+            <method name="getPackageInfo" signature="" line-rate="0" branch-rate="0" complexity="0">
+              <lines>
+                <line number="17" hits="0"/>
+              </lines>
+            </method>
+            <method name="getStructureCreate" signature="" line-rate="0" branch-rate="0" complexity="0">
+              <lines>
+                <line number="22" hits="0"/>
+              </lines>
+            </method>
             <method name="test_json_guest_cannot_get_info" signature="" line-rate="0" branch-rate="0" complexity="1">
               <lines>
                 <line number="26" hits="0"/>
@@ -17225,6 +17235,8 @@
             </method>
           </methods>
           <lines>
+            <line number="17" hits="0"/>
+            <line number="22" hits="0"/>
             <line number="26" hits="0"/>
             <line number="28" hits="0"/>
             <line number="29" hits="0"/>
@@ -18603,6 +18615,16 @@
       <classes>
         <class name="Playground\Test\Feature\Http\Controllers\Resource\Playground\IndexJsonTrait" filename="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/IndexJsonTrait.php" line-rate="0" branch-rate="0" complexity="3">
           <methods>
+            <method name="getPackageInfo" signature="" line-rate="0" branch-rate="0" complexity="0">
+              <lines>
+                <line number="17" hits="0"/>
+              </lines>
+            </method>
+            <method name="getStructureIndex" signature="" line-rate="0" branch-rate="0" complexity="0">
+              <lines>
+                <line number="22" hits="0"/>
+              </lines>
+            </method>
             <method name="test_json_guest_cannot_render_index_view" signature="" line-rate="0" branch-rate="0" complexity="1">
               <lines>
                 <line number="26" hits="0"/>
@@ -18647,6 +18669,8 @@
             </method>
           </methods>
           <lines>
+            <line number="17" hits="0"/>
+            <line number="22" hits="0"/>
             <line number="26" hits="0"/>
             <line number="28" hits="0"/>
             <line number="30" hits="0"/>
@@ -21375,10 +21399,6 @@
           <methods>
             <method name="mockRequest" signature="string $uri, string $method, array $parameters, array $cookies, array $files, array $server, $content" line-rate="0" branch-rate="0" complexity="1">
               <lines>
-                <line number="37" hits="0"/>
-                <line number="38" hits="0"/>
-                <line number="39" hits="0"/>
-                <line number="40" hits="0"/>
                 <line number="43" hits="0"/>
                 <line number="44" hits="0"/>
                 <line number="45" hits="0"/>
@@ -21394,7 +21414,6 @@
             </method>
             <method name="invokeProtected" signature="$out, $method, array $params" line-rate="0" branch-rate="0" complexity="1">
               <lines>
-                <line number="66" hits="0"/>
                 <line number="68" hits="0"/>
                 <line number="69" hits="0"/>
                 <line number="71" hits="0"/>
@@ -21408,10 +21427,6 @@
             </method>
           </methods>
           <lines>
-            <line number="37" hits="0"/>
-            <line number="38" hits="0"/>
-            <line number="39" hits="0"/>
-            <line number="40" hits="0"/>
             <line number="43" hits="0"/>
             <line number="44" hits="0"/>
             <line number="45" hits="0"/>
@@ -21423,7 +21438,6 @@
             <line number="51" hits="0"/>
             <line number="52" hits="0"/>
             <line number="53" hits="0"/>
-            <line number="66" hits="0"/>
             <line number="68" hits="0"/>
             <line number="69" hits="0"/>
             <line number="71" hits="0"/>

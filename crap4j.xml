@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-02-21 06:07:21</timestamp>
+  <timestamp>2024-02-21 06:34:21</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>750</methodCount>
@@ -6674,7 +6674,7 @@
       <fullMethod>getPackageInfo(): array</fullMethod>
       <crap>0</crap>
       <complexity>0</complexity>
-      <coverage>100</coverage>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -6685,7 +6685,7 @@
       <fullMethod>getStructureCreate(): array</fullMethod>
       <crap>0</crap>
       <complexity>0</complexity>
-      <coverage>100</coverage>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7048,7 +7048,7 @@
       <fullMethod>getPackageInfo(): array</fullMethod>
       <crap>0</crap>
       <complexity>0</complexity>
-      <coverage>100</coverage>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7059,7 +7059,7 @@
       <fullMethod>getStructureIndex(): array</fullMethod>
       <crap>0</crap>
       <complexity>0</complexity>
-      <coverage>100</coverage>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
