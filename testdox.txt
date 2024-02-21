@@ -39,26 +39,101 @@ Abstract Role (Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRole)
  [x] Unlock without role
  [x] Unlock with admin
 
-Array Trait (Tests\Unit\Playground\Filters\ModelTrait\ArrayTrait)
+Array Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\ArrayTrait)
  [x] Filter array
  [x] FilterArray to json
 
-Authentication Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\AuthenticationRoute)
- [x] Login screen can be rendered
- [x] Users can authenticate using the login screen
- [x] Users can authenticate using json
- [x] Users cannot authenticate with invalid password
- [x] Users can logout on get request
- [x] Users can logout on get request using json
- [x] Users can logout on post request
- [x] Guests can logout on get request
- [x] Csfr token request
- [x] Login repeat under rate limit and clear
- [x] Login repeat and hit rate limit
+Backlog Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\BacklogRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
 
-Bits Trait (Tests\Unit\Playground\Filters\ModelTrait\BitsTrait)
+Bits Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\BitsTrait)
  [x] FilterBits for exponent zero
  [x] FilterBits for exponent greater than zero
+
+Board Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\BoardRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
 
 Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRoute)
  [x] Route bootstrap as guest and succeed
@@ -66,10 +141,13 @@ Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapR
  [x] Route bootstrap as vendor and succeed
  [x] Route json bootstrap as wheel and succeed
 
+Command (Tests\Feature\Playground\Blade\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
 Command (Tests\Feature\Playground\Console\Commands\About\Command)
  [x] Command about displays package information and succeed with code 0
 
-Command (Tests\Feature\Playground\Login\Blade\Console\Commands\About\Command)
+Command (Tests\Feature\Playground\Http\Console\Commands\About\Command)
  [x] Command about displays package information and succeed with code 0
 
 Command (Tests\Feature\Playground\Site\Blade\Console\Commands\About\Command)
@@ -112,24 +190,363 @@ Component (Tests\Unit\Playground\Blade\View\Components\Table\Data\Component)
  [x] Component instance
  [x] Component can render view
 
-Date Trait (Tests\Unit\Playground\Filters\ModelTrait\DateTrait)
+Create Request (Tests\Unit\Playground\Matrix\Resource\Http\Requests\Backlog\CreateRequest)
+ [x] Request instance
+
+Date Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\DateTrait)
  [x] Filter date
  [x] Filter date as carbon
 
-Email Verification Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\EmailVerificationRoute)
- [x] Email verification screen can be rendered
- [x] Email verification screen is not rendered if already verified
- [x] Json send email verification notification as guest
- [x] Send email verification notification as guest and redirect
- [x] Send email verification notification as user
- [x] Send email verification notification when already verified
- [x] Email can be verified
- [x] Email is not verified with invalid hash
- [x] Email is not verified with invalid user id
- [x] Email verified with already verified
+Epic Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\EpicRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
+
+Example (Tests\Feature\Example)
+ [x] The application returns a successful response
+
+Example (Tests\Unit\Example)
+ [x] That true is true
+
+Flow Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\FlowRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
+
+Instance (Tests\Unit\Playground\ServiceProvider\Instance)
+ [x] Version matches
+ [x] UserPrimaryKeyType with empty model
+ [x] UserPrimaryKeyType with incrementing model
+ [x] UserPrimaryKeyType with uuid model
+ [x] UserPrimaryKeyType with exception
+
+Instance (Tests\Unit\Playground\Test\Models\PlaygroundUser\Instance)
+ [x] Get attributes
+ [x] HasRole is false without role
+ [x] HasRole is true with matching role
+ [x] HasRole is true with matching secondary role
+ [x] IsAdmin is true with admin role
+ [x] IsAdmin is true with admin secondary role
+ [x] IsAdmin is true with wheel role
+ [x] IsAdmin is true with wheel secondary role
+ [x] IsAdmin is true with root role
+ [x] IsAdmin is false with root secondary role
+ [x] Factory with make
+
+Milestone Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\MilestoneRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
+
+Model (Tests\Feature\Playground\Cms\Models\PageRevision\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Cms\Models\Page\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Cms\Models\SnippetRevision\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Cms\Models\Snippet\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Backlog\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Board\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Epic\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Flow\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Milestone\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Note\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Project\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Release\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Roadmap\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Source\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Sprint\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Tag\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Team\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Ticket\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Matrix\Models\Version\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
 
 Model (Tests\Feature\Playground\Models\User\Model)
  [x] Save model in database
+
+Model (Tests\Unit\Playground\Cms\Models\PageRevision\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Cms\Models\Page\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Cms\Models\SnippetRevision\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Cms\Models\Snippet\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Backlog\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Board\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Epic\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Flow\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Milestone\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Note\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Project\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Release\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Roadmap\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Source\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Sprint\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Tag\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Team\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Ticket\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Matrix\Models\Version\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
 
 Model (Tests\Unit\Playground\Models\Model\Model)
  [x] WithChildren children returns HasMany
@@ -223,19 +640,23 @@ Model (Tests\Unit\Playground\Test\Models\AbstractUser\Model)
 Model (Tests\Unit\Playground\Test\Models\ModelCase\Model)
  [x] Model instance
  [x] Verify model relationships
+ [x] Model factory make
 
-Model (Tests\Unit\Playground\Test\Models\UserWithChildren\Model)
+Model (Tests\Unit\Playground\Test\Models\PlaygroundUser\Model)
  [x] Model instance
  [x] Verify model relationships
+ [x] Model factory make
 
 Model (Tests\Unit\Playground\Test\Models\UserWithRoleAndPrivileges\Model)
  [x] Get attributes
  [x] HasPrivilege is false without privilege
  [x] HasPrivilege is false with wrong privilege
  [x] HasPrivilege is true with correct privilege
+ [x] Factory with make
 
 Model (Tests\Unit\Playground\Test\Models\UserWithRoleAndRolesAndPrivileges\Model)
  [x] Get attributes
+ [x] Factory with make
 
 Model (Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\Model)
  [x] Get attributes
@@ -248,32 +669,116 @@ Model (Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\Model)
  [x] IsAdmin is true with wheel secondary role
  [x] IsAdmin is true with root role
  [x] IsAdmin is false with root secondary role
+ [x] Factory with make
 
 Model (Tests\Unit\Playground\Test\Models\UserWithSanctum\Model)
  [x] Get attributes
+ [x] Factory with make
 
 Model (Tests\Unit\Playground\Test\Models\User\Model)
  [x] Get attributes
+ [x] Factory with make
 
-Number Trait (Tests\Unit\Playground\Filters\ModelTrait\NumberTrait)
+Note Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\NoteRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
+
+Number Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\NumberTrait)
  [x] Filter float
  [x] Filter integer
  [x] Filter integer id
  [x] Filter integer positive
  [x] Filter percent
 
-Password Confirmation Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\PasswordConfirmationRoute)
- [x] Confirm password screen can be rendered
- [x] Password can be confirmed
- [x] Password is not confirmed with invalid password
+Phone Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\PhoneTrait)
+ [x] Filter phone
 
-Password Reset Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\PasswordResetRoute)
- [x] Reset password link screen can be rendered
- [x] Reset password link can be requested
- [x] Reset password screen can be rendered
- [x] Password can be reset with valid token
- [x] Password reset with invalid token
- [x] Password reset with invalid user
+Policy (Tests\Unit\Playground\Matrix\Resource\Policies\BacklogPolicy\Policy)
+ [x] Policy instance
+
+Project Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\ProjectRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
 
 Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicDashboardRoute)
  [x] Route dashboard as guest and fail when disabled for guest and no redirect
@@ -298,24 +803,278 @@ Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Publi
  [x] Route json sitemap as admin and succeed
  [x] Route sitemap as user and succeed with package sitemaps
 
-Registration Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\RegistrationRoute)
- [x] Registration screen can be rendered
- [x] New users can register
+Release Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\ReleaseRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
 
-Sanctum Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\SanctumRoute)
- [x] Sanctum users can authenticate and logout and delete token
- [x] Sanctum users can logout without token using json
- [x] Sanctum users can logout all tokens without token using json
- [x] Sanctum users can logout everywhere tokens without token
+Roadmap Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\RoadmapRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
 
-Status Trait (Tests\Unit\Playground\Filters\ModelTrait\StatusTrait)
+Source Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\SourceRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
+
+Sprint Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\SprintRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
+
+Status Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\StatusTrait)
  [x] Filter status
 
-System Fields Trait (Tests\Unit\Playground\Filters\ModelTrait\SystemFieldsTrait)
+System Fields Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\SystemFieldsTrait)
  [x] FilterSystemFields for groups
  [x] FilterSystemFields for permissions
  [x] FilterSystemFields for rank
  [x] FilterSystemFields for size
+
+Tag Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\TagRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
+
+Team Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\TeamRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
 
 Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRoute)
  [x] Route theme as guest and succeed
@@ -323,13 +1082,59 @@ Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRoute)
  [x] Route theme as partner and succeed
  [x] Route theme as sales and succeed with theme and redirect
 
+Ticket Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\TicketRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
+
 Trait (Tests\Unit\Playground\Auth\Policies\PolicyTrait\Trait)
  [x] Get entity
  [x] Get package
  [x] Has token
  [x] Get token
  [x] Set token
- [x] Verify
+ [x] Verify does not log when app debugging is disabled
+ [x] Verify does not log when auth debugging is disabled
+ [x] Verify logs with debugging enabled
  [x] Verify privileges
  [x] Verify roles
  [x] Verify user
@@ -352,13 +1157,12 @@ Trait (Tests\Unit\Playground\Auth\Policies\RoleTrait\Trait)
  [x] Has role
  [x] HasRole advanced role
 
-Trait (Tests\Unit\Playground\Filters\ContentTrait\Trait)
+Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreContent\Trait)
  [x] Purify
  [x] Exorcise
  [x] Get html purifier
  [x] GetHtmlPurifier with iframes
  [x] GetHtmlPurifier with purifier path
- [x] Encode u r i component
 
 User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRoute)
  [x] Route dashboard as guest and fail when disabled for guest and no redirect with auth middleware
@@ -387,13 +1191,57 @@ User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSit
  [x] Route json sitemap as admin and succeed
  [x] Route sitemap as user and succeed with package sitemaps
 
-Uuid Trait (Tests\Unit\Playground\Filters\ModelTrait\UuidTrait)
+Uuid Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\UuidTrait)
  [x] Filter uuid
 
-Value Trait (Tests\Unit\Playground\Filters\ModelTrait\ValueTrait)
+Value Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\ValueTrait)
  [x] Filter boolean
  [x] Filter email
  [x] Filter html
+
+Version Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\VersionRoute)
+ [x] Guest cannot destroy
+ [x] Guest cannot render edit view
+ [x] Guest cannot render index view
+ [x] Guest cannot lock
+ [x] Guest cannot render show view
+ [x] Guest cannot unlock
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Index view rendered by admin
+ [x] Create view rendered by admin with return url
+ [x] Edit as admin view rendered by user with return url
+ [x] Show view rendered by admin
+ [x] Index as admin using json
+ [x] Create info with admin using json
+ [x] Show as admin using json
+ [x] Destroy as admin user and succeed
+ [x] Lock as admin user and succeed
+ [x] Unlock as admin user and succeed
+ [x] Restore as admin user and succeed
+ [x] Edit as admin info with user using json
+ [x] Create view rendered by admin with invalid parameter
+ [x] Edit as admin view rendered by user with invalid parameter
+ [x] Lock as admin user using json and succeed
+ [x] Destroy as admin user and succeed with force delete
+ [x] Unlock as admin user using json and succeed
+ [x] Restore as admin user using json and succeed
+ [x] Lock as admin user and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin user using json and succeed with no content
+ [x] Unlock as admin user and succeed with redirect to index with sorted by unlocked desc
+ [x] Restore as admin user and succeed with redirect to index with only trash
+ [x] Destroy as admin user and succeed with redirect to index with trash
+ [x] Lock with user role and get denied
+ [x] Unlock with user role and get denied
+ [x] Restore with user role and get denied
+ [x] Lock with admin role and succeed
+ [x] Destroy with user role and get denied and no force delete allowed
+ [x] Restore with admin role and succeed
+ [x] Unlock with admin role and succeed
+ [x] Lock with admin role and succeed with json
+ [x] Destroy with admin role and succeed
+ [x] Unlock with admin role and succeed with json
+ [x] Destroy with admin role and succeed with force delete
 
 Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRoute)
  [x] Route welcome as guest and succeed
