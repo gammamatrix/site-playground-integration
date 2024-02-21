@@ -19,13 +19,15 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/gammamatrix/playground-auth"
+            "url": "https://github.com/gammamatrix/playground-cms"
         }
     ],
     "require": {
         "php": "^8.1",
         "gammamatrix/playground-auth": "dev-develop|dev-master|dev-feature/*|^73.0",
+        "gammamatrix/playground-cms": "dev-develop|dev-master|dev-feature/*|^73.0",
         "gammamatrix/playground-login-blade": "dev-develop|dev-master|dev-feature/*|^73.0",
+        "gammamatrix/playground-matrix-resource": "dev-develop|dev-master|dev-feature/*|^73.0",
         "gammamatrix/playground-site-blade": "dev-develop|dev-master|dev-feature/*|^73.0",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
@@ -50,7 +52,6 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Database\\Factories\\Playground\\Models\\": "database/factories/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
@@ -62,10 +63,18 @@
             "Tests\\Unit\\Playground\\": "vendor/gammamatrix/playground/tests/Unit/",
             "Tests\\Feature\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Feature/",
             "Tests\\Unit\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Unit/",
-            "Tests\\Feature\\Playground\\Login\\Blade\\": "vendor/gammamatrix/playground-login-blade/tests/Feature/",
-            "Tests\\Feature\\Playground\\Site\\Blade\\": "vendor/gammamatrix/playground-site-blade/tests/Feature/",
             "Tests\\Feature\\Playground\\Blade\\": "vendor/gammamatrix/playground-blade/tests/Feature/",
             "Tests\\Unit\\Playground\\Blade\\": "vendor/gammamatrix/playground-blade/tests/Unit/",
+            "Tests\\Feature\\Playground\\Cms\\": "vendor/gammamatrix/playground-cms/tests/Feature/",
+            "Tests\\Unit\\Playground\\Cms\\": "vendor/gammamatrix/playground-cms/tests/Unit/",
+            "Tests\\Feature\\Playground\\Http\\": "vendor/gammamatrix/playground-http/tests/Feature/",
+            "Tests\\Unit\\Playground\\Http\\": "vendor/gammamatrix/playground-http/tests/Unit/",
+            "Tests\\Feature\\Playground\\Login\\Blade\\": "vendor/gammamatrix/playground-login-blade/tests/Feature/",
+            "Tests\\Feature\\Playground\\Site\\Blade\\": "vendor/gammamatrix/playground-site-blade/tests/Feature/",
+            "Tests\\Feature\\Playground\\Matrix\\": "vendor/gammamatrix/playground-matrix/tests/Feature/",
+            "Tests\\Unit\\Playground\\Matrix\\": "vendor/gammamatrix/playground-matrix/tests/Unit/",
+            "Tests\\Feature\\Playground\\Matrix\\Resource\\": "vendor/gammamatrix/playground-matrix-resource/tests/Feature/",
+            "Tests\\Unit\\Playground\\Matrix\\Resource\\": "vendor/gammamatrix/playground-matrix-resource/tests/Unit/",
             "Tests\\Feature\\Playground\\Test\\": "vendor/gammamatrix/playground-test/tests/Feature/",
             "Tests\\Unit\\Playground\\Test\\": "vendor/gammamatrix/playground-test/tests/Unit/"
         }
