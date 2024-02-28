@@ -75,12 +75,19 @@ return [
     | - PLAYGROUND_AUTH_USER_PRIVILEGES - allow saving privileges in the user model.
     | - PLAYGROUND_AUTH_VERIFY === privileges
     |
+    | Verification:
+    | - admin: $user->isAdmin()
+    | - policy: $user->can()
+    | - privileges: $user->hasPrivilege()
+    | - roles: $user->hasRole()
+    | - sanctum: $user->currentAccessToken()->can()
+    | - user: ! empty($user)
     */
 
     /**
-     * @var string verify   user|privileges|roles
+     * @var string verify   admin|user|policy|privileges|roles|sanctum
      */
-    'verify' => env('PLAYGROUND_AUTH_VERIFY', 'privileges'),
+    'verify' => env('PLAYGROUND_AUTH_VERIFY', 'sanctum'),
 
     /**
      * @var bool sanctum   Enable Sanctum
@@ -90,30 +97,27 @@ return [
     /**
      * @var bool hasPrivilege   Enable if the user model has $user->hasPrivilege($privilege)
      */
-    'hasPrivilege' => (bool) env('PLAYGROUND_AUTH_HAS_PRIVILEGE', false),
+    'hasPrivilege' => (bool) env('PLAYGROUND_AUTH_HAS_PRIVILEGE', true),
 
     /**
      * @var bool hasPrivilege   Enable if the user model has the attribute User::$privileges
      */
-    'userPrivileges' => (bool) env('PLAYGROUND_AUTH_USER_PRIVILEGES', false),
+    'userPrivileges' => (bool) env('PLAYGROUND_AUTH_USER_PRIVILEGES', true),
 
     /**
      * @var bool hasRole   Enable if the user model has $user->hasRole($role)
      */
-    'hasRole' => (bool) env('PLAYGROUND_AUTH_HAS_ROLE', false),
-    // 'hasRole' => (bool) env('PLAYGROUND_AUTH_HAS_ROLE', true),
+    'hasRole' => (bool) env('PLAYGROUND_AUTH_HAS_ROLE', true),
 
     /**
      * @var bool userRole   Enable if the user model has the attribute User::$role
      */
-    'userRole' => (bool) env('PLAYGROUND_AUTH_USER_ROLE', false),
-    // 'userRole' => (bool) env('PLAYGROUND_AUTH_USER_ROLE', true),
+    'userRole' => (bool) env('PLAYGROUND_AUTH_USER_ROLE', true),
 
     /**
      * @var bool userRoles   Enable if the user model has the attribute User::$roles
      */
-    'userRoles' => (bool) env('PLAYGROUND_AUTH_USER_ROLES', false),
-    // 'userRoles' => (bool) env('PLAYGROUND_AUTH_USER_ROLES', true),
+    'userRoles' => (bool) env('PLAYGROUND_AUTH_USER_ROLES', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -150,20 +154,26 @@ return [
          * @var bool roles   Check the user role(s) for applying abilities.
          */
         'roles' => (bool) env('PLAYGROUND_AUTH_TOKEN_ROLES', false),
-        // 'roles' => (bool) env('PLAYGROUND_AUTH_TOKEN_ROLES', true),
 
         /**
          * @var bool privileges  Allow the attribute User::$privileges to be used for authorization.
          */
         'privileges' => (bool) env('PLAYGROUND_AUTH_TOKEN_PRIVILEGES', false),
-        // 'privileges' => (bool) env('PLAYGROUND_AUTH_TOKEN_PRIVILEGES', true),
 
         /**
          * @var bool sanctum   The token will use Sanctum.
          */
         'sanctum' => (bool) env('PLAYGROUND_AUTH_TOKEN_SANCTUM', true),
-        // 'sanctum' => (bool) env('PLAYGROUND_AUTH_TOKEN_SANCTUM', false),
 
+        /**
+         * @var bool session   Save the token in the session.
+         */
+        'session' => (bool) env('PLAYGROUND_AUTH_TOKEN_SESSION', true),
+
+        /**
+         * @var string session_name   The session name for the token.
+         */
+        'session_name' => env('PLAYGROUND_AUTH_TOKEN_SESSION_NAME', 'sanctum'),
     ],
 
     /*

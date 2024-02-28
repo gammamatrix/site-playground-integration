@@ -41,6 +41,10 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $e)
     {
+        // dd([
+        //     '__METHOD__' => __METHOD__,
+        //     '$e' => $e,
+        // ]);
         if ($e instanceof AuthorizationException && Auth::guest()) {
             if ($this->shouldReturnJson($request, $e)) {
                 if (config('app.debug')) {
@@ -51,7 +55,10 @@ class Handler extends ExceptionHandler
             }
 
             $redirect = config('playground-auth.redirect');
-
+            // dd([
+            //     '__METHOD__' => __METHOD__,
+            //     '$e' => $e,
+            // ]);
             if (config('app.debug')) {
                 Log::debug('redirect()->guest($redirect)', [
                     '$redirect' => $redirect,
