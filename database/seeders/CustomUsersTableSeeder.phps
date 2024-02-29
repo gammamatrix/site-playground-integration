@@ -123,6 +123,14 @@ class CustomUsersTableSeeder extends Seeder
             'status' => 1,
         ],
 
+        'guest@example.com' => [
+            'name' => 'Guest Tseug',
+            'role' => 'guest',
+            'roles' => [],
+            'description' => 'Guest',
+            'status' => 1,
+        ],
+
         'partner@example.com' => [
             'name' => 'Partner Rentrap',
             'role' => 'partner',
