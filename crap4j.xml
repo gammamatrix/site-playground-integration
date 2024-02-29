@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-02-21 06:34:21</timestamp>
+  <timestamp>2024-02-29 00:02:24</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>750</methodCount>
-    <crapMethodCount>41</crapMethodCount>
-    <crapLoad>402</crapLoad>
-    <totalCrap>7848.93</totalCrap>
-    <crapMethodPercent>5.47</crapMethodPercent>
+    <methodCount>917</methodCount>
+    <crapMethodCount>40</crapMethodCount>
+    <crapLoad>393</crapLoad>
+    <totalCrap>7592.42</totalCrap>
+    <crapMethodPercent>4.36</crapMethodPercent>
   </stats>
   <methods>
     <method>
@@ -166,6 +166,94 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Can</className>
+      <methodName>matches</methodName>
+      <methodSignature>matches(?Illuminate\Contracts\Auth\Authenticatable $user): bool</methodSignature>
+      <fullMethod>matches(?Illuminate\Contracts\Auth\Authenticatable $user): bool</fullMethod>
+      <crap>8.7</crap>
+      <complexity>8</complexity>
+      <coverage>77.78</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Can</className>
+      <methodName>init</methodName>
+      <methodSignature>init(?Illuminate\Contracts\Auth\Authenticatable $user): self</methodSignature>
+      <fullMethod>init(?Illuminate\Contracts\Auth\Authenticatable $user): self</fullMethod>
+      <crap>14</crap>
+      <complexity>14</complexity>
+      <coverage>97.06</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Can</className>
+      <methodName>reset</methodName>
+      <methodSignature>reset(?Illuminate\Contracts\Auth\Authenticatable $user): self</methodSignature>
+      <fullMethod>reset(?Illuminate\Contracts\Auth\Authenticatable $user): self</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Can</className>
+      <methodName>isGuest</methodName>
+      <methodSignature>isGuest(?Illuminate\Contracts\Auth\Authenticatable $user): bool</methodSignature>
+      <fullMethod>isGuest(?Illuminate\Contracts\Auth\Authenticatable $user): bool</fullMethod>
+      <crap>4.07</crap>
+      <complexity>4</complexity>
+      <coverage>83.33</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Can</className>
+      <methodName>map</methodName>
+      <methodSignature>map(array $privileges, ?Illuminate\Contracts\Auth\Authenticatable $user): array</methodSignature>
+      <fullMethod>map(array $privileges, ?Illuminate\Contracts\Auth\Authenticatable $user): array</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Can</className>
+      <methodName>wildcards</methodName>
+      <methodSignature>wildcards(string $privilege): array</methodSignature>
+      <fullMethod>wildcards(string $privilege): array</fullMethod>
+      <crap>110</crap>
+      <complexity>10</complexity>
+      <coverage>0</coverage>
+      <crapLoad>10</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Can</className>
+      <methodName>access</methodName>
+      <methodSignature>access(?Illuminate\Contracts\Auth\Authenticatable $user, array $options): Playground\Auth\Permission</methodSignature>
+      <fullMethod>access(?Illuminate\Contracts\Auth\Authenticatable $user, array $options): Playground\Auth\Permission</fullMethod>
+      <crap>488.75</crap>
+      <complexity>49</complexity>
+      <coverage>43.21</coverage>
+      <crapLoad>29</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Can</className>
+      <methodName>withPrivilege</methodName>
+      <methodSignature>withPrivilege(array $meta): string</methodSignature>
+      <fullMethod>withPrivilege(array $meta): string</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
       <package>Playground\Auth\Console\Commands</package>
       <className>Playground\Auth\Console\Commands\HashPassword</className>
       <methodName>handle</methodName>
@@ -174,6 +262,17 @@
       <crap>9.02</crap>
       <complexity>9</complexity>
       <coverage>93.75</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth\Facades</package>
+      <className>Playground\Auth\Facades\Can</className>
+      <methodName>getFacadeAccessor</methodName>
+      <methodSignature>getFacadeAccessor()</methodSignature>
+      <fullMethod>getFacadeAccessor()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -240,6 +339,61 @@
       <crap>42</crap>
       <complexity>6</complexity>
       <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Permission</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(string $verify)</methodSignature>
+      <fullMethod>__construct(string $verify)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Permission</className>
+      <methodName>markAllowed</methodName>
+      <methodSignature>markAllowed(): self</methodSignature>
+      <fullMethod>markAllowed(): self</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Permission</className>
+      <methodName>markIsGuest</methodName>
+      <methodSignature>markIsGuest(): self</methodSignature>
+      <fullMethod>markIsGuest(): self</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Permission</className>
+      <methodName>allowed</methodName>
+      <methodSignature>allowed(): bool</methodSignature>
+      <fullMethod>allowed(): bool</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Auth</package>
+      <className>Playground\Auth\Permission</className>
+      <methodName>isGuest</methodName>
+      <methodSignature>isGuest(): bool</methodSignature>
+      <fullMethod>isGuest(): bool</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -490,9 +644,9 @@
       <methodName>verify</methodName>
       <methodSignature>verify(Illuminate\Contracts\Auth\Authenticatable $user, string $ability): bool|\Illuminate\Auth\Access\Response</methodSignature>
       <fullMethod>verify(Illuminate\Contracts\Auth\Authenticatable $user, string $ability): bool|\Illuminate\Auth\Access\Response</fullMethod>
-      <crap>6</crap>
-      <complexity>6</complexity>
-      <coverage>100</coverage>
+      <crap>8.01</crap>
+      <complexity>8</complexity>
+      <coverage>94.12</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -694,6 +848,622 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Asset</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(mixed $options)</methodSignature>
+      <fullMethod>__construct(mixed $options)</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Asset</className>
+      <methodName>setOptions</methodName>
+      <methodSignature>setOptions(array $options): self</methodSignature>
+      <fullMethod>setOptions(array $options): self</fullMethod>
+      <crap>12</crap>
+      <complexity>3</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Font</className>
+      <methodName>__toString</methodName>
+      <methodSignature>__toString(): string</methodSignature>
+      <fullMethod>__toString(): string</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Icon</className>
+      <methodName>setOptions</methodName>
+      <methodSignature>setOptions(array $options): self</methodSignature>
+      <fullMethod>setOptions(array $options): self</fullMethod>
+      <crap>3.07</crap>
+      <complexity>3</complexity>
+      <coverage>80</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Icon</className>
+      <methodName>sizes</methodName>
+      <methodSignature>sizes(): string</methodSignature>
+      <fullMethod>sizes(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Icon</className>
+      <methodName>__toString</methodName>
+      <methodSignature>__toString(): string</methodSignature>
+      <fullMethod>__toString(): string</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Link</className>
+      <methodName>setOptions</methodName>
+      <methodSignature>setOptions(array $options): self</methodSignature>
+      <fullMethod>setOptions(array $options): self</fullMethod>
+      <crap>15.15</crap>
+      <complexity>15</complexity>
+      <coverage>91.3</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Link</className>
+      <methodName>always</methodName>
+      <methodSignature>always(): bool</methodSignature>
+      <fullMethod>always(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Link</className>
+      <methodName>as</methodName>
+      <methodSignature>as(): string</methodSignature>
+      <fullMethod>as(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Link</className>
+      <methodName>crossorigin</methodName>
+      <methodSignature>crossorigin(): string</methodSignature>
+      <fullMethod>crossorigin(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Link</className>
+      <methodName>href</methodName>
+      <methodSignature>href(): string</methodSignature>
+      <fullMethod>href(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Link</className>
+      <methodName>integrity</methodName>
+      <methodSignature>integrity(): string</methodSignature>
+      <fullMethod>integrity(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Link</className>
+      <methodName>media</methodName>
+      <methodSignature>media(): string</methodSignature>
+      <fullMethod>media(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Link</className>
+      <methodName>rel</methodName>
+      <methodSignature>rel(): string</methodSignature>
+      <fullMethod>rel(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Link</className>
+      <methodName>title</methodName>
+      <methodSignature>title(): string</methodSignature>
+      <fullMethod>title(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Link</className>
+      <methodName>type</methodName>
+      <methodSignature>type(): string</methodSignature>
+      <fullMethod>type(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Link</className>
+      <methodName>__toString</methodName>
+      <methodSignature>__toString(): string</methodSignature>
+      <fullMethod>__toString(): string</fullMethod>
+      <crap>30</crap>
+      <complexity>5</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>setOptions</methodName>
+      <methodSignature>setOptions(array $options): self</methodSignature>
+      <fullMethod>setOptions(array $options): self</fullMethod>
+      <crap>15.09</crap>
+      <complexity>15</complexity>
+      <coverage>92.59</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>always</methodName>
+      <methodSignature>always(): bool</methodSignature>
+      <fullMethod>always(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>async</methodName>
+      <methodSignature>async(): bool</methodSignature>
+      <fullMethod>async(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>nomodule</methodName>
+      <methodSignature>nomodule(): bool</methodSignature>
+      <fullMethod>nomodule(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>defer</methodName>
+      <methodSignature>defer(): bool</methodSignature>
+      <fullMethod>defer(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>scoped</methodName>
+      <methodSignature>scoped(): bool</methodSignature>
+      <fullMethod>scoped(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>crossorigin</methodName>
+      <methodSignature>crossorigin(): string</methodSignature>
+      <fullMethod>crossorigin(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>fetchpriority</methodName>
+      <methodSignature>fetchpriority(): string</methodSignature>
+      <fullMethod>fetchpriority(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>integrity</methodName>
+      <methodSignature>integrity(): string</methodSignature>
+      <fullMethod>integrity(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>referrerpolicy</methodName>
+      <methodSignature>referrerpolicy(): string</methodSignature>
+      <fullMethod>referrerpolicy(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>script</methodName>
+      <methodSignature>script(): string</methodSignature>
+      <fullMethod>script(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>src</methodName>
+      <methodSignature>src(): string</methodSignature>
+      <fullMethod>src(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>version</methodName>
+      <methodSignature>version(): string</methodSignature>
+      <fullMethod>version(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>type</methodName>
+      <methodSignature>type(): string</methodSignature>
+      <fullMethod>type(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Script</className>
+      <methodName>__toString</methodName>
+      <methodSignature>__toString(): string</methodSignature>
+      <fullMethod>__toString(): string</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Style</className>
+      <methodName>setOptions</methodName>
+      <methodSignature>setOptions(array $options): self</methodSignature>
+      <fullMethod>setOptions(array $options): self</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Style</className>
+      <methodName>always</methodName>
+      <methodSignature>always(): bool</methodSignature>
+      <fullMethod>always(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Style</className>
+      <methodName>style</methodName>
+      <methodSignature>style(): string</methodSignature>
+      <fullMethod>style(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Style</className>
+      <methodName>__toString</methodName>
+      <methodSignature>__toString(): string</methodSignature>
+      <fullMethod>__toString(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Stylesheet</className>
+      <methodName>setOptions</methodName>
+      <methodSignature>setOptions(array $options): self</methodSignature>
+      <fullMethod>setOptions(array $options): self</fullMethod>
+      <crap>5.05</crap>
+      <complexity>5</complexity>
+      <coverage>87.5</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Stylesheet</className>
+      <methodName>docs</methodName>
+      <methodSignature>docs(): string</methodSignature>
+      <fullMethod>docs(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Stylesheet</className>
+      <methodName>version</methodName>
+      <methodSignature>version(): string</methodSignature>
+      <fullMethod>version(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Assets</package>
+      <className>Playground\Blade\Assets\Stylesheet</className>
+      <methodName>__toString</methodName>
+      <methodSignature>__toString(): string</methodSignature>
+      <fullMethod>__toString(): string</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithAssets</className>
+      <methodName>initAssets</methodName>
+      <methodSignature>initAssets(): self</methodSignature>
+      <fullMethod>initAssets(): self</fullMethod>
+      <crap>9</crap>
+      <complexity>9</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithAssets</className>
+      <methodName>loadBodyAssets</methodName>
+      <methodSignature>loadBodyAssets(array $assets): self</methodSignature>
+      <fullMethod>loadBodyAssets(array $assets): self</fullMethod>
+      <crap>12.87</crap>
+      <complexity>12</complexity>
+      <coverage>81.82</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithAssets</className>
+      <methodName>loadHeadAssets</methodName>
+      <methodSignature>loadHeadAssets(array $assets): self</methodSignature>
+      <fullMethod>loadHeadAssets(array $assets): self</fullMethod>
+      <crap>15</crap>
+      <complexity>15</complexity>
+      <coverage>96.77</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithAssets</className>
+      <methodName>bodyAssets</methodName>
+      <methodSignature>bodyAssets(): array</methodSignature>
+      <fullMethod>bodyAssets(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithAssets</className>
+      <methodName>headAssets</methodName>
+      <methodSignature>headAssets(): array</methodSignature>
+      <fullMethod>headAssets(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithThemes</className>
+      <methodName>initThemes</methodName>
+      <methodSignature>initThemes(): self</methodSignature>
+      <fullMethod>initThemes(): self</fullMethod>
+      <crap>9</crap>
+      <complexity>9</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithThemes</className>
+      <methodName>loadThemes</methodName>
+      <methodSignature>loadThemes(array $themes): self</methodSignature>
+      <fullMethod>loadThemes(array $themes): self</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithThemes</className>
+      <methodName>theme</methodName>
+      <methodSignature>theme(): Playground\Blade\Themes\Theme</methodSignature>
+      <fullMethod>theme(): Playground\Blade\Themes\Theme</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithThemes</className>
+      <methodName>themes</methodName>
+      <methodSignature>themes(): array</methodSignature>
+      <fullMethod>themes(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithThemes</className>
+      <methodName>getTheme</methodName>
+      <methodSignature>getTheme(string $key): ?Playground\Blade\Themes\Theme</methodSignature>
+      <fullMethod>getTheme(string $key): ?Playground\Blade\Themes\Theme</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithThemes</className>
+      <methodName>hasTheme</methodName>
+      <methodSignature>hasTheme(string $themeKey): bool</methodSignature>
+      <fullMethod>hasTheme(string $themeKey): bool</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithThemes</className>
+      <methodName>saveTheme</methodName>
+      <methodSignature>saveTheme(Playground\Blade\Themes\Theme $theme): self</methodSignature>
+      <fullMethod>saveTheme(Playground\Blade\Themes\Theme $theme): self</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithThemes</className>
+      <methodName>setTheme</methodName>
+      <methodSignature>setTheme(string $themeKey, bool $save): self</methodSignature>
+      <fullMethod>setTheme(string $themeKey, bool $save): self</fullMethod>
+      <crap>5.68</crap>
+      <complexity>5</complexity>
+      <coverage>70</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithThemes</className>
+      <methodName>session</methodName>
+      <methodSignature>session(): bool</methodSignature>
+      <fullMethod>session(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Concerns</package>
+      <className>Playground\Blade\Concerns\WithThemes</className>
+      <methodName>sessionThemeName</methodName>
+      <methodSignature>sessionThemeName(): string</methodSignature>
+      <fullMethod>sessionThemeName(): string</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Facades</package>
+      <className>Playground\Blade\Facades\Ui</className>
+      <methodName>getFacadeAccessor</methodName>
+      <methodSignature>getFacadeAccessor()</methodSignature>
+      <fullMethod>getFacadeAccessor()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
       <package>Playground\Blade</package>
       <className>Playground\Blade\ServiceProvider</className>
       <methodName>boot</methodName>
@@ -732,6 +1502,116 @@
       <methodName>version</methodName>
       <methodSignature>version(): string</methodSignature>
       <fullMethod>version(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Themes</package>
+      <className>Playground\Blade\Themes\Bootstrap</className>
+      <methodName>setOptions</methodName>
+      <methodSignature>setOptions(array $options): self</methodSignature>
+      <fullMethod>setOptions(array $options): self</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Themes</package>
+      <className>Playground\Blade\Themes\Bootstrap</className>
+      <methodName>bsTheme</methodName>
+      <methodSignature>bsTheme(): string</methodSignature>
+      <fullMethod>bsTheme(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Themes</package>
+      <className>Playground\Blade\Themes\Theme</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct(mixed $options)</methodSignature>
+      <fullMethod>__construct(mixed $options)</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Themes</package>
+      <className>Playground\Blade\Themes\Theme</className>
+      <methodName>setOptions</methodName>
+      <methodSignature>setOptions(array $options): self</methodSignature>
+      <fullMethod>setOptions(array $options): self</fullMethod>
+      <crap>11</crap>
+      <complexity>11</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Themes</package>
+      <className>Playground\Blade\Themes\Theme</className>
+      <methodName>enabled</methodName>
+      <methodSignature>enabled(): bool</methodSignature>
+      <fullMethod>enabled(): bool</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Themes</package>
+      <className>Playground\Blade\Themes\Theme</className>
+      <methodName>key</methodName>
+      <methodSignature>key(): string</methodSignature>
+      <fullMethod>key(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Themes</package>
+      <className>Playground\Blade\Themes\Theme</className>
+      <methodName>editor</methodName>
+      <methodSignature>editor(): string</methodSignature>
+      <fullMethod>editor(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Themes</package>
+      <className>Playground\Blade\Themes\Theme</className>
+      <methodName>label</methodName>
+      <methodSignature>label(): string</methodSignature>
+      <fullMethod>label(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Themes</package>
+      <className>Playground\Blade\Themes\Theme</className>
+      <methodName>icon</methodName>
+      <methodSignature>icon(): string</methodSignature>
+      <fullMethod>icon(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Blade\Themes</package>
+      <className>Playground\Blade\Themes\Theme</className>
+      <methodName>session</methodName>
+      <methodSignature>session(): bool</methodSignature>
+      <fullMethod>session(): bool</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -849,6 +1729,17 @@
     </method>
     <method>
       <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Page</className>
+      <methodName>revisions</methodName>
+      <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
+      <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
       <className>Playground\Cms\Models\PageRevision</className>
       <methodName>parent</methodName>
       <methodSignature>parent(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
@@ -864,6 +1755,17 @@
       <methodName>page</methodName>
       <methodSignature>page(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>page(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Snippet</className>
+      <methodName>revisions</methodName>
+      <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
+      <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -996,10 +1898,10 @@
       <methodName>prepareForValidationForDates</methodName>
       <methodSignature>prepareForValidationForDates(): ?array</methodSignature>
       <fullMethod>prepareForValidationForDates(): ?array</fullMethod>
-      <crap>331.48</crap>
+      <crap>23.2</crap>
       <complexity>20</complexity>
-      <coverage>8</coverage>
-      <crapLoad>19</crapLoad>
+      <coverage>80</coverage>
+      <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Http\Requests\Concerns</package>
@@ -1062,9 +1964,9 @@
       <methodName>getPaginationOperators</methodName>
       <methodSignature>getPaginationOperators(): array</methodSignature>
       <fullMethod>getPaginationOperators(): array</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1225,10 +2127,10 @@
       <package>Playground\Http\Requests\Concerns</package>
       <className>Playground\Http\Requests\Concerns\StoreFilter</className>
       <methodName>filterHtml</methodName>
-      <methodSignature>filterHtml(string $content): string</methodSignature>
-      <fullMethod>filterHtml(string $content): string</fullMethod>
-      <crap>2</crap>
-      <complexity>2</complexity>
+      <methodSignature>filterHtml(mixed $content): string</methodSignature>
+      <fullMethod>filterHtml(mixed $content): string</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -1291,10 +2193,32 @@
       <package>Playground\Http\Requests\Concerns</package>
       <className>Playground\Http\Requests\Concerns\StoreFilter</className>
       <methodName>filterStatus</methodName>
-      <methodSignature>filterStatus(array $input): array</methodSignature>
-      <fullMethod>filterStatus(array $input): array</fullMethod>
-      <crap>5</crap>
-      <complexity>5</complexity>
+      <methodSignature>filterStatus(array $input): void</methodSignature>
+      <fullMethod>filterStatus(array $input): void</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterCommonFields</methodName>
+      <methodSignature>filterCommonFields(array $input): void</methodSignature>
+      <fullMethod>filterCommonFields(array $input): void</fullMethod>
+      <crap>13.1</crap>
+      <complexity>13</complexity>
+      <coverage>91.67</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterContentFields</methodName>
+      <methodSignature>filterContentFields(array $input): void</methodSignature>
+      <fullMethod>filterContentFields(array $input): void</fullMethod>
+      <crap>9</crap>
+      <complexity>9</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -1302,11 +2226,22 @@
       <package>Playground\Http\Requests\Concerns</package>
       <className>Playground\Http\Requests\Concerns\StoreFilter</className>
       <methodName>filterSystemFields</methodName>
-      <methodSignature>filterSystemFields(array $input): array</methodSignature>
-      <fullMethod>filterSystemFields(array $input): array</fullMethod>
-      <crap>13</crap>
-      <complexity>13</complexity>
+      <methodSignature>filterSystemFields(array $input): void</methodSignature>
+      <fullMethod>filterSystemFields(array $input): void</fullMethod>
+      <crap>19</crap>
+      <complexity>19</complexity>
       <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterUri</methodName>
+      <methodSignature>filterUri(mixed $value): string</methodSignature>
+      <fullMethod>filterUri(mixed $value): string</fullMethod>
+      <crap>20</crap>
+      <complexity>4</complexity>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1326,9 +2261,9 @@
       <methodName>rules_store_slug_create</methodName>
       <methodSignature>rules_store_slug_create(array $rules): void</methodSignature>
       <fullMethod>rules_store_slug_create(array $rules): void</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1337,9 +2272,9 @@
       <methodName>rules_store_slug_update</methodName>
       <methodSignature>rules_store_slug_update(array $rules): void</methodSignature>
       <fullMethod>rules_store_slug_update(array $rules): void</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1348,10 +2283,10 @@
       <methodName>prepareForValidationForSlug</methodName>
       <methodSignature>prepareForValidationForSlug(): array</methodSignature>
       <fullMethod>prepareForValidationForSlug(): array</fullMethod>
-      <crap>210</crap>
+      <crap>17.48</crap>
       <complexity>14</complexity>
-      <coverage>0</coverage>
-      <crapLoad>14</crapLoad>
+      <coverage>73.91</coverage>
+      <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Http\Requests</package>
@@ -1436,9 +2371,9 @@
       <methodName>messages</methodName>
       <methodSignature>messages(): array</methodSignature>
       <fullMethod>messages(): array</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1447,9 +2382,9 @@
       <methodName>rules</methodName>
       <methodSignature>rules(): array</methodSignature>
       <fullMethod>rules(): array</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1458,9 +2393,9 @@
       <methodName>prepareForValidation</methodName>
       <methodSignature>prepareForValidation()</methodSignature>
       <fullMethod>prepareForValidation()</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1469,9 +2404,9 @@
       <methodName>messages</methodName>
       <methodSignature>messages(): array</methodSignature>
       <fullMethod>messages(): array</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1480,9 +2415,9 @@
       <methodName>rules</methodName>
       <methodSignature>rules(): array</methodSignature>
       <fullMethod>rules(): array</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1491,9 +2426,9 @@
       <methodName>prepareForValidation</methodName>
       <methodSignature>prepareForValidation()</methodSignature>
       <fullMethod>prepareForValidation()</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1590,9 +2525,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Backlog\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\BacklogCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Backlog\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\BacklogCollection</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1656,9 +2591,9 @@
       <methodName>create</methodName>
       <methodSignature>create(Playground\Matrix\Resource\Http\Requests\Board\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
       <fullMethod>create(Playground\Matrix\Resource\Http\Requests\Board\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1667,9 +2602,9 @@
       <methodName>edit</methodName>
       <methodSignature>edit(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
       <fullMethod>edit(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
-      <crap>12</crap>
+      <crap>3</crap>
       <complexity>3</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1678,9 +2613,9 @@
       <methodName>destroy</methodName>
       <methodSignature>destroy(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
       <fullMethod>destroy(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
-      <crap>30</crap>
+      <crap>5</crap>
       <complexity>5</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1689,9 +2624,9 @@
       <methodName>lock</methodName>
       <methodSignature>lock(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Board</methodSignature>
       <fullMethod>lock(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Board</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1700,9 +2635,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Board\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\BoardCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Board\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\BoardCollection</fullMethod>
-      <crap>42</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1711,9 +2646,9 @@
       <methodName>restore</methodName>
       <methodSignature>restore(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Board</methodSignature>
       <fullMethod>restore(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Board</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1722,9 +2657,9 @@
       <methodName>show</methodName>
       <methodSignature>show(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\Board</methodSignature>
       <fullMethod>show(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\Board</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1744,9 +2679,9 @@
       <methodName>unlock</methodName>
       <methodSignature>unlock(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Board</methodSignature>
       <fullMethod>unlock(Playground\Matrix\Models\Board $board, Playground\Matrix\Resource\Http\Requests\Board\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Board</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1777,9 +2712,9 @@
       <methodName>create</methodName>
       <methodSignature>create(Playground\Matrix\Resource\Http\Requests\Epic\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
       <fullMethod>create(Playground\Matrix\Resource\Http\Requests\Epic\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1788,9 +2723,9 @@
       <methodName>edit</methodName>
       <methodSignature>edit(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
       <fullMethod>edit(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
-      <crap>12</crap>
+      <crap>3</crap>
       <complexity>3</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1799,9 +2734,9 @@
       <methodName>destroy</methodName>
       <methodSignature>destroy(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
       <fullMethod>destroy(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
-      <crap>30</crap>
+      <crap>5</crap>
       <complexity>5</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1810,9 +2745,9 @@
       <methodName>lock</methodName>
       <methodSignature>lock(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Epic</methodSignature>
       <fullMethod>lock(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Epic</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1821,9 +2756,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Epic\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\EpicCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Epic\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\EpicCollection</fullMethod>
-      <crap>42</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1832,9 +2767,9 @@
       <methodName>restore</methodName>
       <methodSignature>restore(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Epic</methodSignature>
       <fullMethod>restore(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Epic</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1843,9 +2778,9 @@
       <methodName>show</methodName>
       <methodSignature>show(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\Epic</methodSignature>
       <fullMethod>show(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\Epic</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1865,9 +2800,9 @@
       <methodName>unlock</methodName>
       <methodSignature>unlock(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Epic</methodSignature>
       <fullMethod>unlock(Playground\Matrix\Models\Epic $epic, Playground\Matrix\Resource\Http\Requests\Epic\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Epic</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1887,9 +2822,9 @@
       <methodName>create</methodName>
       <methodSignature>create(Playground\Matrix\Resource\Http\Requests\Flow\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
       <fullMethod>create(Playground\Matrix\Resource\Http\Requests\Flow\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1898,9 +2833,9 @@
       <methodName>edit</methodName>
       <methodSignature>edit(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
       <fullMethod>edit(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
-      <crap>12</crap>
+      <crap>3</crap>
       <complexity>3</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1909,9 +2844,9 @@
       <methodName>destroy</methodName>
       <methodSignature>destroy(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
       <fullMethod>destroy(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
-      <crap>30</crap>
+      <crap>5</crap>
       <complexity>5</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1920,9 +2855,9 @@
       <methodName>lock</methodName>
       <methodSignature>lock(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Flow</methodSignature>
       <fullMethod>lock(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Flow</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1931,9 +2866,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Flow\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\FlowCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Flow\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\FlowCollection</fullMethod>
-      <crap>42</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1942,9 +2877,9 @@
       <methodName>restore</methodName>
       <methodSignature>restore(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Flow</methodSignature>
       <fullMethod>restore(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Flow</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1953,9 +2888,9 @@
       <methodName>show</methodName>
       <methodSignature>show(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\Flow</methodSignature>
       <fullMethod>show(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\Flow</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -1975,9 +2910,9 @@
       <methodName>unlock</methodName>
       <methodSignature>unlock(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Flow</methodSignature>
       <fullMethod>unlock(Playground\Matrix\Models\Flow $flow, Playground\Matrix\Resource\Http\Requests\Flow\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Matrix\Resource\Http\Resources\Flow</fullMethod>
-      <crap>20</crap>
+      <crap>4</crap>
       <complexity>4</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -2052,9 +2987,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Milestone\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\MilestoneCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Milestone\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\MilestoneCollection</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -2162,9 +3097,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Note\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\NoteCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Note\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\NoteCollection</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -2272,9 +3207,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Project\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\ProjectCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Project\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\ProjectCollection</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -2382,9 +3317,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Release\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\ReleaseCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Release\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\ReleaseCollection</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -2492,9 +3427,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Roadmap\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\RoadmapCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Roadmap\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\RoadmapCollection</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -2602,9 +3537,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Source\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\SourceCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Source\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\SourceCollection</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -2712,9 +3647,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Sprint\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\SprintCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Sprint\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\SprintCollection</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -2822,9 +3757,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Tag\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\TagCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Tag\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\TagCollection</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -2932,9 +3867,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Team\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\TeamCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Team\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\TeamCollection</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3042,9 +3977,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Ticket\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\TicketCollection</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Ticket\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Matrix\Resource\Http\Resources\TicketCollection</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3152,9 +4087,9 @@
       <methodName>index</methodName>
       <methodSignature>index(Playground\Matrix\Resource\Http\Requests\Version\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
       <fullMethod>index(Playground\Matrix\Resource\Http\Requests\Version\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
-      <crap>7.7</crap>
+      <crap>6</crap>
       <complexity>6</complexity>
-      <coverage>63.83</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3251,9 +4186,9 @@
       <methodName>rules</methodName>
       <methodSignature>rules(): array</methodSignature>
       <fullMethod>rules(): array</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3284,9 +4219,9 @@
       <methodName>rules</methodName>
       <methodSignature>rules(): array</methodSignature>
       <fullMethod>rules(): array</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3317,9 +4252,9 @@
       <methodName>rules</methodName>
       <methodSignature>rules(): array</methodSignature>
       <fullMethod>rules(): array</fullMethod>
-      <crap>6</crap>
+      <crap>2</crap>
       <complexity>2</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3790,9 +4725,9 @@
       <methodName>toArray</methodName>
       <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
       <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3801,9 +4736,9 @@
       <methodName>with</methodName>
       <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
       <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3812,9 +4747,9 @@
       <methodName>toArray</methodName>
       <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
       <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3823,9 +4758,9 @@
       <methodName>with</methodName>
       <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
       <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3834,9 +4769,9 @@
       <methodName>toArray</methodName>
       <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
       <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3845,9 +4780,9 @@
       <methodName>with</methodName>
       <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
       <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3856,9 +4791,9 @@
       <methodName>toArray</methodName>
       <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
       <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3867,9 +4802,9 @@
       <methodName>with</methodName>
       <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
       <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3878,9 +4813,9 @@
       <methodName>toArray</methodName>
       <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
       <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3889,9 +4824,9 @@
       <methodName>with</methodName>
       <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
       <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3900,9 +4835,9 @@
       <methodName>toArray</methodName>
       <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
       <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -3911,9 +4846,9 @@
       <methodName>with</methodName>
       <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
       <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -6669,12 +7604,23 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateJsonTrait</className>
       <methodName>getPackageInfo</methodName>
       <methodSignature>getPackageInfo(): array</methodSignature>
       <fullMethod>getPackageInfo(): array</fullMethod>
       <crap>0</crap>
       <complexity>0</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -6685,51 +7631,62 @@
       <fullMethod>getStructureCreate(): array</fullMethod>
       <crap>0</crap>
       <complexity>0</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateJsonTrait</className>
-      <methodName>test_json_guest_cannot_get_info</methodName>
-      <methodSignature>test_json_guest_cannot_get_info()</methodSignature>
-      <fullMethod>test_json_guest_cannot_get_info()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_guest_cannot_get_create_info</methodName>
+      <methodSignature>test_json_guest_cannot_get_create_info()</methodSignature>
+      <fullMethod>test_json_guest_cannot_get_create_info()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateJsonTrait</className>
-      <methodName>test_json_guest_cannot_render_create_view_requesting_json</methodName>
-      <methodSignature>test_json_guest_cannot_render_create_view_requesting_json()</methodSignature>
-      <fullMethod>test_json_guest_cannot_render_create_view_requesting_json()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_admin_can_get_create_info</methodName>
+      <methodSignature>test_json_admin_can_get_create_info()</methodSignature>
+      <fullMethod>test_json_admin_can_get_create_info()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateJsonTrait</className>
-      <methodName>test_json_create_info_with_admin</methodName>
-      <methodSignature>test_json_create_info_with_admin()</methodSignature>
-      <fullMethod>test_json_create_info_with_admin()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_get_create_info_as_admin_with_invalid_parameter_and_fail_validation</methodName>
+      <methodSignature>test_json_get_create_info_as_admin_with_invalid_parameter_and_fail_validation()</methodSignature>
+      <fullMethod>test_json_get_create_info_as_admin_with_invalid_parameter_and_fail_validation()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateJsonTrait</className>
-      <methodName>test_json_create_info_by_admin_with_invalid_parameter</methodName>
-      <methodSignature>test_json_create_info_by_admin_with_invalid_parameter()</methodSignature>
-      <fullMethod>test_json_create_info_by_admin_with_invalid_parameter()</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -6746,9 +7703,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateTrait</className>
-      <methodName>test_create_view_rendered_by_admin_with_return_url</methodName>
-      <methodSignature>test_create_view_rendered_by_admin_with_return_url()</methodSignature>
-      <fullMethod>test_create_view_rendered_by_admin_with_return_url()</fullMethod>
+      <methodName>test_admin_can_render_create_view</methodName>
+      <methodSignature>test_admin_can_render_create_view()</methodSignature>
+      <fullMethod>test_admin_can_render_create_view()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -6757,9 +7714,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateTrait</className>
-      <methodName>test_create_info_with_admin_using_json</methodName>
-      <methodSignature>test_create_info_with_admin_using_json()</methodSignature>
-      <fullMethod>test_create_info_with_admin_using_json()</fullMethod>
+      <methodName>test_admin_can_render_create_view_with_return_url</methodName>
+      <methodSignature>test_admin_can_render_create_view_with_return_url()</methodSignature>
+      <fullMethod>test_admin_can_render_create_view_with_return_url()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -6768,11 +7725,33 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\CreateTrait</className>
-      <methodName>test_create_view_rendered_by_admin_with_invalid_parameter</methodName>
-      <methodSignature>test_create_view_rendered_by_admin_with_invalid_parameter()</methodSignature>
-      <fullMethod>test_create_view_rendered_by_admin_with_invalid_parameter()</fullMethod>
+      <methodName>test_create_view_as_admin_with_invalid_parameter_and_fail_validation_and_redirect</methodName>
+      <methodSignature>test_create_view_as_admin_with_invalid_parameter_and_fail_validation_and_redirect()</methodSignature>
+      <fullMethod>test_create_view_as_admin_with_invalid_parameter_and_fail_validation_and_redirect()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyJsonTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -6782,86 +7761,86 @@
       <methodName>test_json_guest_cannot_destroy</methodName>
       <methodSignature>test_json_guest_cannot_destroy()</methodSignature>
       <fullMethod>test_json_guest_cannot_destroy()</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyJsonTrait</className>
-      <methodName>test_json_destroy_as_admin_user_and_succeed</methodName>
-      <methodSignature>test_json_destroy_as_admin_user_and_succeed()</methodSignature>
-      <fullMethod>test_json_destroy_as_admin_user_and_succeed()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_destroy_as_admin_and_succeed</methodName>
+      <methodSignature>test_json_destroy_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_json_destroy_as_admin_and_succeed()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyJsonTrait</className>
-      <methodName>test_json_destroy_as_admin_user_and_succeed_with_force_delete</methodName>
-      <methodSignature>test_json_destroy_as_admin_user_and_succeed_with_force_delete()</methodSignature>
-      <fullMethod>test_json_destroy_as_admin_user_and_succeed_with_force_delete()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_destroy_as_admin_and_succeed_with_force_delete</methodName>
+      <methodSignature>test_json_destroy_as_admin_and_succeed_with_force_delete()</methodSignature>
+      <fullMethod>test_json_destroy_as_admin_and_succeed_with_force_delete()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyJsonTrait</className>
-      <methodName>test_json_destroy_as_admin_user_using_json_and_succeed_with_no_content</methodName>
-      <methodSignature>test_json_destroy_as_admin_user_using_json_and_succeed_with_no_content()</methodSignature>
-      <fullMethod>test_json_destroy_as_admin_user_using_json_and_succeed_with_no_content()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_destroy_as_admin_and_succeed_with_no_content</methodName>
+      <methodSignature>test_json_destroy_as_admin_and_succeed_with_no_content()</methodSignature>
+      <fullMethod>test_json_destroy_as_admin_and_succeed_with_no_content()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyJsonTrait</className>
-      <methodName>test_json_destroy_as_admin_user_and_succeed_with_redirect_to_index_with_trash</methodName>
-      <methodSignature>test_json_destroy_as_admin_user_and_succeed_with_redirect_to_index_with_trash()</methodSignature>
-      <fullMethod>test_json_destroy_as_admin_user_and_succeed_with_redirect_to_index_with_trash()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_destroy_as_admin_and_succeed_and_ignore_redirect</methodName>
+      <methodSignature>test_json_destroy_as_admin_and_succeed_and_ignore_redirect()</methodSignature>
+      <fullMethod>test_json_destroy_as_admin_and_succeed_and_ignore_redirect()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyJsonTrait</className>
-      <methodName>test_json_destroy_with_user_role_and_get_denied_and_no_force_delete_allowed</methodName>
-      <methodSignature>test_json_destroy_with_user_role_and_get_denied_and_no_force_delete_allowed()</methodSignature>
-      <fullMethod>test_json_destroy_with_user_role_and_get_denied_and_no_force_delete_allowed()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_destroy_as_user_and_get_denied_and_no_force_delete_allowed</methodName>
+      <methodSignature>test_json_destroy_as_user_and_get_denied_and_no_force_delete_allowed()</methodSignature>
+      <fullMethod>test_json_destroy_as_user_and_get_denied_and_no_force_delete_allowed()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyJsonTrait</className>
-      <methodName>test_json_destroy_with_admin_role_and_succeed</methodName>
-      <methodSignature>test_json_destroy_with_admin_role_and_succeed()</methodSignature>
-      <fullMethod>test_json_destroy_with_admin_role_and_succeed()</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyJsonTrait</className>
-      <methodName>test_json_destroy_with_admin_role_and_succeed_with_force_delete</methodName>
-      <methodSignature>test_json_destroy_with_admin_role_and_succeed_with_force_delete()</methodSignature>
-      <fullMethod>test_json_destroy_with_admin_role_and_succeed_with_force_delete()</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -6878,9 +7857,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyTrait</className>
-      <methodName>test_destroy_as_admin_user_and_succeed</methodName>
-      <methodSignature>test_destroy_as_admin_user_and_succeed()</methodSignature>
-      <fullMethod>test_destroy_as_admin_user_and_succeed()</fullMethod>
+      <methodName>test_destroy_as_admin_and_succeed</methodName>
+      <methodSignature>test_destroy_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_destroy_as_admin_and_succeed()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -6889,9 +7868,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyTrait</className>
-      <methodName>test_destroy_as_admin_user_and_succeed_with_force_delete</methodName>
-      <methodSignature>test_destroy_as_admin_user_and_succeed_with_force_delete()</methodSignature>
-      <fullMethod>test_destroy_as_admin_user_and_succeed_with_force_delete()</fullMethod>
+      <methodName>test_destroy_as_admin_and_succeed_with_force_delete</methodName>
+      <methodSignature>test_destroy_as_admin_and_succeed_with_force_delete()</methodSignature>
+      <fullMethod>test_destroy_as_admin_and_succeed_with_force_delete()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -6900,9 +7879,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyTrait</className>
-      <methodName>test_destroy_as_admin_user_using_json_and_succeed_with_no_content</methodName>
-      <methodSignature>test_destroy_as_admin_user_using_json_and_succeed_with_no_content()</methodSignature>
-      <fullMethod>test_destroy_as_admin_user_using_json_and_succeed_with_no_content()</fullMethod>
+      <methodName>test_destroy_as_admin_and_succeed_with_redirect_to_index_with_trash</methodName>
+      <methodSignature>test_destroy_as_admin_and_succeed_with_redirect_to_index_with_trash()</methodSignature>
+      <fullMethod>test_destroy_as_admin_and_succeed_with_redirect_to_index_with_trash()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -6911,42 +7890,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyTrait</className>
-      <methodName>test_destroy_as_admin_user_and_succeed_with_redirect_to_index_with_trash</methodName>
-      <methodSignature>test_destroy_as_admin_user_and_succeed_with_redirect_to_index_with_trash()</methodSignature>
-      <fullMethod>test_destroy_as_admin_user_and_succeed_with_redirect_to_index_with_trash()</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyTrait</className>
-      <methodName>test_destroy_with_user_role_and_get_denied_and_no_force_delete_allowed</methodName>
-      <methodSignature>test_destroy_with_user_role_and_get_denied_and_no_force_delete_allowed()</methodSignature>
-      <fullMethod>test_destroy_with_user_role_and_get_denied_and_no_force_delete_allowed()</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyTrait</className>
-      <methodName>test_destroy_with_admin_role_and_succeed</methodName>
-      <methodSignature>test_destroy_with_admin_role_and_succeed()</methodSignature>
-      <fullMethod>test_destroy_with_admin_role_and_succeed()</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\DestroyTrait</className>
-      <methodName>test_destroy_with_admin_role_and_succeed_with_force_delete</methodName>
-      <methodSignature>test_destroy_with_admin_role_and_succeed_with_force_delete()</methodSignature>
-      <fullMethod>test_destroy_with_admin_role_and_succeed_with_force_delete()</fullMethod>
+      <methodName>test_destroy_as_user_and_get_denied_and_no_force_delete_allowed</methodName>
+      <methodSignature>test_destroy_as_user_and_get_denied_and_no_force_delete_allowed()</methodSignature>
+      <fullMethod>test_destroy_as_user_and_get_denied_and_no_force_delete_allowed()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -6955,45 +7901,89 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\EditJsonTrait</className>
-      <methodName>test_json_guest_cannot_render_edit_view</methodName>
-      <methodSignature>test_json_guest_cannot_render_edit_view()</methodSignature>
-      <fullMethod>test_json_guest_cannot_render_edit_view()</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\EditJsonTrait</className>
-      <methodName>test_json_edit_as_admin_view_rendered_by_user_with_return_url</methodName>
-      <methodSignature>test_json_edit_as_admin_view_rendered_by_user_with_return_url()</methodSignature>
-      <fullMethod>test_json_edit_as_admin_view_rendered_by_user_with_return_url()</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\EditJsonTrait</className>
-      <methodName>test_json_edit_as_admin_info_with_user</methodName>
-      <methodSignature>test_json_edit_as_admin_info_with_user()</methodSignature>
-      <fullMethod>test_json_edit_as_admin_info_with_user()</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <methodName>getStructureEdit</methodName>
+      <methodSignature>getStructureEdit(): array</methodSignature>
+      <fullMethod>getStructureEdit(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\EditJsonTrait</className>
-      <methodName>test_json_edit_as_admin_view_rendered_by_user_with_invalid_parameter</methodName>
-      <methodSignature>test_json_edit_as_admin_view_rendered_by_user_with_invalid_parameter()</methodSignature>
-      <fullMethod>test_json_edit_as_admin_view_rendered_by_user_with_invalid_parameter()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_guest_cannot_get_edit_info</methodName>
+      <methodSignature>test_json_guest_cannot_get_edit_info()</methodSignature>
+      <fullMethod>test_json_guest_cannot_get_edit_info()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\EditJsonTrait</className>
+      <methodName>test_json_admin_can_get_edit_info</methodName>
+      <methodSignature>test_json_admin_can_get_edit_info()</methodSignature>
+      <fullMethod>test_json_admin_can_get_edit_info()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\EditJsonTrait</className>
+      <methodName>test_json_edit_as_admin_and_fail_validation_with_invalid_parameter</methodName>
+      <methodSignature>test_json_edit_as_admin_and_fail_validation_with_invalid_parameter()</methodSignature>
+      <fullMethod>test_json_edit_as_admin_and_fail_validation_with_invalid_parameter()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\EditTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\EditTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7010,9 +8000,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\EditTrait</className>
-      <methodName>test_edit_as_admin_view_rendered_by_user_with_return_url</methodName>
-      <methodSignature>test_edit_as_admin_view_rendered_by_user_with_return_url()</methodSignature>
-      <fullMethod>test_edit_as_admin_view_rendered_by_user_with_return_url()</fullMethod>
+      <methodName>test_admin_can_render_edit_view</methodName>
+      <methodSignature>test_admin_can_render_edit_view()</methodSignature>
+      <fullMethod>test_admin_can_render_edit_view()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7021,9 +8011,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\EditTrait</className>
-      <methodName>test_edit_as_admin_info_with_user_using_json</methodName>
-      <methodSignature>test_edit_as_admin_info_with_user_using_json()</methodSignature>
-      <fullMethod>test_edit_as_admin_info_with_user_using_json()</fullMethod>
+      <methodName>test_admin_can_render_edit_view_with_return_url</methodName>
+      <methodSignature>test_admin_can_render_edit_view_with_return_url()</methodSignature>
+      <fullMethod>test_admin_can_render_edit_view_with_return_url()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7032,11 +8022,22 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\EditTrait</className>
-      <methodName>test_edit_as_admin_view_rendered_by_user_with_invalid_parameter</methodName>
-      <methodSignature>test_edit_as_admin_view_rendered_by_user_with_invalid_parameter()</methodSignature>
-      <fullMethod>test_edit_as_admin_view_rendered_by_user_with_invalid_parameter()</fullMethod>
+      <methodName>test_edit_view_as_admin_with_invalid_parameter_and_fail_validation_and_redirect</methodName>
+      <methodSignature>test_edit_view_as_admin_with_invalid_parameter_and_fail_validation_and_redirect()</methodSignature>
+      <fullMethod>test_edit_view_as_admin_with_invalid_parameter_and_fail_validation_and_redirect()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\IndexJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -7048,7 +8049,7 @@
       <fullMethod>getPackageInfo(): array</fullMethod>
       <crap>0</crap>
       <complexity>0</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7059,40 +8060,62 @@
       <fullMethod>getStructureIndex(): array</fullMethod>
       <crap>0</crap>
       <complexity>0</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\IndexJsonTrait</className>
-      <methodName>test_json_guest_cannot_render_index_view</methodName>
-      <methodSignature>test_json_guest_cannot_render_index_view()</methodSignature>
-      <fullMethod>test_json_guest_cannot_render_index_view()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_guest_cannot_get_index</methodName>
+      <methodSignature>test_json_guest_cannot_get_index()</methodSignature>
+      <fullMethod>test_json_guest_cannot_get_index()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\IndexJsonTrait</className>
-      <methodName>test_json_index_view_rendered_by_admin</methodName>
-      <methodSignature>test_json_index_view_rendered_by_admin()</methodSignature>
-      <fullMethod>test_json_index_view_rendered_by_admin()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_admin_can_get_index</methodName>
+      <methodSignature>test_json_admin_can_get_index()</methodSignature>
+      <fullMethod>test_json_admin_can_get_index()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\IndexJsonTrait</className>
-      <methodName>test_json_index_as_admin</methodName>
-      <methodSignature>test_json_index_as_admin()</methodSignature>
-      <fullMethod>test_json_index_as_admin()</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <methodName>test_json_admin_can_get_index_with_filters</methodName>
+      <methodSignature>test_json_admin_can_get_index_with_filters()</methodSignature>
+      <fullMethod>test_json_admin_can_get_index_with_filters()</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>95</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\IndexTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\IndexTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7109,9 +8132,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\IndexTrait</className>
-      <methodName>test_index_view_rendered_by_admin</methodName>
-      <methodSignature>test_index_view_rendered_by_admin()</methodSignature>
-      <fullMethod>test_index_view_rendered_by_admin()</fullMethod>
+      <methodName>test_admin_can_render_index_view</methodName>
+      <methodSignature>test_admin_can_render_index_view()</methodSignature>
+      <fullMethod>test_admin_can_render_index_view()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7120,11 +8143,44 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\IndexTrait</className>
-      <methodName>test_index_as_admin_using_json</methodName>
-      <methodSignature>test_index_as_admin_using_json()</methodSignature>
-      <fullMethod>test_index_as_admin_using_json()</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
+      <methodName>test_admin_can_render_index_view_with_filters</methodName>
+      <methodSignature>test_admin_can_render_index_view_with_filters()</methodSignature>
+      <fullMethod>test_admin_can_render_index_view_with_filters()</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>95</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockJsonTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockJsonTrait</className>
+      <methodName>getStructureData</methodName>
+      <methodSignature>getStructureData(): array</methodSignature>
+      <fullMethod>getStructureData(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -7134,64 +8190,64 @@
       <methodName>test_json_guest_cannot_lock</methodName>
       <methodSignature>test_json_guest_cannot_lock()</methodSignature>
       <fullMethod>test_json_guest_cannot_lock()</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockJsonTrait</className>
-      <methodName>test_json_lock_as_admin_user_and_succeed</methodName>
-      <methodSignature>test_json_lock_as_admin_user_and_succeed()</methodSignature>
-      <fullMethod>test_json_lock_as_admin_user_and_succeed()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_lock_as_admin_and_succeed</methodName>
+      <methodSignature>test_json_lock_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_json_lock_as_admin_and_succeed()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockJsonTrait</className>
-      <methodName>test_json_lock_as_admin_user_and_succeed_with_no_redirect</methodName>
-      <methodSignature>test_json_lock_as_admin_user_and_succeed_with_no_redirect()</methodSignature>
-      <fullMethod>test_json_lock_as_admin_user_and_succeed_with_no_redirect()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_lock_as_admin_and_succeed_with_no_redirect</methodName>
+      <methodSignature>test_json_lock_as_admin_and_succeed_with_no_redirect()</methodSignature>
+      <fullMethod>test_json_lock_as_admin_and_succeed_with_no_redirect()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockJsonTrait</className>
-      <methodName>test_json_lock_with_user_role_and_get_denied</methodName>
-      <methodSignature>test_json_lock_with_user_role_and_get_denied()</methodSignature>
-      <fullMethod>test_json_lock_with_user_role_and_get_denied()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_lock_as_user_and_get_denied</methodName>
+      <methodSignature>test_json_lock_as_user_and_get_denied()</methodSignature>
+      <fullMethod>test_json_lock_as_user_and_get_denied()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockJsonTrait</className>
-      <methodName>test_json_lock_with_admin_role_and_succeed</methodName>
-      <methodSignature>test_json_lock_with_admin_role_and_succeed()</methodSignature>
-      <fullMethod>test_json_lock_with_admin_role_and_succeed()</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockJsonTrait</className>
-      <methodName>test_json_lock_with_admin_role_and_succeed_with_json</methodName>
-      <methodSignature>test_json_lock_with_admin_role_and_succeed_with_json()</methodSignature>
-      <fullMethod>test_json_lock_with_admin_role_and_succeed_with_json()</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7208,9 +8264,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockTrait</className>
-      <methodName>test_lock_as_admin_user_and_succeed</methodName>
-      <methodSignature>test_lock_as_admin_user_and_succeed()</methodSignature>
-      <fullMethod>test_lock_as_admin_user_and_succeed()</fullMethod>
+      <methodName>test_lock_as_admin_and_succeed</methodName>
+      <methodSignature>test_lock_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_lock_as_admin_and_succeed()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7219,9 +8275,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockTrait</className>
-      <methodName>test_lock_as_admin_user_using_json_and_succeed</methodName>
-      <methodSignature>test_lock_as_admin_user_using_json_and_succeed()</methodSignature>
-      <fullMethod>test_lock_as_admin_user_using_json_and_succeed()</fullMethod>
+      <methodName>test_lock_as_admin_and_succeed_with_redirect_to_index_with_sorted_by_locked_desc</methodName>
+      <methodSignature>test_lock_as_admin_and_succeed_with_redirect_to_index_with_sorted_by_locked_desc()</methodSignature>
+      <fullMethod>test_lock_as_admin_and_succeed_with_redirect_to_index_with_sorted_by_locked_desc()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7230,9 +8286,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockTrait</className>
-      <methodName>test_lock_as_admin_user_and_succeed_with_redirect_to_index_with_sorted_by_locked_desc</methodName>
-      <methodSignature>test_lock_as_admin_user_and_succeed_with_redirect_to_index_with_sorted_by_locked_desc()</methodSignature>
-      <fullMethod>test_lock_as_admin_user_and_succeed_with_redirect_to_index_with_sorted_by_locked_desc()</fullMethod>
+      <methodName>test_lock_as_user_and_get_denied</methodName>
+      <methodSignature>test_lock_as_user_and_get_denied()</methodSignature>
+      <fullMethod>test_lock_as_user_and_get_denied()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7240,34 +8296,23 @@
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockTrait</className>
-      <methodName>test_lock_with_user_role_and_get_denied</methodName>
-      <methodSignature>test_lock_with_user_role_and_get_denied()</methodSignature>
-      <fullMethod>test_lock_with_user_role_and_get_denied()</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockTrait</className>
-      <methodName>test_lock_with_admin_role_and_succeed</methodName>
-      <methodSignature>test_lock_with_admin_role_and_succeed()</methodSignature>
-      <fullMethod>test_lock_with_admin_role_and_succeed()</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\LockTrait</className>
-      <methodName>test_lock_with_admin_role_and_succeed_with_json</methodName>
-      <methodSignature>test_lock_with_admin_role_and_succeed_with_json()</methodSignature>
-      <fullMethod>test_lock_with_admin_role_and_succeed_with_json()</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreJsonTrait</className>
+      <methodName>getStructureData</methodName>
+      <methodSignature>getStructureData(): array</methodSignature>
+      <fullMethod>getStructureData(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -7277,53 +8322,273 @@
       <methodName>test_json_guest_cannot_restore</methodName>
       <methodSignature>test_json_guest_cannot_restore()</methodSignature>
       <fullMethod>test_json_guest_cannot_restore()</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreJsonTrait</className>
-      <methodName>test_json_restore_as_admin_user_and_succeed</methodName>
-      <methodSignature>test_json_restore_as_admin_user_and_succeed()</methodSignature>
-      <fullMethod>test_json_restore_as_admin_user_and_succeed()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_restore_as_admin_and_succeed</methodName>
+      <methodSignature>test_json_restore_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_json_restore_as_admin_and_succeed()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreJsonTrait</className>
-      <methodName>test_json_restore_as_admin_user_and_succeed_with_no_redirect</methodName>
-      <methodSignature>test_json_restore_as_admin_user_and_succeed_with_no_redirect()</methodSignature>
-      <fullMethod>test_json_restore_as_admin_user_and_succeed_with_no_redirect()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_restore_as_admin_and_succeed_with_no_redirect</methodName>
+      <methodSignature>test_json_restore_as_admin_and_succeed_with_no_redirect()</methodSignature>
+      <fullMethod>test_json_restore_as_admin_and_succeed_with_no_redirect()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreJsonTrait</className>
-      <methodName>test_json_restore_with_user_role_and_get_denied</methodName>
-      <methodSignature>test_json_restore_with_user_role_and_get_denied()</methodSignature>
-      <fullMethod>test_json_restore_with_user_role_and_get_denied()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_restore_as_user_and_get_denied</methodName>
+      <methodSignature>test_json_restore_as_user_and_get_denied()</methodSignature>
+      <fullMethod>test_json_restore_as_user_and_get_denied()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreJsonTrait</className>
-      <methodName>test_json_restore_with_admin_role_and_succeed</methodName>
-      <methodSignature>test_json_restore_with_admin_role_and_succeed()</methodSignature>
-      <fullMethod>test_json_restore_with_admin_role_and_succeed()</fullMethod>
-      <crap>2</crap>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionJsonTrait</className>
+      <methodName>getGetFqdnRevision</methodName>
+      <methodSignature>getGetFqdnRevision(): string</methodSignature>
+      <fullMethod>getGetFqdnRevision(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionJsonTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionJsonTrait</className>
+      <methodName>getRevisionId</methodName>
+      <methodSignature>getRevisionId(): string</methodSignature>
+      <fullMethod>getRevisionId(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionJsonTrait</className>
+      <methodName>getRevisionRouteParameter</methodName>
+      <methodSignature>getRevisionRouteParameter(): string</methodSignature>
+      <fullMethod>getRevisionRouteParameter(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionJsonTrait</className>
+      <methodName>getStructureData</methodName>
+      <methodSignature>getStructureData(): array</methodSignature>
+      <fullMethod>getStructureData(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionJsonTrait</className>
+      <methodName>test_json_guest_cannot_restore_revision</methodName>
+      <methodSignature>test_json_guest_cannot_restore_revision()</methodSignature>
+      <fullMethod>test_json_guest_cannot_restore_revision()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionJsonTrait</className>
+      <methodName>test_json_restore_revision_as_admin_and_succeed</methodName>
+      <methodSignature>test_json_restore_revision_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_json_restore_revision_as_admin_and_succeed()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionJsonTrait</className>
+      <methodName>test_json_restore_revision_as_admin_and_succeed_without_redirect</methodName>
+      <methodSignature>test_json_restore_revision_as_admin_and_succeed_without_redirect()</methodSignature>
+      <fullMethod>test_json_restore_revision_as_admin_and_succeed_without_redirect()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionJsonTrait</className>
+      <methodName>test_json_restore_revision_as_user_and_get_denied</methodName>
+      <methodSignature>test_json_restore_revision_as_user_and_get_denied()</methodSignature>
+      <fullMethod>test_json_restore_revision_as_user_and_get_denied()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionTrait</className>
+      <methodName>getGetFqdnRevision</methodName>
+      <methodSignature>getGetFqdnRevision(): string</methodSignature>
+      <fullMethod>getGetFqdnRevision(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionTrait</className>
+      <methodName>getRevisionId</methodName>
+      <methodSignature>getRevisionId(): string</methodSignature>
+      <fullMethod>getRevisionId(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionTrait</className>
+      <methodName>getRevisionRouteParameter</methodName>
+      <methodSignature>getRevisionRouteParameter(): string</methodSignature>
+      <fullMethod>getRevisionRouteParameter(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionTrait</className>
+      <methodName>test_guest_cannot_restore_revision</methodName>
+      <methodSignature>test_guest_cannot_restore_revision()</methodSignature>
+      <fullMethod>test_guest_cannot_restore_revision()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionTrait</className>
+      <methodName>test_restore_revision_as_admin_and_succeed</methodName>
+      <methodSignature>test_restore_revision_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_restore_revision_as_admin_and_succeed()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionTrait</className>
+      <methodName>test_restore_revision_as_admin_and_succeed_with_redirect_to_index_with_only_trash</methodName>
+      <methodSignature>test_restore_revision_as_admin_and_succeed_with_redirect_to_index_with_only_trash()</methodSignature>
+      <fullMethod>test_restore_revision_as_admin_and_succeed_with_redirect_to_index_with_only_trash()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreRevisionTrait</className>
+      <methodName>test_restore_revision_as_user_and_get_denied</methodName>
+      <methodSignature>test_restore_revision_as_user_and_get_denied()</methodSignature>
+      <fullMethod>test_restore_revision_as_user_and_get_denied()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7340,9 +8605,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreTrait</className>
-      <methodName>test_restore_as_admin_user_and_succeed</methodName>
-      <methodSignature>test_restore_as_admin_user_and_succeed()</methodSignature>
-      <fullMethod>test_restore_as_admin_user_and_succeed()</fullMethod>
+      <methodName>test_restore_as_admin_and_succeed</methodName>
+      <methodSignature>test_restore_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_restore_as_admin_and_succeed()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7351,9 +8616,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreTrait</className>
-      <methodName>test_restore_as_admin_user_using_json_and_succeed</methodName>
-      <methodSignature>test_restore_as_admin_user_using_json_and_succeed()</methodSignature>
-      <fullMethod>test_restore_as_admin_user_using_json_and_succeed()</fullMethod>
+      <methodName>test_restore_as_admin_and_succeed_with_redirect_to_index_with_only_trash</methodName>
+      <methodSignature>test_restore_as_admin_and_succeed_with_redirect_to_index_with_only_trash()</methodSignature>
+      <fullMethod>test_restore_as_admin_and_succeed_with_redirect_to_index_with_only_trash()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7362,9 +8627,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreTrait</className>
-      <methodName>test_restore_as_admin_user_and_succeed_with_redirect_to_index_with_only_trash</methodName>
-      <methodSignature>test_restore_as_admin_user_and_succeed_with_redirect_to_index_with_only_trash()</methodSignature>
-      <fullMethod>test_restore_as_admin_user_and_succeed_with_redirect_to_index_with_only_trash()</fullMethod>
+      <methodName>test_restore_as_user_and_get_denied</methodName>
+      <methodSignature>test_restore_as_user_and_get_denied()</methodSignature>
+      <fullMethod>test_restore_as_user_and_get_denied()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7372,10 +8637,65 @@
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreTrait</className>
-      <methodName>test_restore_with_user_role_and_get_denied</methodName>
-      <methodSignature>test_restore_with_user_role_and_get_denied()</methodSignature>
-      <fullMethod>test_restore_with_user_role_and_get_denied()</fullMethod>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionJsonTrait</className>
+      <methodName>getGetFqdnRevision</methodName>
+      <methodSignature>getGetFqdnRevision(): string</methodSignature>
+      <fullMethod>getGetFqdnRevision(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionJsonTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionJsonTrait</className>
+      <methodName>getRevisionId</methodName>
+      <methodSignature>getRevisionId(): string</methodSignature>
+      <fullMethod>getRevisionId(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionJsonTrait</className>
+      <methodName>getRevisionRouteParameter</methodName>
+      <methodSignature>getRevisionRouteParameter(): string</methodSignature>
+      <fullMethod>getRevisionRouteParameter(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionJsonTrait</className>
+      <methodName>test_json_guest_cannot_render_revision_view</methodName>
+      <methodSignature>test_json_guest_cannot_render_revision_view()</methodSignature>
+      <fullMethod>test_json_guest_cannot_render_revision_view()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7383,12 +8703,243 @@
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RestoreTrait</className>
-      <methodName>test_restore_with_admin_role_and_succeed</methodName>
-      <methodSignature>test_restore_with_admin_role_and_succeed()</methodSignature>
-      <fullMethod>test_restore_with_admin_role_and_succeed()</fullMethod>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionJsonTrait</className>
+      <methodName>test_json_admin_can_get_revision_info</methodName>
+      <methodSignature>test_json_admin_can_get_revision_info()</methodSignature>
+      <fullMethod>test_json_admin_can_get_revision_info()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionTrait</className>
+      <methodName>getGetFqdnRevision</methodName>
+      <methodSignature>getGetFqdnRevision(): string</methodSignature>
+      <fullMethod>getGetFqdnRevision(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionTrait</className>
+      <methodName>getRevisionId</methodName>
+      <methodSignature>getRevisionId(): string</methodSignature>
+      <fullMethod>getRevisionId(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionTrait</className>
+      <methodName>getRevisionRouteParameter</methodName>
+      <methodSignature>getRevisionRouteParameter(): string</methodSignature>
+      <fullMethod>getRevisionRouteParameter(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionTrait</className>
+      <methodName>test_guest_cannot_render_revision_view</methodName>
+      <methodSignature>test_guest_cannot_render_revision_view()</methodSignature>
+      <fullMethod>test_guest_cannot_render_revision_view()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionTrait</className>
+      <methodName>test_revision_view_rendered_by_admin</methodName>
+      <methodSignature>test_revision_view_rendered_by_admin()</methodSignature>
+      <fullMethod>test_revision_view_rendered_by_admin()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsJsonTrait</className>
+      <methodName>getGetFqdnRevision</methodName>
+      <methodSignature>getGetFqdnRevision(): string</methodSignature>
+      <fullMethod>getGetFqdnRevision(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsJsonTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsJsonTrait</className>
+      <methodName>test_json_guest_cannot_get_revisions</methodName>
+      <methodSignature>test_json_guest_cannot_get_revisions()</methodSignature>
+      <fullMethod>test_json_guest_cannot_get_revisions()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsJsonTrait</className>
+      <methodName>test_json_admin_can_get_revisions</methodName>
+      <methodSignature>test_json_admin_can_get_revisions()</methodSignature>
+      <fullMethod>test_json_admin_can_get_revisions()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsJsonTrait</className>
+      <methodName>test_json_admin_can_get_revisions_with_filters</methodName>
+      <methodSignature>test_json_admin_can_get_revisions_with_filters()</methodSignature>
+      <fullMethod>test_json_admin_can_get_revisions_with_filters()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsTrait</className>
+      <methodName>getGetFqdnRevision</methodName>
+      <methodSignature>getGetFqdnRevision(): string</methodSignature>
+      <fullMethod>getGetFqdnRevision(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsTrait</className>
+      <methodName>test_guest_cannot_render_revisions_view</methodName>
+      <methodSignature>test_guest_cannot_render_revisions_view()</methodSignature>
+      <fullMethod>test_guest_cannot_render_revisions_view()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsTrait</className>
+      <methodName>test_admin_can_render_revisions_view</methodName>
+      <methodSignature>test_admin_can_render_revisions_view()</methodSignature>
+      <fullMethod>test_admin_can_render_revisions_view()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\RevisionsTrait</className>
+      <methodName>test_admin_can_render_revisions_view_with_filters</methodName>
+      <methodSignature>test_admin_can_render_revisions_view_with_filters()</methodSignature>
+      <fullMethod>test_admin_can_render_revisions_view_with_filters()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\ShowJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\ShowJsonTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -7398,9 +8949,9 @@
       <methodName>test_json_guest_cannot_see_info</methodName>
       <methodSignature>test_json_guest_cannot_see_info()</methodSignature>
       <fullMethod>test_json_guest_cannot_see_info()</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7409,9 +8960,31 @@
       <methodName>test_json_show_info_for_admin</methodName>
       <methodSignature>test_json_show_info_for_admin()</methodSignature>
       <fullMethod>test_json_show_info_for_admin()</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\ShowTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\ShowTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7438,12 +9011,166 @@
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\ShowTrait</className>
-      <methodName>test_show_as_admin_using_json</methodName>
-      <methodSignature>test_show_as_admin_using_json()</methodSignature>
-      <fullMethod>test_show_as_admin_using_json()</fullMethod>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreJsonTrait</className>
+      <methodName>getStructureData</methodName>
+      <methodSignature>getStructureData(): array</methodSignature>
+      <fullMethod>getStructureData(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreJsonTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreJsonTrait</className>
+      <methodName>test_json_guest_cannot_store</methodName>
+      <methodSignature>test_json_guest_cannot_store()</methodSignature>
+      <fullMethod>test_json_guest_cannot_store()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreJsonTrait</className>
+      <methodName>test_json_store_as_admin_without_payload_and_fail_validation</methodName>
+      <methodSignature>test_json_store_as_admin_without_payload_and_fail_validation()</methodSignature>
+      <fullMethod>test_json_store_as_admin_without_payload_and_fail_validation()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreJsonTrait</className>
+      <methodName>test_json_store_as_admin_and_succeed</methodName>
+      <methodSignature>test_json_store_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_json_store_as_admin_and_succeed()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreTrait</className>
+      <methodName>test_guest_cannot_store</methodName>
+      <methodSignature>test_guest_cannot_store()</methodSignature>
+      <fullMethod>test_guest_cannot_store()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreTrait</className>
+      <methodName>test_store_as_admin_without_payload_and_fail_validation</methodName>
+      <methodSignature>test_store_as_admin_without_payload_and_fail_validation()</methodSignature>
+      <fullMethod>test_store_as_admin_without_payload_and_fail_validation()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreTrait</className>
+      <methodName>test_store_as_admin_and_succeed</methodName>
+      <methodSignature>test_store_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_store_as_admin_and_succeed()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\StoreTrait</className>
+      <methodName>test_store_as_admin_and_succeed_with_return_url</methodName>
+      <methodSignature>test_store_as_admin_and_succeed_with_return_url()</methodSignature>
+      <fullMethod>test_store_as_admin_and_succeed_with_return_url()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockJsonTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockJsonTrait</className>
+      <methodName>getStructureData</methodName>
+      <methodSignature>getStructureData(): array</methodSignature>
+      <fullMethod>getStructureData(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -7453,53 +9180,75 @@
       <methodName>test_json_guest_cannot_unlock</methodName>
       <methodSignature>test_json_guest_cannot_unlock()</methodSignature>
       <fullMethod>test_json_guest_cannot_unlock()</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockJsonTrait</className>
-      <methodName>test_json_unlock_as_admin_user_and_succeed</methodName>
-      <methodSignature>test_json_unlock_as_admin_user_and_succeed()</methodSignature>
-      <fullMethod>test_json_unlock_as_admin_user_and_succeed()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_unlock_as_admin_and_succeed</methodName>
+      <methodSignature>test_json_unlock_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_json_unlock_as_admin_and_succeed()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockJsonTrait</className>
-      <methodName>test_json_unlock_as_admin_user_and_succeed_with_no_redirect</methodName>
-      <methodSignature>test_json_unlock_as_admin_user_and_succeed_with_no_redirect()</methodSignature>
-      <fullMethod>test_json_unlock_as_admin_user_and_succeed_with_no_redirect()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_unlock_as_admin_and_succeed_with_no_redirect</methodName>
+      <methodSignature>test_json_unlock_as_admin_and_succeed_with_no_redirect()</methodSignature>
+      <fullMethod>test_json_unlock_as_admin_and_succeed_with_no_redirect()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockJsonTrait</className>
-      <methodName>test_json_unlock_with_user_role_and_get_denied</methodName>
-      <methodSignature>test_json_unlock_with_user_role_and_get_denied()</methodSignature>
-      <fullMethod>test_json_unlock_with_user_role_and_get_denied()</fullMethod>
-      <crap>2</crap>
+      <methodName>test_json_unlock_as_user_and_get_denied</methodName>
+      <methodSignature>test_json_unlock_as_user_and_get_denied()</methodSignature>
+      <fullMethod>test_json_unlock_as_user_and_get_denied()</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockJsonTrait</className>
-      <methodName>test_json_unlock_with_admin_role_and_succeed</methodName>
-      <methodSignature>test_json_unlock_with_admin_role_and_succeed()</methodSignature>
-      <fullMethod>test_json_unlock_with_admin_role_and_succeed()</fullMethod>
-      <crap>2</crap>
-      <complexity>1</complexity>
-      <coverage>0</coverage>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockTrait</className>
+      <methodName>getStructureData</methodName>
+      <methodSignature>getStructureData(): array</methodSignature>
+      <fullMethod>getStructureData(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7516,9 +9265,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockTrait</className>
-      <methodName>test_unlock_as_admin_user_and_succeed</methodName>
-      <methodSignature>test_unlock_as_admin_user_and_succeed()</methodSignature>
-      <fullMethod>test_unlock_as_admin_user_and_succeed()</fullMethod>
+      <methodName>test_unlock_as_admin_and_succeed</methodName>
+      <methodSignature>test_unlock_as_admin_and_succeed()</methodSignature>
+      <fullMethod>test_unlock_as_admin_and_succeed()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7527,9 +9276,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockTrait</className>
-      <methodName>test_unlock_as_admin_user_using_json_and_succeed</methodName>
-      <methodSignature>test_unlock_as_admin_user_using_json_and_succeed()</methodSignature>
-      <fullMethod>test_unlock_as_admin_user_using_json_and_succeed()</fullMethod>
+      <methodName>test_unlock_as_admin_and_succeed_with_redirect_to_index_with_sorted_by_unlocked_desc</methodName>
+      <methodSignature>test_unlock_as_admin_and_succeed_with_redirect_to_index_with_sorted_by_unlocked_desc()</methodSignature>
+      <fullMethod>test_unlock_as_admin_and_succeed_with_redirect_to_index_with_sorted_by_unlocked_desc()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7538,9 +9287,9 @@
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
       <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockTrait</className>
-      <methodName>test_unlock_as_admin_user_and_succeed_with_redirect_to_index_with_sorted_by_unlocked_desc</methodName>
-      <methodSignature>test_unlock_as_admin_user_and_succeed_with_redirect_to_index_with_sorted_by_unlocked_desc()</methodSignature>
-      <fullMethod>test_unlock_as_admin_user_and_succeed_with_redirect_to_index_with_sorted_by_unlocked_desc()</fullMethod>
+      <methodName>test_unlock_as_user_and_get_denied</methodName>
+      <methodSignature>test_unlock_as_user_and_get_denied()</methodSignature>
+      <fullMethod>test_unlock_as_user_and_get_denied()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7548,10 +9297,32 @@
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockTrait</className>
-      <methodName>test_unlock_with_user_role_and_get_denied</methodName>
-      <methodSignature>test_unlock_with_user_role_and_get_denied()</methodSignature>
-      <fullMethod>test_unlock_with_user_role_and_get_denied()</fullMethod>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UpdateJsonTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UpdateJsonTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UpdateJsonTrait</className>
+      <methodName>test_json_guest_cannot_update</methodName>
+      <methodSignature>test_json_guest_cannot_update()</methodSignature>
+      <fullMethod>test_json_guest_cannot_update()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7559,10 +9330,10 @@
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockTrait</className>
-      <methodName>test_unlock_with_admin_role_and_succeed</methodName>
-      <methodSignature>test_unlock_with_admin_role_and_succeed()</methodSignature>
-      <fullMethod>test_unlock_with_admin_role_and_succeed()</fullMethod>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UpdateJsonTrait</className>
+      <methodName>test_json_update_as_admin_without_payload_and_fail_validation</methodName>
+      <methodSignature>test_json_update_as_admin_without_payload_and_fail_validation()</methodSignature>
+      <fullMethod>test_json_update_as_admin_without_payload_and_fail_validation()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7570,10 +9341,76 @@
     </method>
     <method>
       <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
-      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UnlockTrait</className>
-      <methodName>test_unlock_with_admin_role_and_succeed_with_json</methodName>
-      <methodSignature>test_unlock_with_admin_role_and_succeed_with_json()</methodSignature>
-      <fullMethod>test_unlock_with_admin_role_and_succeed_with_json()</fullMethod>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UpdateJsonTrait</className>
+      <methodName>test_json_admin_can_update</methodName>
+      <methodSignature>test_json_admin_can_update()</methodSignature>
+      <fullMethod>test_json_admin_can_update()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UpdateTrait</className>
+      <methodName>getGetFqdn</methodName>
+      <methodSignature>getGetFqdn(): string</methodSignature>
+      <fullMethod>getGetFqdn(): string</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UpdateTrait</className>
+      <methodName>getPackageInfo</methodName>
+      <methodSignature>getPackageInfo(): array</methodSignature>
+      <fullMethod>getPackageInfo(): array</fullMethod>
+      <crap>0</crap>
+      <complexity>0</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UpdateTrait</className>
+      <methodName>test_guest_cannot_update</methodName>
+      <methodSignature>test_guest_cannot_update()</methodSignature>
+      <fullMethod>test_guest_cannot_update()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UpdateTrait</className>
+      <methodName>test_update_as_admin_without_payload_and_fail_validation</methodName>
+      <methodSignature>test_update_as_admin_without_payload_and_fail_validation()</methodSignature>
+      <fullMethod>test_update_as_admin_without_payload_and_fail_validation()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UpdateTrait</className>
+      <methodName>test_admin_can_update</methodName>
+      <methodSignature>test_admin_can_update()</methodSignature>
+      <fullMethod>test_admin_can_update()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Test\Feature\Http\Controllers\Resource\Playground</package>
+      <className>Playground\Test\Feature\Http\Controllers\Resource\Playground\UpdateTrait</className>
+      <methodName>test_admin_can_update_view_with_return_url</methodName>
+      <methodSignature>test_admin_can_update_view_with_return_url()</methodSignature>
+      <fullMethod>test_admin_can_update_view_with_return_url()</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -7618,9 +9455,9 @@
       <methodName>verifyRelationship</methodName>
       <methodSignature>verifyRelationship(string $relationshipType, string $accessor): bool</methodSignature>
       <fullMethod>verifyRelationship(string $relationshipType, string $accessor): bool</fullMethod>
-      <crap>32.38</crap>
+      <crap>26.98</crap>
       <complexity>16</complexity>
-      <coverage>60</coverage>
+      <coverage>65</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7629,9 +9466,9 @@
       <methodName>verifyRelationships</methodName>
       <methodSignature>verifyRelationships(): array</methodSignature>
       <fullMethod>verifyRelationships(): array</fullMethod>
-      <crap>6.1</crap>
+      <crap>6.03</crap>
       <complexity>6</complexity>
-      <coverage>85.71</coverage>
+      <coverage>90.48</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7651,10 +9488,10 @@
       <methodName>verifyRelationshipHasMany</methodName>
       <methodSignature>verifyRelationshipHasMany(Illuminate\Database\Eloquent\Model $model, string $accessor): void</methodSignature>
       <fullMethod>verifyRelationshipHasMany(Illuminate\Database\Eloquent\Model $model, string $accessor): void</fullMethod>
-      <crap>240</crap>
+      <crap>15</crap>
       <complexity>15</complexity>
-      <coverage>0</coverage>
-      <crapLoad>15</crapLoad>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
     </method>
     <method>
       <package>Playground\Test\Feature\Models</package>
@@ -7682,11 +9519,11 @@
       <package>Playground\Test</package>
       <className>Playground\Test\MockingTrait</className>
       <methodName>mockRequest</methodName>
-      <methodSignature>mockRequest(string $uri, string $method, array $parameters, array $cookies, array $files, array $server, $content)</methodSignature>
-      <fullMethod>mockRequest(string $uri, string $method, array $parameters, array $cookies, array $files, array $server, $content)</fullMethod>
-      <crap>2</crap>
+      <methodSignature>mockRequest(string $requestClass, string $uri, string $method, array $parameters, array $cookies, array $files, array $server, $content)</methodSignature>
+      <fullMethod>mockRequest(string $requestClass, string $uri, string $method, array $parameters, array $cookies, array $files, array $server, $content)</fullMethod>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7915,9 +9752,9 @@
       <methodName>verifyRelationship</methodName>
       <methodSignature>verifyRelationship(string $relationshipType, string $accessor): bool</methodSignature>
       <fullMethod>verifyRelationship(string $relationshipType, string $accessor): bool</fullMethod>
-      <crap>19.83</crap>
+      <crap>17.57</crap>
       <complexity>10</complexity>
-      <coverage>53.85</coverage>
+      <coverage>57.69</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -7926,9 +9763,9 @@
       <methodName>verifyRelationships</methodName>
       <methodSignature>verifyRelationships(): array</methodSignature>
       <fullMethod>verifyRelationships(): array</fullMethod>
-      <crap>7.2</crap>
+      <crap>7.08</crap>
       <complexity>7</complexity>
-      <coverage>84</coverage>
+      <coverage>88</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
