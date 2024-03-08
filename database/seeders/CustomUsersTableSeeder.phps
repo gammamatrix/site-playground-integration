@@ -1,9 +1,7 @@
 <?php
 /**
  * Playground
- *
  */
-
 namespace Database\Seeders;
 
 use App\Models\User;
@@ -15,12 +13,11 @@ use Illuminate\Support\Facades\Hash;
  * \CustomUsersTableSeeder
  *
  * Test users for Playground using Sanctum
- *
  */
 class CustomUsersTableSeeder extends Seeder
 {
     /**
-     * @var array<string, mixed> $models The default models.
+     * @var array<string, mixed> The default models.
      */
     protected $models = [
         'root@example.com' => [
@@ -163,7 +160,6 @@ class CustomUsersTableSeeder extends Seeder
 
     /**
      * Run the database seeds.
-     *
      */
     public function run(): void
     {
@@ -176,12 +172,12 @@ class CustomUsersTableSeeder extends Seeder
         //     '$password' => $password,
         //     '$test_password_hashed' => $test_password_hashed,
         // ]);
-        if (empty($password) || !is_string($password)) {
+        if (empty($password) || ! is_string($password)) {
             $password = md5(Carbon::now()->format('c'));
             $test_password_hashed = false;
         }
 
-        if (!$test_password_hashed) {
+        if (! $test_password_hashed) {
             $password = Hash::make($password);
         }
 
@@ -195,18 +191,18 @@ class CustomUsersTableSeeder extends Seeder
 
             if (empty($model)) {
                 $model = new User([
-                    'name' => empty($meta['name']) || !is_string($meta['name']) ? 'Some Name' : $meta['name'],
+                    'name' => empty($meta['name']) || ! is_string($meta['name']) ? 'Some Name' : $meta['name'],
                     // 'description' => empty($meta['description']) || !is_string($meta['description']) ? '' : $meta['description'],
                     // 'active' => true,
                     'email' => $email,
-                    'role' => empty($meta['role']) || !is_string($meta['role']) ? '' : $meta['role'],
+                    'role' => empty($meta['role']) || ! is_string($meta['role']) ? '' : $meta['role'],
                 ]);
             } else {
                 $model->update([
-                    'name' => empty($meta['name']) || !is_string($meta['name']) ? 'Some Name' : $meta['name'],
+                    'name' => empty($meta['name']) || ! is_string($meta['name']) ? 'Some Name' : $meta['name'],
                     // 'description' => empty($meta['description']) || !is_string($meta['description']) ? '' : $meta['description'],
                     // 'active' => true,
-                    'role' => empty($meta['role']) || !is_string($meta['role']) ? '' : $meta['role'],
+                    'role' => empty($meta['role']) || ! is_string($meta['role']) ? '' : $meta['role'],
                 ]);
             }
 
@@ -214,9 +210,9 @@ class CustomUsersTableSeeder extends Seeder
 
             if (is_array($meta['roles'])) {
                 foreach ($meta['roles'] as $role) {
-                    if (!empty($role)
+                    if (! empty($role)
                         && is_string($role)
-                        && !in_array($role, $roles)
+                        && ! in_array($role, $roles)
                         && $role !== $model->role
                     ) {
                         $roles[] = $role;
