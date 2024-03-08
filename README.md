@@ -21,10 +21,10 @@ Installed Playground Packages
 | [playground-blade](https://github.com/gammamatrix/playground-blade) | Provides Blade UI handling. |
 | [playground-cms](https://github.com/gammamatrix/playground-cms) | Provide the Cms models for a Playground Laravel application. |
 | [playground-http](https://github.com/gammamatrix/playground-http) | Provide http content and filter handling for controllers. |
-| [playground-login-blade](https://github.com/gammamatrix/playgroundlogin-blade) | Provides a Blade UI for authentication handling. |
+| [playground-login-blade](https://github.com/gammamatrix/playground-login-blade) | Provides a Blade UI for authentication handling. |
 | [playground-matrix](https://github.com/gammamatrix/playground-matrix) | Provide the Matrix models for a Playground Laravel application. |
 | [playground-matrix-resource](https://github.com/gammamatrix/playground-matrix-resource) | Provide the Matrix UI for a Laravel application. |
-| [playground-site-blade](https://github.com/gammamatrix/playgroundsite-blade) | Provides Blade UI handling for standard website. |
+| [playground-site-blade](https://github.com/gammamatrix/playground-site-blade) | Provides Blade UI handling for standard website. |
 | [playground-test](https://github.com/gammamatrix/playground-test) | A test helper for Playground Laravel packages. |
 - [playground-cms-resource will be installed soon](https://github.com/gammamatrix/playground-cms-resource/issues/1)
 

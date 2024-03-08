@@ -3,17 +3,16 @@
     "type": "project",
     "description": "Playground: This package provides a Laravel site using Sanctum for authentication and authorization and utilizes Blade for the UI.",
     "keywords": [
+        "auth",
         "blade",
+        "cms",
         "gammamatrix",
-        "playground",
         "laravel",
         "login",
-        "auth",
-        "site",
-        "sanctum",
+        "playground",
         "playground-blade",
-        "playground-login-blade",
-        "playground-site-blade"
+        "site",
+        "sanctum"
     ],
     "license": "MIT",
     "repositories": [
