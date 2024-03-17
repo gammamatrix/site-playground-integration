@@ -113,6 +113,34 @@
             <li class="success">Filter array</li>
             <li class="success">FilterArray to json</li>
         </ul>
+        <h2>Authentication Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRoute)</h2>
+        <ul>
+            <li class="success">Login screen can be rendered</li>
+            <li class="success">Users can authenticate using the login screen laravel</li>
+            <li class="success">Users can authenticate using json</li>
+            <li class="success">Users cannot authenticate with invalid password</li>
+            <li class="success">Users can logout on get request</li>
+            <li class="success">Users can logout on get request using json</li>
+            <li class="success">Users can logout on post request</li>
+            <li class="success">Guests can logout on get request</li>
+            <li class="success">Csfr token request</li>
+            <li class="success">Login repeat under rate limit and clear</li>
+            <li class="success">Login repeat and hit rate limit</li>
+        </ul>
+        <h2>Authentication Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Playground\AuthenticationRoute)</h2>
+        <ul>
+            <li class="success">Login screen can be rendered</li>
+            <li class="success">Users can authenticate using the login screen playground</li>
+            <li class="success">Users can authenticate using json</li>
+            <li class="success">Users cannot authenticate with invalid password</li>
+            <li class="success">Users can logout on get request</li>
+            <li class="success">Users can logout on get request using json</li>
+            <li class="success">Users can logout on post request</li>
+            <li class="success">Guests can logout on get request</li>
+            <li class="success">Csfr token request</li>
+            <li class="success">Login repeat under rate limit and clear</li>
+            <li class="success">Login repeat and hit rate limit</li>
+        </ul>
         <h2>Backlog Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\BacklogRoute)</h2>
         <ul>
             <li class="success">Guest cannot render index view</li>
@@ -256,6 +284,14 @@
             <li class="success">As wheel and succeed</li>
             <li class="success">Json as wheel and succeed</li>
         </ul>
+        <h2>Command (Tests\Feature\Playground\Admin\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Admin\Resource\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
         <h2>Command (Tests\Feature\Playground\Auth\Console\Commands\About\Command)</h2>
         <ul>
             <li class="success">Command about displays package information and succeed with code 0</li>
@@ -277,6 +313,10 @@
             <li class="success">Command about displays package information and succeed with code 0</li>
         </ul>
         <h2>Command (Tests\Feature\Playground\Http\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Login\Blade\Console\Commands\About\Command)</h2>
         <ul>
             <li class="success">Command about displays package information and succeed with code 0</li>
         </ul>
@@ -332,6 +372,16 @@
             <li class="success">Component instance</li>
             <li class="success">Component can render view</li>
         </ul>
+        <h2>Create Request (Tests\Unit\Playground\Admin\Resource\Http\Requests\Setting\CreateRequest)</h2>
+        <ul>
+            <li class="success">Request instance</li>
+        </ul>
+        <h2>Create Request (Tests\Unit\Playground\Admin\Resource\Http\Requests\User\CreateRequest)</h2>
+        <ul>
+            <li class="success">Request instance</li>
+            <li class="success">Return playground rules</li>
+            <li class="success">Return laravel rules</li>
+        </ul>
         <h2>Create Request (Tests\Unit\Playground\Cms\Resource\Http\Requests\Page\CreateRequest)</h2>
         <ul>
             <li class="success">Request instance</li>
@@ -348,6 +398,38 @@
         <ul>
             <li class="success">Filter date</li>
             <li class="success">Filter date as carbon</li>
+        </ul>
+        <h2>Edit Request (Tests\Unit\Playground\Admin\Resource\Http\Requests\User\EditRequest)</h2>
+        <ul>
+            <li class="success">Request instance</li>
+            <li class="success">Return playground rules</li>
+            <li class="success">Return laravel rules</li>
+        </ul>
+        <h2>Email Verification Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRoute)</h2>
+        <ul>
+            <li class="success">Email verification screen can be rendered</li>
+            <li class="success">Email verification screen is not rendered if already verified</li>
+            <li class="success">Json send email verification notification as guest</li>
+            <li class="success">Send email verification notification as guest and redirect</li>
+            <li class="success">Send email verification notification as user</li>
+            <li class="success">Send email verification notification when already verified</li>
+            <li class="success">Email can be verified</li>
+            <li class="success">Email is not verified with invalid hash</li>
+            <li class="success">Email is not verified with invalid user id</li>
+            <li class="success">Email verified with already verified</li>
+        </ul>
+        <h2>Email Verification Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Playground\EmailVerificationRoute)</h2>
+        <ul>
+            <li class="success">Email verification screen can be rendered</li>
+            <li class="success">Email verification screen is not rendered if already verified</li>
+            <li class="success">Json send email verification notification as guest</li>
+            <li class="success">Send email verification notification as guest and redirect</li>
+            <li class="success">Send email verification notification as user</li>
+            <li class="success">Send email verification notification when already verified</li>
+            <li class="success">Email can be verified</li>
+            <li class="success">Email is not verified with invalid hash</li>
+            <li class="success">Email is not verified with invalid user id</li>
+            <li class="success">Email verified with already verified</li>
         </ul>
         <h2>Epic Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\EpicRoute)</h2>
         <ul>
@@ -481,14 +563,40 @@
             <li class="success">Destroy as user and get denied and no force delete allowed</li>
             <li class="success">Json destroy as user and get denied and no force delete allowed</li>
         </ul>
+        <h2>Index Route (Tests\Feature\Playground\Admin\Resource\Http\Controllers\Playground\IndexRoute)</h2>
+        <ul>
+            <li class="success">Guest cannot render index view</li>
+            <li class="success">Admin can render index view</li>
+        </ul>
         <h2>Index Route (Tests\Feature\Playground\Cms\Resource\Http\Controllers\Playground\IndexRoute)</h2>
         <ul>
             <li class="success">Guest cannot render index view</li>
             <li class="success">Admin can render index view</li>
         </ul>
+        <h2>Instance (Tests\Feature\Playground\Admin\Resource\Http\Requests\FormRequest\Instance)</h2>
+        <ul>
+            <li class="success">FormRequest authorize with admin</li>
+        </ul>
         <h2>Instance (Tests\Feature\Playground\Cms\Resource\Http\Requests\FormRequest\Instance)</h2>
         <ul>
             <li class="success">FormRequest authorize with admin</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Admin\Resource\Http\Controllers\UserController\Instance)</h2>
+        <ul>
+            <li class="success">UserProvidergetUserClass with invalid user class</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Admin\Resource\Http\Requests\FormRequest\Instance)</h2>
+        <ul>
+            <li class="success">FormRequest authorize without user</li>
+            <li class="success">RULES is empty by default</li>
+            <li class="success">UserHasAdminPrivileges without user</li>
+            <li class="success">UserHasAdminPrivileges with admin</li>
+            <li class="success">UserHasAdminPrivileges with default laravel user</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Admin\Resource\ServiceProvider\Instance)</h2>
+        <ul>
+            <li class="success">Version matches</li>
+            <li class="success">SetPolicies with empty array</li>
         </ul>
         <h2>Instance (Tests\Unit\Playground\Blade\Assets\Comment\Instance)</h2>
         <ul>
@@ -530,8 +638,6 @@
         <ul>
             <li class="success">Version matches</li>
             <li class="success">SetPolicies with empty array</li>
-            <li class="success">SetPolicies with invalid model</li>
-            <li class="success">SetPolicies with invalid policy</li>
         </ul>
         <h2>Instance (Tests\Unit\Playground\ServiceProvider\Instance)</h2>
         <ul>
@@ -568,6 +674,14 @@
             <li class="success">IsAdmin is true with root role</li>
             <li class="success">IsAdmin is false with root secondary role</li>
             <li class="success">Factory with make</li>
+        </ul>
+        <h2>Logout Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Sanctum\LogoutRoute)</h2>
+        <ul>
+            <li class="success">Sanctum users can authenticate and logout and delete token</li>
+            <li class="success">Sanctum users can logout without token using json</li>
+            <li class="success">Sanctum users can logout all tokens without token using json</li>
+            <li class="success">Sanctum users can logout everywhere tokens without token</li>
+            <li class="success">Sanctum users can authenticate and logout and delete token with sessions</li>
         </ul>
         <h2>Milestone Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\MilestoneRoute)</h2>
         <ul>
@@ -630,6 +744,12 @@
             <li class="success">Json destroy as admin and succeed and ignore redirect</li>
             <li class="success">Destroy as user and get denied and no force delete allowed</li>
             <li class="success">Json destroy as user and get denied and no force delete allowed</li>
+        </ul>
+        <h2>Model (Tests\Feature\Playground\Admin\Models\Setting\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Factory create</li>
         </ul>
         <h2>Model (Tests\Feature\Playground\Cms\Models\PageRevision\Model)</h2>
         <ul>
@@ -748,6 +868,12 @@
         <h2>Model (Tests\Feature\Playground\Models\User\Model)</h2>
         <ul>
             <li class="success">Save model in database</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Admin\Models\Setting\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Model factory make</li>
         </ul>
         <h2>Model (Tests\Unit\Playground\Cms\Models\PageRevision\Model)</h2>
         <ul>
@@ -871,7 +997,7 @@
             <li class="success">WithOwner owner returns HasOne</li>
             <li class="success">WithParent parent returns HasOne</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterColumns\Model)</h2>
         <ul>
             <li class="success">ScopeFilterColumns returns query without columns or filters</li>
             <li class="success">ScopeFilterColumns returns query without filters</li>
@@ -889,7 +1015,7 @@
             <li class="success">ScopeFilterColumns with not between filter operator without single parameter and ignore between</li>
             <li class="success">ScopeFilterColumns with not between filter operator</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterDates\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterDates\Model)</h2>
         <ul>
             <li class="success">ScopeFilterDates returns query without dates or filters</li>
             <li class="success">ScopeFilterDates returns query without filters</li>
@@ -910,13 +1036,13 @@
             <li class="success">ScopeFilterDates with not between filter operator with parse</li>
             <li class="success">ScopeFilterDates with filter operators</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterFlags\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterFlags\Model)</h2>
         <ul>
             <li class="success">ScopeFilterFlags returns query without flags or filters</li>
             <li class="success">ScopeFilterFlags returns query without filters</li>
             <li class="success">ScopeFilterFlags returns query with filters</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterIds\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterIds\Model)</h2>
         <ul>
             <li class="success">ScopeFilterIds returns query without ids or filters</li>
             <li class="success">ScopeFilterIds returns query without filters</li>
@@ -930,13 +1056,13 @@
             <li class="success">ScopeFilterIds returns query with array of integer ids ignore duplicate id</li>
             <li class="success">ScopeFilterIds returns query with filters with null and string and array</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterTrash\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterTrash\Model)</h2>
         <ul>
             <li class="success">ScopeFilterTrash returns query with empty visibility</li>
             <li class="success">ScopeFilterTrash returns query with trash</li>
             <li class="success">ScopeFilterTrash returns query with only trash</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeSort\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeSort\Model)</h2>
         <ul>
             <li class="success">ScopeSort returns query with empty sort</li>
             <li class="success">ScopeSort returns query with array boolean sort asc</li>
@@ -956,10 +1082,6 @@
             <li class="success">Add has and remove Privileges</li>
             <li class="success">Add has and remove Roles</li>
             <li class="success">IsAdmin with admins and users</li>
-        </ul>
-        <h2>Model (Tests\Unit\Playground\Test\Models\AbstractUser\Model)</h2>
-        <ul>
-            <li class="success">Get attributes</li>
         </ul>
         <h2>Model (Tests\Unit\Playground\Test\Models\AppPlaygroundUser\Model)</h2>
         <ul>
@@ -1014,6 +1136,7 @@
         <h2>Model (Tests\Unit\Playground\Test\Models\User\Model)</h2>
         <ul>
             <li class="success">Get attributes</li>
+            <li class="success">GetAttributes filled</li>
             <li class="success">Factory with make</li>
         </ul>
         <h2>Note Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\NoteRoute)</h2>
@@ -1180,9 +1303,43 @@
             <li class="success">Json restore revision as user and get denied</li>
             <li class="success">Json destroy as user and get denied and no force delete allowed</li>
         </ul>
+        <h2>Password Confirmation Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRoute)</h2>
+        <ul>
+            <li class="success">Confirm password screen can be rendered</li>
+            <li class="success">Password can be confirmed</li>
+            <li class="success">Password is not confirmed with invalid password</li>
+        </ul>
+        <h2>Password Confirmation Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Playground\PasswordConfirmationRoute)</h2>
+        <ul>
+            <li class="success">Confirm password screen can be rendered</li>
+            <li class="success">Password can be confirmed</li>
+            <li class="success">Password is not confirmed with invalid password</li>
+        </ul>
+        <h2>Password Reset Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRoute)</h2>
+        <ul>
+            <li class="success">Reset password link screen can be rendered</li>
+            <li class="success">Reset password link can be requested</li>
+            <li class="success">Reset password screen can be rendered</li>
+            <li class="success">Password can be reset with valid token</li>
+            <li class="success">Password reset with invalid token</li>
+            <li class="success">Password reset with invalid user</li>
+        </ul>
+        <h2>Password Reset Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Playground\PasswordResetRoute)</h2>
+        <ul>
+            <li class="success">Reset password link screen can be rendered</li>
+            <li class="success">Reset password link can be requested</li>
+            <li class="success">Reset password screen can be rendered</li>
+            <li class="success">Password can be reset with valid token</li>
+            <li class="success">Password reset with invalid token</li>
+            <li class="success">Password reset with invalid user</li>
+        </ul>
         <h2>Phone Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\PhoneTrait)</h2>
         <ul>
             <li class="success">Filter phone</li>
+        </ul>
+        <h2>Policy (Tests\Unit\Playground\Admin\Resource\Policies\SettingPolicy\Policy)</h2>
+        <ul>
+            <li class="success">Policy instance</li>
         </ul>
         <h2>Policy (Tests\Unit\Playground\Cms\Resource\Policies\PagePolicy\Policy)</h2>
         <ul>
@@ -1310,6 +1467,16 @@
             <li class="success">As admin and succeed</li>
             <li class="success">As user and succeed with package sitemaps</li>
         </ul>
+        <h2>Registration Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\RegistrationRoute)</h2>
+        <ul>
+            <li class="success">Registration screen can be rendered</li>
+            <li class="success">New users can register</li>
+        </ul>
+        <h2>Registration Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Playground\RegistrationRoute)</h2>
+        <ul>
+            <li class="success">Registration screen can be rendered</li>
+            <li class="success">New users can register</li>
+        </ul>
         <h2>Release Route (Tests\Feature\Playground\Matrix\Resource\Http\Controllers\Playground\ReleaseRoute)</h2>
         <ul>
             <li class="success">Guest cannot render index view</li>
@@ -1425,6 +1592,82 @@
             <li class="success">Destroy as admin and succeed with redirect to index with trash</li>
             <li class="success">Json destroy as admin and succeed with no content</li>
             <li class="success">Lock as user and get denied</li>
+            <li class="success">Json lock as user and get denied</li>
+            <li class="success">Json restore as user and get denied</li>
+            <li class="success">Json unlock as user and get denied</li>
+            <li class="success">Restore as user and get denied</li>
+            <li class="success">Unlock as user and get denied</li>
+            <li class="success">Json destroy as admin and succeed and ignore redirect</li>
+            <li class="success">Destroy as user and get denied and no force delete allowed</li>
+            <li class="success">Json destroy as user and get denied and no force delete allowed</li>
+        </ul>
+        <h2>Setting Route (Tests\Feature\Playground\Admin\Resource\Http\Controllers\Playground\SettingRoute)</h2>
+        <ul>
+            <li class="success">Guest cannot render index view</li>
+            <li class="success">Json guest cannot see info</li>
+            <li class="success">Guest cannot render show view</li>
+            <li class="success">Json guest cannot destroy</li>
+            <li class="success">Guest cannot destroy</li>
+            <li class="success">Guest cannot lock</li>
+            <li class="success">Json guest cannot restore</li>
+            <li class="success">Guest cannot restore</li>
+            <li class="success">Guest cannot render create view</li>
+            <li class="success">Guest cannot render edit view</li>
+            <li class="success">Json guest cannot get index</li>
+            <li class="success">Json guest cannot lock</li>
+            <li class="success">Json guest cannot unlock</li>
+            <li class="success">Guest cannot unlock</li>
+            <li class="success">Json guest cannot get create info</li>
+            <li class="success">Json guest cannot get edit info</li>
+            <li class="success">Guest cannot store</li>
+            <li class="success">Json guest cannot store</li>
+            <li class="success">Admin can render index view</li>
+            <li class="success">Json guest cannot update</li>
+            <li class="success">Guest cannot update</li>
+            <li class="success">Admin can render create view</li>
+            <li class="success">Json admin can get index</li>
+            <li class="success">Json show info for admin</li>
+            <li class="success">Show view rendered by admin</li>
+            <li class="success">Json admin can get create info</li>
+            <li class="success">Admin can render edit view</li>
+            <li class="success">Json admin can get edit info</li>
+            <li class="success">Json destroy as admin and succeed</li>
+            <li class="success">Destroy as admin and succeed</li>
+            <li class="success">Lock as admin and succeed</li>
+            <li class="success">Store as admin without payload and fail validation</li>
+            <li class="success">Json restore as admin and succeed</li>
+            <li class="success">Restore as admin and succeed</li>
+            <li class="success">Admin can render create view with return url</li>
+            <li class="success">Json update as admin without payload and fail validation</li>
+            <li class="success">Update as admin without payload and fail validation</li>
+            <li class="success">Json lock as admin and succeed</li>
+            <li class="success">Json store as admin without payload and fail validation</li>
+            <li class="success">Json unlock as admin and succeed</li>
+            <li class="success">Unlock as admin and succeed</li>
+            <li class="success">Json get create info as admin with invalid parameter and fail validation</li>
+            <li class="success">Admin can render edit view with return url</li>
+            <li class="success">Admin can render index view with filters</li>
+            <li class="success">Json admin can get index with filters</li>
+            <li class="success">Json edit as admin and fail validation with invalid parameter</li>
+            <li class="success">Store as admin and succeed</li>
+            <li class="success">Json admin can update</li>
+            <li class="success">Admin can update</li>
+            <li class="success">Create view as admin with invalid parameter and fail validation and redirect</li>
+            <li class="success">Json store as admin and succeed</li>
+            <li class="success">Lock as admin and succeed with redirect to index with sorted by locked desc</li>
+            <li class="success">Destroy as admin and succeed with force delete</li>
+            <li class="success">Json lock as admin and succeed with no redirect</li>
+            <li class="success">Json destroy as admin and succeed with force delete</li>
+            <li class="success">Json restore as admin and succeed with no redirect</li>
+            <li class="success">Restore as admin and succeed with redirect to index with only trash</li>
+            <li class="success">Json unlock as admin and succeed with no redirect</li>
+            <li class="success">Edit view as admin with invalid parameter and fail validation and redirect</li>
+            <li class="success">Unlock as admin and succeed with redirect to index with sorted by unlocked desc</li>
+            <li class="success">Destroy as admin and succeed with redirect to index with trash</li>
+            <li class="success">Json destroy as admin and succeed with no content</li>
+            <li class="success">Lock as user and get denied</li>
+            <li class="success">Admin can update view with return url</li>
+            <li class="success">Store as admin and succeed with return url</li>
             <li class="success">Json lock as user and get denied</li>
             <li class="success">Json restore as user and get denied</li>
             <li class="success">Json unlock as user and get denied</li>
@@ -1659,6 +1902,15 @@
             <li class="success">FilterStatus with integer as string</li>
             <li class="success">FilterStatus with integer as negative float</li>
             <li class="success">FilterStatus with map</li>
+        </ul>
+        <h2>Store Request (Tests\Unit\Playground\Admin\Resource\Http\Requests\User\StoreRequest)</h2>
+        <ul>
+            <li class="success">Request instance</li>
+            <li class="success">Return playground rules</li>
+            <li class="success">Return laravel rules</li>
+            <li class="success">PrepareForValidation for laravel</li>
+            <li class="success">PrepareForValidation for playground</li>
+            <li class="success">PrepareForValidation parameters</li>
         </ul>
         <h2>System Fields Trait (Tests\Unit\Playground\Http\Requests\Concerns\StoreFilter\SystemFieldsTrait)</h2>
         <ul>
@@ -1911,6 +2163,15 @@
             <li class="success">GetHtmlPurifier with iframes</li>
             <li class="success">GetHtmlPurifier with purifier path</li>
         </ul>
+        <h2>Update Request (Tests\Unit\Playground\Admin\Resource\Http\Requests\User\UpdateRequest)</h2>
+        <ul>
+            <li class="success">Request instance</li>
+            <li class="success">Return playground rules</li>
+            <li class="success">Return laravel rules</li>
+            <li class="success">PrepareForValidation for laravel</li>
+            <li class="success">PrepareForValidation for playground</li>
+            <li class="success">PrepareForValidation parameters</li>
+        </ul>
         <h2>User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRoute)</h2>
         <ul>
             <li class="success">As guest and fail when disabled for guest and no redirect with auth middleware</li>
@@ -1946,6 +2207,82 @@
             <li class="success">Route json home as guest and fail</li>
             <li class="success">Route home as user admin and succeed</li>
             <li class="success">Route json home as admin and succeed</li>
+        </ul>
+        <h2>User Route (Tests\Feature\Playground\Admin\Resource\Http\Controllers\Playground\UserRoute)</h2>
+        <ul>
+            <li class="success">Guest cannot render index view</li>
+            <li class="success">Json guest cannot see info</li>
+            <li class="success">Guest cannot render show view</li>
+            <li class="success">Json guest cannot destroy</li>
+            <li class="success">Guest cannot destroy</li>
+            <li class="success">Guest cannot lock</li>
+            <li class="success">Json guest cannot restore</li>
+            <li class="success">Guest cannot restore</li>
+            <li class="success">Guest cannot render create view</li>
+            <li class="success">Guest cannot render edit view</li>
+            <li class="success">Json guest cannot get index</li>
+            <li class="success">Json guest cannot lock</li>
+            <li class="success">Json guest cannot unlock</li>
+            <li class="success">Guest cannot unlock</li>
+            <li class="success">Json guest cannot get create info</li>
+            <li class="success">Json guest cannot get edit info</li>
+            <li class="success">Guest cannot store</li>
+            <li class="success">Json guest cannot store</li>
+            <li class="success">Admin can render index view</li>
+            <li class="success">Json guest cannot update</li>
+            <li class="success">Guest cannot update</li>
+            <li class="success">Admin can render create view</li>
+            <li class="success">Json admin can get index</li>
+            <li class="success">Json show info for admin</li>
+            <li class="success">Show view rendered by admin</li>
+            <li class="success">Json admin can get create info</li>
+            <li class="success">Admin can render edit view</li>
+            <li class="success">Json admin can get edit info</li>
+            <li class="success">Json destroy as admin and succeed</li>
+            <li class="success">Destroy as admin and succeed</li>
+            <li class="success">Lock as admin and succeed</li>
+            <li class="success">Store as admin without payload and fail validation</li>
+            <li class="success">Json restore as admin and succeed</li>
+            <li class="success">Restore as admin and succeed</li>
+            <li class="success">Admin can render create view with return url</li>
+            <li class="success">Json update as admin without payload and fail validation</li>
+            <li class="success">Update as admin without payload and fail validation</li>
+            <li class="success">Json lock as admin and succeed</li>
+            <li class="success">Json store as admin without payload and fail validation</li>
+            <li class="success">Json unlock as admin and succeed</li>
+            <li class="success">Unlock as admin and succeed</li>
+            <li class="success">Json get create info as admin with invalid parameter and fail validation</li>
+            <li class="success">Admin can render edit view with return url</li>
+            <li class="success">Admin can render index view with filters</li>
+            <li class="success">Json admin can get index with filters</li>
+            <li class="success">Json edit as admin and fail validation with invalid parameter</li>
+            <li class="success">Store as admin and succeed</li>
+            <li class="success">Json admin can update</li>
+            <li class="success">Admin can update</li>
+            <li class="success">Create view as admin with invalid parameter and fail validation and redirect</li>
+            <li class="success">Json store as admin and succeed</li>
+            <li class="success">Lock as admin and succeed with redirect to index with sorted by locked desc</li>
+            <li class="success">Destroy as admin and succeed with force delete</li>
+            <li class="success">Json lock as admin and succeed with no redirect</li>
+            <li class="success">Json destroy as admin and succeed with force delete</li>
+            <li class="success">Json restore as admin and succeed with no redirect</li>
+            <li class="success">Restore as admin and succeed with redirect to index with only trash</li>
+            <li class="success">Json unlock as admin and succeed with no redirect</li>
+            <li class="success">Edit view as admin with invalid parameter and fail validation and redirect</li>
+            <li class="success">Unlock as admin and succeed with redirect to index with sorted by unlocked desc</li>
+            <li class="success">Destroy as admin and succeed with redirect to index with trash</li>
+            <li class="success">Json destroy as admin and succeed with no content</li>
+            <li class="success">Lock as user and get denied</li>
+            <li class="success">Admin can update view with return url</li>
+            <li class="success">Store as admin and succeed with return url</li>
+            <li class="success">Json lock as user and get denied</li>
+            <li class="success">Json restore as user and get denied</li>
+            <li class="success">Json unlock as user and get denied</li>
+            <li class="success">Restore as user and get denied</li>
+            <li class="success">Unlock as user and get denied</li>
+            <li class="success">Json destroy as admin and succeed and ignore redirect</li>
+            <li class="success">Destroy as user and get denied and no force delete allowed</li>
+            <li class="success">Json destroy as user and get denied and no force delete allowed</li>
         </ul>
         <h2>User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRoute)</h2>
         <ul>
