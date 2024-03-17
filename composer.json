@@ -15,7 +15,7 @@
         "matrix",
         "playground-blade"
     ],
-    "homepage": "https://gammamatrix-playground.readthedocs.io/",
+    "homepage": "https://gammamatrix-playground.readthedocs.io/en/develop/applications/site-playground-blade-sanctum.html",
     "license": "MIT",
     "require": {
         "php": "^8.2",
