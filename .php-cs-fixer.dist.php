@@ -45,7 +45,7 @@ $rules_laravel = [
     'class_definition' => [
         'multi_line_extends_each_single_line' => true,
         'single_item_single_line' => true,
-        'single_line' => true,
+        'single_line' => false,
     ],
     'clean_namespace' => true,
     'compact_nullable_typehint' => true,
@@ -59,6 +59,7 @@ $rules_laravel = [
     'encoding' => true,
     'full_opening_tag' => true,
     'fully_qualified_strict_types' => true,
+    'declare_strict_types' => true,
     'function_declaration' => true,
     'general_phpdoc_tag_rename' => true,
     'heredoc_to_nowdoc' => true,

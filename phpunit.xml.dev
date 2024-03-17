@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
+  xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
   bootstrap="vendor/autoload.php"
   colors="true"
   stopOnSkipped="false"
@@ -27,8 +27,11 @@
     <testsuite name="Unit">
       <directory>tests/Unit</directory>
       <directory>vendor/gammamatrix/playground/tests/Unit</directory>
+      <directory>vendor/gammamatrix/playground-admin/tests/Unit</directory>
+      <directory>vendor/gammamatrix/playground-admin-resource/tests/Unit</directory>
       <directory>vendor/gammamatrix/playground-auth/tests/Unit</directory>
       <directory>vendor/gammamatrix/playground-cms/tests/Unit</directory>
+      <directory>vendor/gammamatrix/playground-cms-resource/tests/Unit</directory>
       <directory>vendor/gammamatrix/playground-blade/tests/Unit</directory>
       <directory>vendor/gammamatrix/playground-http/tests/Unit</directory>
       <directory>vendor/gammamatrix/playground-matrix/tests/Unit</directory>
@@ -38,8 +41,11 @@
     <testsuite name="Feature">
       <directory>tests/Feature</directory>
       <directory>vendor/gammamatrix/playground/tests/Feature</directory>
+      <directory>vendor/gammamatrix/playground-admin/tests/Feature</directory>
+      <directory>vendor/gammamatrix/playground-admin-resource/tests/Feature</directory>
       <directory>vendor/gammamatrix/playground-auth/tests/Feature</directory>
       <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>
+      <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>
       <directory>vendor/gammamatrix/playground-blade/tests/Feature</directory>
       <directory>vendor/gammamatrix/playground-http/tests/Feature</directory>
       <directory>vendor/gammamatrix/playground-login-blade/tests/Feature</directory>
@@ -74,9 +80,12 @@
     <include>
       <directory>app</directory>
       <directory suffix=".php">vendor/gammamatrix/playground/src</directory>
+      <directory suffix=".php">vendor/gammamatrix/playground-admin/src</directory>
+      <directory suffix=".php">vendor/gammamatrix/playground-admin-resource/src</directory>
       <directory suffix=".php">vendor/gammamatrix/playground-auth/src</directory>
       <directory suffix=".php">vendor/gammamatrix/playground-blade/src</directory>
       <directory suffix=".php">vendor/gammamatrix/playground-cms/src</directory>
+      <directory suffix=".php">vendor/gammamatrix/playground-cms-resource/src</directory>
       <directory suffix=".php">vendor/gammamatrix/playground-http/src</directory>
       <directory suffix=".php">vendor/gammamatrix/playground-login-blade/src</directory>
       <directory suffix=".php">vendor/gammamatrix/playground-matrix/src</directory>
@@ -88,14 +97,15 @@
   <php>
     <env name="APP_ENV" value="testing" />
     <env name="APP_KEY" value="base64:lNTGdmOOxP5uNUVuCj9FB//Ssn8JmRXBdtPEE4/QReE=" />
+    <env name="APP_MAINTENANCE_DRIVER" value="file"/>
     <env name="BCRYPT_ROUNDS" value="4" />
-    <env name="CACHE_DRIVER" value="array" />
+    <env name="CACHE_STORE" value="array" />
     <env name="LOG_CHANNEL" value="stderr" />
-    <env name="AUTH_PROVIDERS_USERS_MODEL" value="\Playground\Models\User" />
     <env name="TEST_DB_MIGRATIONS" value="true" />
     <env name="DB_CONNECTION" value="sqlite" />
     <env name="DB_DATABASE" value=":memory:" />
     <env name="MAIL_MAILER" value="log" />
+    <env name="PULSE_ENABLED" value="false"/>
     <env name="QUEUE_CONNECTION" value="sync" />
     <env name="SESSION_DRIVER" value="array" />
     <env name="TELESCOPE_ENABLED" value="false" />
