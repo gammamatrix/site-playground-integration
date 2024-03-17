@@ -1,7 +1,7 @@
 # Site Playground Blade Sanctum
 
 [![Playground CI Workflow](https://github.com/gammamatrix/site-playground-blade-sanctum/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/site-playground-blade-sanctum/testing/develop/testdox.txt)
-[![Test Coverage](https://raw.githubusercontent.com/gammamatrix/site-playground-blade-sanctum/testing/develop/coverage.svg)](tests)
+[![Test Coverage](https://img.shields.io/badge/coverage-%2090%25-brightgreen)](tests)
 [![PHPStan Level 9 src and tests](https://img.shields.io/badge/PHPStan-level%209-brightgreen)](.github/workflows/ci.yml#L120)
 <!-- [![Playground on Packagist](https://img.shields.io/packagist/v/gammamatrix/site-playground-blade-sanctum)](https://packagist.org/packages/gammamatrix/site-playground-blade-sanctum) -->
 

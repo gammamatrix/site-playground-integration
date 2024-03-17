@@ -105,11 +105,11 @@ jobs:
         coverage_clover: clover.xml
         coverage_text: true
         memory_limit: "512M"
-    - name: Make code coverage badge
-      uses: timkrase/phpunit-coverage-badge@v1.2.1
-      with:
-        coverage_badge_path: output/coverage.svg
-        push_badge: false
+    # - name: Make code coverage badge
+    #   uses: timkrase/phpunit-coverage-badge@v1.2.1
+    #   with:
+    #     coverage_badge_path: output/coverage.svg
+    #     push_badge: false
     - name: Git push to testing/develop branch
       uses: peaceiris/actions-gh-pages@v3
       with:
