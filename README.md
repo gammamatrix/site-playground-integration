@@ -18,7 +18,7 @@ Read more on using [Site: Playground Blade Sanctum at Read the Docs: Playground 
 Install the package with `composer create-project`
 
 ```sh
-composer create-project gammamatrix/site-playground-blade-sanctum site-example
+composer create-project gammamatrix/site-playground-blade-sanctum site-example --stability dev
 ```
 - NOTE: A stable release has not been deployed yet.
 
