@@ -96,13 +96,14 @@ jobs:
         php_extensions: intl
         version: 2.x
     - uses: php-actions/phpunit@v3
-      env:
-        XDEBUG_MODE: coverage
+      # env:
+      #   XDEBUG_MODE: coverage
       with:
         version: "11.0"
         php_version: "8.2"
-        php_extensions: intl xdebug
-        coverage_clover: clover.xml
+        # php_extensions: intl xdebug
+        php_extensions: intl
+        # coverage_clover: clover.xml
         coverage_text: true
         memory_limit: "1024M"
     # - name: Make code coverage badge
