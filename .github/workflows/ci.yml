@@ -104,7 +104,7 @@ jobs:
         # php_extensions: intl xdebug
         php_extensions: intl
         # coverage_clover: clover.xml
-        coverage_text: true
+        # coverage_text: true
         memory_limit: "1024M"
     # - name: Make code coverage badge
     #   uses: timkrase/phpunit-coverage-badge@v1.2.1
