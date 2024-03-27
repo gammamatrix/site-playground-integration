@@ -35,13 +35,13 @@ jobs:
         channel-id: 'C068A06PV43'
         payload: |
           {
-            "text": "CI Build Status for site-playground-blade-sanctum: IN PROGRESS\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "text": "CI Build Status for site-playground-integration: IN PROGRESS\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
             "blocks": [
               {
                 "type": "header",
                 "text": {
                   "type": "plain_text",
-                  "text": ":runner: CI Build Status for site-playground-blade-sanctum"
+                  "text": ":runner: CI Build Status for site-playground-integration"
                 }
               },
               {
@@ -139,13 +139,13 @@ jobs:
         update-ts: ${{ steps.slack.outputs.ts }}
         payload: |
           {
-            "text": "CI Build Status for site-playground-blade-sanctum: DONE\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "text": "CI Build Status for site-playground-integration: DONE\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
             "blocks": [
               {
                 "type": "header",
                 "text": {
                   "type": "plain_text",
-                  "text": ":white_check_mark: CI Build Status for site-playground-blade-sanctum"
+                  "text": ":white_check_mark: CI Build Status for site-playground-integration"
                 }
               },
               {
@@ -200,13 +200,13 @@ jobs:
         update-ts: ${{ steps.slack.outputs.ts }}
         payload: |
           {
-            "text": "CI Build Status for site-playground-blade-sanctum: FAILED\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "text": "CI Build Status for site-playground-integration: FAILED\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
             "blocks": [
               {
                 "type": "header",
                 "text": {
                   "type": "plain_text",
-                  "text": ":warning: CI Build Status for site-playground-blade-sanctum"
+                  "text": ":warning: CI Build Status for site-playground-integration"
                 }
               },
               {

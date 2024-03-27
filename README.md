@@ -1,14 +1,14 @@
-# Site Playground Blade Sanctum
+# Site: Playground Integration
 
-[![Playground CI Workflow](https://github.com/gammamatrix/site-playground-blade-sanctum/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/site-playground-blade-sanctum/testing/develop/testdox.txt)
-[![Test Coverage](https://img.shields.io/badge/coverage-%2087%25-brightgreen)]([tests](https://raw.githubusercontent.com/gammamatrix/site-playground-blade-sanctum/testing/develop/testdox.txt))
+[![Playground CI Workflow](https://github.com/gammamatrix/site-playground-integration/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/site-playground-integration/testing/develop/testdox.txt)
+[![Test Coverage](https://img.shields.io/badge/coverage-%2087%25-brightgreen)]([tests](https://raw.githubusercontent.com/gammamatrix/site-playground-integration/testing/develop/testdox.txt))
 [![PHPStan Level 9 src and tests](https://img.shields.io/badge/PHPStan-level%209-brightgreen)](.github/workflows/ci.yml#L120)
-<!-- [![Playground on Packagist](https://img.shields.io/packagist/v/gammamatrix/site-playground-blade-sanctum)](https://packagist.org/packages/gammamatrix/site-playground-blade-sanctum) -->
+<!-- [![Playground on Packagist](https://img.shields.io/packagist/v/gammamatrix/site-playground-integration)](https://packagist.org/packages/gammamatrix/site-playground-integration) -->
 
 
-Site: Playground Blade Sanctum Package for [Laravel v11](https://laravel.com/docs/11.x) applications.
+Site: Playground Integration Package for [Laravel v11](https://laravel.com/docs/11.x) applications.
 
-Read more on using [Site: Playground Blade Sanctum at Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/applications/site-playground-blade-sanctum.html)
+Read more on using [Site: Playground Integration at Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/applications/site-playground-integration.html)
 
 **FYI:** *This is an integration testing site for Playground packages and the composer.json will be updated frequently. This site repository may be renamed.*
 
@@ -28,7 +28,7 @@ To use a Playground Site that is already set up, see:
 Install the package with `composer create-project`
 
 ```sh
-composer create-project gammamatrix/site-playground-blade-sanctum site-example --stability dev
+composer create-project gammamatrix/site-playground-integration site-example --stability dev
 ```
 - NOTE: A stable release has not been deployed yet.
 
@@ -60,7 +60,7 @@ Installed Support Playground Packages
 ## Testing
 
 This application supports running integration tests with the installed Playground packages.
-- Currently, [2,393 tests Unit and Feature tests, with 34,611 assertions are run.](https://raw.githubusercontent.com/gammamatrix/site-playground-blade-sanctum/testing/develop/testdox.txt)
+- Currently, [2,393 tests Unit and Feature tests, with 34,611 assertions are run.](https://raw.githubusercontent.com/gammamatrix/site-playground-integration/testing/develop/testdox.txt)
 
 
 <details>

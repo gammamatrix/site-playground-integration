@@ -1,21 +1,13 @@
 {
-    "name": "gammamatrix/site-playground-blade-sanctum",
+    "name": "gammamatrix/site-playground-integration",
     "type": "project",
-    "description": "Playground: This package provides a Laravel site using Sanctum for authentication and authorization and utilizes Blade for the UI.",
+    "description": "Playground: This is an integration testing site for Playground.",
     "keywords": [
-        "blade",
         "gammamatrix",
         "playground",
-        "laravel",
-        "login",
-        "auth",
-        "site",
-        "sanctum",
-        "cms",
-        "matrix",
-        "playground-blade"
+        "laravel"
     ],
-    "homepage": "https://gammamatrix-playground.readthedocs.io/en/develop/applications/site-playground-blade-sanctum.html",
+    "homepage": "https://gammamatrix-playground.readthedocs.io/en/develop/applications/site-playground-integration.html",
     "license": "MIT",
     "require": {
         "php": "^8.2",
