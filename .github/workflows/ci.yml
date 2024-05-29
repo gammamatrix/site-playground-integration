@@ -71,18 +71,26 @@ jobs:
                 ]
               },
               {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "*PR:* ${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-                }
-              },
-              {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "*Build:* ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-                }
+                "type": "actions",
+                "elements": [
+                  {
+                    "type": "button",
+                    "text": {
+                      "type": "plain_text",
+                      "text": "Pull Request/Merge"
+                    },
+                    "style": "default",
+                    "url": "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                  },
+                  {
+                    "type": "button",
+                    "text": {
+                      "type": "plain_text",
+                      "text": "Build ${{ github.run_id }}"
+                    },
+                    "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                  }
+                ]
               }
             ]
           }
@@ -175,18 +183,26 @@ jobs:
                 ]
               },
               {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "*PR:* ${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-                }
-              },
-              {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "*Build:* ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-                }
+                "type": "actions",
+                "elements": [
+                  {
+                    "type": "button",
+                    "text": {
+                      "type": "plain_text",
+                      "text": "Pull Request/Merge"
+                    },
+                    "style": "primary",
+                    "url": "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                  },
+                  {
+                    "type": "button",
+                    "text": {
+                      "type": "plain_text",
+                      "text": "Build ${{ github.run_id }}"
+                    },
+                    "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                  }
+                ]
               }
             ]
           }
@@ -236,18 +252,26 @@ jobs:
                 ]
               },
               {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "*PR:* ${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-                }
-              },
-              {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "*Build:* ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-                }
+                "type": "actions",
+                "elements": [
+                  {
+                    "type": "button",
+                    "text": {
+                      "type": "plain_text",
+                      "text": "Pull Request/Merge"
+                    },
+                    "style": "danger",
+                    "url": "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                  },
+                  {
+                    "type": "button",
+                    "text": {
+                      "type": "plain_text",
+                      "text": "Build ${{ github.run_id }}"
+                    },
+                    "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                  }
+                ]
               }
             ]
           }
