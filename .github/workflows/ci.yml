@@ -77,9 +77,8 @@ jobs:
                     "type": "button",
                     "text": {
                       "type": "plain_text",
-                      "text": "Pull Request/Merge"
+                      "text": "Merge/Pull Request"
                     },
-                    "style": "default",
                     "url": "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
                   },
                   {
@@ -189,7 +188,7 @@ jobs:
                     "type": "button",
                     "text": {
                       "type": "plain_text",
-                      "text": "Pull Request/Merge"
+                      "text": "Merge/Pull Request"
                     },
                     "style": "primary",
                     "url": "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
@@ -258,7 +257,7 @@ jobs:
                     "type": "button",
                     "text": {
                       "type": "plain_text",
-                      "text": "Pull Request/Merge"
+                      "text": "Merge/Pull Request"
                     },
                     "style": "danger",
                     "url": "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
