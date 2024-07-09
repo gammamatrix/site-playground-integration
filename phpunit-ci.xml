@@ -40,7 +40,7 @@
             <directory>vendor/gammamatrix/playground-matrix-resource/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-test/tests/Unit</directory>
         </testsuite>
-        <!-- <testsuite name="Feature">
+        <testsuite name="Feature">
             <directory>tests/Feature</directory>
             <directory>vendor/gammamatrix/playground/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-auth/tests/Feature</directory>
@@ -53,11 +53,11 @@
             <directory>vendor/gammamatrix/playground-login-blade/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-http/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-matrix/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-matrix-api/tests/Feature</directory>
+            <!-- <directory>vendor/gammamatrix/playground-matrix-api/tests/Feature</directory> -->
             <directory>vendor/gammamatrix/playground-matrix-resource/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-site-blade/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-test/tests/Feature</directory>
-        </testsuite> -->
+        </testsuite>
     </testsuites>
     <!-- <coverage
         includeUncoveredFiles="true"
@@ -116,7 +116,7 @@
         <env name="QUEUE_CONNECTION" value="sync" />
         <env name="SESSION_DRIVER" value="array" />
         <env name="TELESCOPE_ENABLED" value="false" />
-        <env name="TEST_DB_MIGRATIONS" value="false" />
+        <env name="TEST_DB_MIGRATIONS" value="true" />
         <ini name="memory_limit" value="1024M" />
     </php>
 </phpunit>
