@@ -9,20 +9,6 @@
     ],
     "homepage": "https://gammamatrix-playground.readthedocs.io/en/develop/applications/site-playground-integration.html",
     "license": "MIT",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/gammamatrix/playground-directory.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/gammamatrix/playground-directory-api.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/gammamatrix/playground-directory-resource.git"
-        }
-    ],
     "require": {
         "php": "^8.2",
         "gammamatrix/playground": "*",
@@ -33,6 +19,8 @@
         "gammamatrix/playground-cms-resource": "*",
         "gammamatrix/playground-directory-api": "*",
         "gammamatrix/playground-directory-resource": "*",
+        "gammamatrix/playground-lead-api": "*",
+        "gammamatrix/playground-lead-resource": "*",
         "gammamatrix/playground-matrix-api": "*",
         "gammamatrix/playground-matrix-resource": "*",
         "gammamatrix/playground-http": "*",
@@ -87,6 +75,12 @@
             "Tests\\Feature\\Playground\\Directory\\": "vendor/gammamatrix/playground-directory/tests/Feature/",
             "Tests\\Feature\\Playground\\Directory\\Api\\": "vendor/gammamatrix/playground-directory-api/tests/Feature/",
             "Tests\\Feature\\Playground\\Directory\\Resource\\": "vendor/gammamatrix/playground-directory-resource/tests/Feature/",
+            "Tests\\Unit\\Playground\\Lead\\": "vendor/gammamatrix/playground-lead/tests/Unit/",
+            "Tests\\Unit\\Playground\\Lead\\Api\\": "vendor/gammamatrix/playground-lead-api/tests/Unit/",
+            "Tests\\Unit\\Playground\\Lead\\Resource\\": "vendor/gammamatrix/playground-lead-resource/tests/Unit/",
+            "Tests\\Feature\\Playground\\Lead\\": "vendor/gammamatrix/playground-lead/tests/Feature/",
+            "Tests\\Feature\\Playground\\Lead\\Api\\": "vendor/gammamatrix/playground-lead-api/tests/Feature/",
+            "Tests\\Feature\\Playground\\Lead\\Resource\\": "vendor/gammamatrix/playground-lead-resource/tests/Feature/",
             "Tests\\Feature\\Playground\\Http\\": "vendor/gammamatrix/playground-http/tests/Feature/",
             "Tests\\Unit\\Playground\\Http\\": "vendor/gammamatrix/playground-http/tests/Unit/",
             "Tests\\Feature\\Playground\\Login\\Blade\\": "vendor/gammamatrix/playground-login-blade/tests/Feature/",
