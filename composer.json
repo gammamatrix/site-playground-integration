@@ -9,6 +9,20 @@
     ],
     "homepage": "https://gammamatrix-playground.readthedocs.io/en/develop/applications/site-playground-integration.html",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gammamatrix/playground-directory.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gammamatrix/playground-directory-api.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gammamatrix/playground-directory-resource.git"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "gammamatrix/playground": "*",
@@ -17,6 +31,8 @@
         "gammamatrix/playground-blade": "*",
         "gammamatrix/playground-cms-api": "*",
         "gammamatrix/playground-cms-resource": "*",
+        "gammamatrix/playground-directory-api": "*",
+        "gammamatrix/playground-directory-resource": "*",
         "gammamatrix/playground-matrix-api": "*",
         "gammamatrix/playground-matrix-resource": "*",
         "gammamatrix/playground-http": "*",
@@ -65,6 +81,12 @@
             "Tests\\Unit\\Playground\\Cms\\Api\\": "vendor/gammamatrix/playground-cms-api/tests/Unit/",
             "Tests\\Feature\\Playground\\Cms\\Resource\\": "vendor/gammamatrix/playground-cms-resource/tests/Feature/",
             "Tests\\Unit\\Playground\\Cms\\Resource\\": "vendor/gammamatrix/playground-cms-resource/tests/Unit/",
+            "Tests\\Unit\\Playground\\Directory\\": "vendor/gammamatrix/playground-directory/tests/Unit/",
+            "Tests\\Unit\\Playground\\Directory\\Api\\": "vendor/gammamatrix/playground-directory-api/tests/Unit/",
+            "Tests\\Unit\\Playground\\Directory\\Resource\\": "vendor/gammamatrix/playground-directory-resource/tests/Unit/",
+            "Tests\\Feature\\Playground\\Directory\\": "vendor/gammamatrix/playground-directory/tests/Feature/",
+            "Tests\\Feature\\Playground\\Directory\\Api\\": "vendor/gammamatrix/playground-directory-api/tests/Feature/",
+            "Tests\\Feature\\Playground\\Directory\\Resource\\": "vendor/gammamatrix/playground-directory-resource/tests/Feature/",
             "Tests\\Feature\\Playground\\Http\\": "vendor/gammamatrix/playground-http/tests/Feature/",
             "Tests\\Unit\\Playground\\Http\\": "vendor/gammamatrix/playground-http/tests/Unit/",
             "Tests\\Feature\\Playground\\Login\\Blade\\": "vendor/gammamatrix/playground-login-blade/tests/Feature/",
@@ -95,7 +117,10 @@
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi"
         ],
-        "test": "vendor/bin/phpunit",
+        "test": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/phpunit"
+        ],
         "format": "vendor/bin/php-cs-fixer fix",
         "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max"
     },

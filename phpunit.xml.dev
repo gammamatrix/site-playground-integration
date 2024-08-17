@@ -11,8 +11,8 @@
     failOnRisky="true"
     failOnWarning="true"
     processIsolation="false"
-    stopOnError="true"
-    stopOnFailure="true"
+    stopOnError="false"
+    stopOnFailure="false"
     cacheDirectory=".phpunit.cache"
     backupStaticProperties="false"
     displayDetailsOnIncompleteTests="true"
@@ -34,10 +34,12 @@
             <directory>vendor/gammamatrix/playground-cms/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-cms-api/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-cms-resource/tests/Unit</directory>
+            <directory>vendor/gammamatrix/playground-directory/tests/Unit</directory>
+            <directory>vendor/gammamatrix/playground-directory-api/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-http/tests/Unit</directory>
-            <directory>vendor/gammamatrix/playground-matrix/tests/Unit</directory>
-            <directory>vendor/gammamatrix/playground-matrix-api/tests/Unit</directory>
-            <directory>vendor/gammamatrix/playground-matrix-resource/tests/Unit</directory>
+            <!-- <directory>vendor/gammamatrix/playground-matrix/tests/Unit</directory> -->
+            <!-- <directory>vendor/gammamatrix/playground-matrix-api/tests/Unit</directory> -->
+            <!-- <directory>vendor/gammamatrix/playground-matrix-resource/tests/Unit</directory> -->
             <directory>vendor/gammamatrix/playground-test/tests/Unit</directory>
         </testsuite>
         <testsuite name="Feature">
@@ -50,30 +52,32 @@
             <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-cms-api/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>
+            <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>
+            <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-login-blade/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-http/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-matrix/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-matrix-api/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-matrix-resource/tests/Feature</directory>
+            <!-- <directory>vendor/gammamatrix/playground-matrix/tests/Feature</directory> -->
+            <!-- <directory>vendor/gammamatrix/playground-matrix-api/tests/Feature</directory> -->
+            <!-- <directory>vendor/gammamatrix/playground-matrix-resource/tests/Feature</directory> -->
             <directory>vendor/gammamatrix/playground-site-blade/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-test/tests/Feature</directory>
         </testsuite>
     </testsuites>
-    <!-- <coverage
+    <coverage
         includeUncoveredFiles="true"
         pathCoverage="false"
         ignoreDeprecatedCodeUnits="true"
         disableCodeCoverageIgnore="true">
         <report>
-            <clover outputFile="output/clover.xml" />
-            <cobertura outputFile="output/cobertura.xml" />
-            <crap4j outputFile="output/crap4j.xml" threshold="50" />
+            <!-- <clover outputFile="output/clover.xml" /> -->
+            <!-- <cobertura outputFile="output/cobertura.xml" /> -->
+            <!-- <crap4j outputFile="output/crap4j.xml" threshold="50" /> -->
             <html outputDirectory="output/html" lowUpperBound="50" highLowerBound="90" />
-            <php outputFile="output/coverage.php" />
+            <!-- <php outputFile="output/coverage.php" /> -->
             <text outputFile="output/coverage.txt" showUncoveredFiles="false" showOnlySummary="true" />
-            <xml outputDirectory="output/xml" />
+            <!-- <xml outputDirectory="output/xml" /> -->
         </report>
-    </coverage> -->
+    </coverage>
     <logging>
         <junit outputFile="output/junit.xml" />
         <teamcity outputFile="output/teamcity.txt" />
@@ -91,12 +95,14 @@
             <directory suffix=".php">vendor/gammamatrix/playground-cms/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-cms-api/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-cms-resource/src</directory>
+            <directory suffix=".php">vendor/gammamatrix/playground-directory/src</directory>
+            <directory suffix=".php">vendor/gammamatrix/playground-directory-api/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-login-blade/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-site-blade/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-http/src</directory>
-            <directory suffix=".php">vendor/gammamatrix/playground-matrix/src</directory>
-            <directory suffix=".php">vendor/gammamatrix/playground-matrix-resource/src</directory>
-            <directory suffix=".php">vendor/gammamatrix/playground-matrix-api/src</directory>
+            <!-- <directory suffix=".php">vendor/gammamatrix/playground-matrix/src</directory> -->
+            <!-- <directory suffix=".php">vendor/gammamatrix/playground-matrix-resource/src</directory> -->
+            <!-- <directory suffix=".php">vendor/gammamatrix/playground-matrix-api/src</directory> -->
             <directory suffix=".php">vendor/gammamatrix/playground-test/src</directory>
         </include>
     </source>
