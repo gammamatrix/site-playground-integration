@@ -56,9 +56,9 @@
 <!--            <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-cms-api/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>-->
-            <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-directory-resource/tests/Feature</directory>
+<!--            <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-directory-resource/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-lead/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-lead-api/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-lead-resource/tests/Feature</directory>-->
@@ -88,9 +88,9 @@
 <!--            <directory suffix=".php">vendor/gammamatrix/playground-cms/src</directory>-->
 <!--            <directory suffix=".php">vendor/gammamatrix/playground-cms-api/src</directory>-->
 <!--            <directory suffix=".php">vendor/gammamatrix/playground-cms-resource/src</directory>-->
-            <directory suffix=".php">vendor/gammamatrix/playground-directory/src</directory>
-            <directory suffix=".php">vendor/gammamatrix/playground-directory-api/src</directory>
-            <directory suffix=".php">vendor/gammamatrix/playground-directory-resource/src</directory>
+<!--            <directory suffix=".php">vendor/gammamatrix/playground-directory/src</directory>-->
+<!--            <directory suffix=".php">vendor/gammamatrix/playground-directory-api/src</directory>-->
+<!--            <directory suffix=".php">vendor/gammamatrix/playground-directory-resource/src</directory>-->
 <!--            <directory suffix=".php">vendor/gammamatrix/playground-lead/src</directory>-->
 <!--            <directory suffix=".php">vendor/gammamatrix/playground-lead-api/src</directory>-->
 <!--            <directory suffix=".php">vendor/gammamatrix/playground-lead-resource/src</directory>-->

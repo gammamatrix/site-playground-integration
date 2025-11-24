@@ -34,8 +34,8 @@
 <!--            <directory>vendor/gammamatrix/playground-cms/tests/Unit</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-cms-api/tests/Unit</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-cms-resource/tests/Unit</directory>-->
-            <directory>vendor/gammamatrix/playground-directory/tests/Unit</directory>
-            <directory>vendor/gammamatrix/playground-directory-api/tests/Unit</directory>
+<!--            <directory>vendor/gammamatrix/playground-directory/tests/Unit</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-directory-api/tests/Unit</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-lead/tests/Unit</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-lead-api/tests/Unit</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-lead-resource/tests/Unit</directory>-->
@@ -55,8 +55,8 @@
 <!--            <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-cms-api/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>-->
-            <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>
+<!--            <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-lead/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-lead-api/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-lead-resource/tests/Feature</directory>-->
