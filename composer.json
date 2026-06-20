@@ -26,9 +26,9 @@
         "gammamatrix/playground-http": "*",
         "gammamatrix/playground-login-blade": "*",
         "gammamatrix/playground-site-blade": "*",
-        "laravel/framework": "^12.0",
+        "laravel/framework": "^13.0",
         "laravel/sanctum": "^4.0",
-        "laravel/tinker": "^2.9",
+        "laravel/tinker": "^3.0",
         "predis/predis": "^3.2"
     },
     "require-dev": {
@@ -37,11 +37,11 @@
         "larastan/larastan": "^3.0",
         "laravel/pint": "^1.2",
         "laravel/sail": "^1.26",
-        "illuminate/testing": "^12.0",
+        "illuminate/testing": "^13.0",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.0",
         "phpstan/phpstan-phpunit": "^2.0",
-        "phpunit/phpunit": "^12.0",
+        "phpunit/phpunit": "^13.0",
         "spatie/laravel-ignition": "^2.4"
     },
     "autoload": {
@@ -129,7 +129,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-develop": "73.x-dev"
+            "dev-develop": "75.x-dev"
         },
         "laravel": {
             "dont-discover": []
