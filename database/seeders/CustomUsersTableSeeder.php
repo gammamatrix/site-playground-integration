@@ -1,216 +1,161 @@
 <?php
 
-declare(strict_types=1);
 /**
  * Playground
  */
+
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
-use App\Models\User;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+use Playground\Models\User;
 
 /**
  * \CustomUsersTableSeeder
  *
- * Test users for Playground using Sanctum
+ * Test users.
  */
 class CustomUsersTableSeeder extends Seeder
 {
+    protected bool $withPrivileges = true;
+
+    protected bool $withActive = true;
+
+    protected bool $withDescription = true;
+
+    protected bool $withRole = true;
+
+    protected bool $withRoles = true;
+
+    protected bool $withStatus = true;
+
     /**
-     * @var array<string, mixed> The default models.
+     * @var class-string<User>
      */
-    protected $models = [
-        'root@example.com' => [
-            'name' => 'Root Toor',
-            'role' => 'root',
-            'roles' => [],
-            'description' => 'User: root',
-            'status' => 1,
-        ],
-        'admin@example.com' => [
-            'name' => 'Admin Nimda',
-            'role' => 'admin',
-            'roles' => [
-                'user',
-                'publisher',
-                'sales',
-            ],
-            'description' => 'User: admin',
-            'status' => 1,
-        ],
-        'manager@example.com' => [
-            'name' => 'Manager Reganam',
-            'role' => 'manager',
-            'roles' => [
-                'user',
-                'publisher',
-                'sales',
-            ],
-            'description' => 'User: manager',
-            'status' => 1,
-        ],
-        'mark@example.com' => [
-            'name' => 'Mark Kram',
-            'role' => 'sales',
-            'roles' => [
-                'admin',
-                'user',
-                'publisher',
-            ],
-            'description' => 'User: Mark - sales',
-            'status' => 1,
-        ],
-        'mike@example.com' => [
-            'name' => 'Mike Ekim',
-            'role' => 'sales',
-            'roles' => [
-                'admin',
-                'user',
-                'publisher',
-            ],
-            'description' => 'User: Mike - sales assistant',
-            'status' => 1,
-        ],
-        'sara@example.com' => [
-            'name' => 'Sara Aras',
-            'role' => 'sales',
-            'roles' => [
-                'admin',
-                'user',
-                'publisher',
-            ],
-            'description' => 'User: Sara - sales',
-            'status' => 1,
-        ],
-        'erin@example.com' => [
-            'name' => 'Erin Nire',
-            'role' => 'sales',
-            'roles' => [],
-            'description' => 'User: Erin - sales',
-            'status' => 1,
-        ],
-        'bob@example.com' => [
-            'name' => 'Bob',
-            'role' => 'sales',
-            'roles' => [
-                'user',
-            ],
-            'description' => 'User: Bob - sales',
-            'status' => 1,
-        ],
-        'tim@example.com' => [
-            'name' => 'Tim Mit',
-            'role' => 'sales',
-            'roles' => [
-                'user',
-            ],
-            'description' => 'User: Tim - sales',
-            'status' => 1,
-        ],
-
-        // Special roles
-
-        'client@example.com' => [
-            'name' => 'Client Tneilc',
-            'role' => 'partner',
-            'roles' => [
-                'user',
-            ],
-            'description' => 'Client',
-            'status' => 1,
-        ],
-
-        'guest@example.com' => [
-            'name' => 'Guest Tseug',
-            'role' => 'guest',
-            'roles' => [],
-            'description' => 'Guest',
-            'status' => 1,
-        ],
-
-        'partner@example.com' => [
-            'name' => 'Partner Rentrap',
-            'role' => 'partner',
-            'roles' => [
-                'user',
-            ],
-            'description' => 'Partner',
-            'status' => 1,
-        ],
-
-        'user@example.com' => [
-            'name' => 'User Resu',
-            'role' => 'user',
-            'roles' => [
-            ],
-            'description' => 'User',
-            'status' => 1,
-        ],
-
-        'vendor@example.com' => [
-            'name' => 'Vendor Rodnev',
-            'role' => 'vendor',
-            'roles' => [
-                'user',
-            ],
-            'description' => 'Vendor',
-            'status' => 1,
-        ],
-    ];
+    protected string $userClass = User::class;
 
     /**
      * Run the database seeds.
+     *
+     * @return void
      */
-    public function run(): void
+    public function run()
     {
-        $password = config('auth.testing.password');
-        $test_password_hashed = config('auth.testing.hashed');
-        // dump([
-        //     '__METHOD__' => __METHOD__,
-        //     '__FILE__' => __FILE__,
-        //     '__LINE__' => __LINE__,
-        //     '$password' => $password,
-        //     '$test_password_hashed' => $test_password_hashed,
-        // ]);
-        if (empty($password) || ! is_string($password)) {
-            $password = md5(Carbon::now()->format('c'));
-            $test_password_hashed = false;
+        $config = config('playground-test');
+
+        if (! is_array($config) || empty($config['users']) || ! is_array($config['users'])) {
+            error_log('No users defined in playground-test.');
+
+            return;
         }
 
-        if (! $test_password_hashed) {
+        /**
+         * @var class-string<User> $userClass
+         */
+        $userClass = $this->userClass;
+
+        if (! empty(config('auth.providers.users.model'))
+            && is_string(config('auth.providers.users.model'))
+            && class_exists(config('auth.providers.users.model'))
+        ) {
+            $userClass = config('auth.providers.users.model');
+        }
+
+        if (empty($config['with_active'])) {
+            $this->withActive = false;
+        }
+
+        if (empty($config['with_description'])) {
+            $this->withDescription = false;
+        }
+
+        if (empty($config['with_privileges'])) {
+            $this->withPrivileges = false;
+        }
+
+        if (empty($config['with_role'])) {
+            $this->withRole = false;
+        }
+
+        if (empty($config['with_roles'])) {
+            $this->withRoles = false;
+        }
+
+        if (empty($config['with_status'])) {
+            $this->withStatus = false;
+        }
+
+        $password = empty($config['password']) || ! is_string($config['password']) ? '' : $config['password'];
+        // $password = 'testing';
+        $password_encrypted = ! empty($config['password_encrypted']);
+
+        if (empty($password)) {
+            // Set a random password.
+            $password = md5(date('c'));
+            $password = Hash::make($password);
+        } elseif (! $password_encrypted) {
             $password = Hash::make($password);
         }
 
-        foreach ($this->models as $email => $meta) {
+        foreach ($config['users'] as $slug => $meta) {
 
-            if (empty($meta) || ! is_array($meta)) {
-                $meta = [];
+            if (! is_string($slug) || ! is_array($meta)) {
+                \Log::warning(sprintf('Invalid test user[%s]', $slug));
+
+                continue;
+            }
+            if (! empty($meta['email']) && is_string($meta['email'])) {
+                $email = $meta['email'];
+            } else {
+                $email = sprintf('%1$s@example.com', Str::slug($slug));
             }
 
-            $model = User::where('email', $email)->first();
+            /**
+             * @var Builder<User> $query
+             */
+            $query = $userClass::where('email', $email);
+
+            /**
+             * @var User $model|null
+             */
+            $model = $query->first();
+
+            $data = [
+                'name' => empty($meta['name']) || ! is_string($meta['name']) ? 'Some Name' : $meta['name'],
+            ];
+
+            if ($this->withActive) {
+                $data['active'] = true;
+            }
+
+            if ($this->withRole) {
+                $data['description'] = empty($meta['description']) || ! is_string($meta['description']) ? '' : $meta['description'];
+            }
+
+            if ($this->withRole) {
+                $data['role'] = empty($meta['role']) || ! is_string($meta['role']) ? '' : $meta['role'];
+            }
+
+            if ($this->withRole) {
+                $data['status'] = empty($meta['status']) || ! is_numeric($meta['status']) ? 0 : $meta['status'];
+            }
 
             if (empty($model)) {
-                $model = new User([
-                    'name' => empty($meta['name']) || ! is_string($meta['name']) ? 'Some Name' : $meta['name'],
-                    // 'description' => empty($meta['description']) || !is_string($meta['description']) ? '' : $meta['description'],
-                    // 'active' => true,
-                    'email' => $email,
-                    'role' => empty($meta['role']) || ! is_string($meta['role']) ? '' : $meta['role'],
-                ]);
+                $data['email'] = $email;
+                /**
+                 * @var User $model
+                 */
+                $model = $userClass::create($data);
             } else {
-                $model->update([
-                    'name' => empty($meta['name']) || ! is_string($meta['name']) ? 'Some Name' : $meta['name'],
-                    // 'description' => empty($meta['description']) || !is_string($meta['description']) ? '' : $meta['description'],
-                    // 'active' => true,
-                    'role' => empty($meta['role']) || ! is_string($meta['role']) ? '' : $meta['role'],
-                ]);
+                $model->update($data);
             }
 
-            $roles = [];
-
-            if (is_array($meta['roles'])) {
+            if ($this->withRoles && is_array($meta['roles'])) {
+                $roles = [];
                 foreach ($meta['roles'] as $role) {
                     if (! empty($role)
                         && is_string($role)
@@ -220,19 +165,38 @@ class CustomUsersTableSeeder extends Seeder
                         $roles[] = $role;
                     }
                 }
+                $model->roles = $roles;
             }
 
-            $model->setAttribute('roles', $roles);
+            if ($this->withPrivileges && is_array($meta['privileges'])) {
+                $privileges = [];
+                foreach ($meta['privileges'] as $privilege) {
+                    if (! empty($privilege)
+                        && is_string($privilege)
+                        && ! in_array($privilege, $privileges)
+                    ) {
+                        $privileges[] = $privilege;
+                    }
+                }
+                $model->privileges = $privileges;
+            }
+
             // dd([
             //     '__METHOD__' => __METHOD__,
-            //     '__FILE__' => __FILE__,
-            //     '__LINE__' => __LINE__,
             //     '$password' => $password,
-            //     '$test_password_hashed' => $test_password_hashed,
+            //     '$password_encrypted' => $password_encrypted,
+            //     '$email' => $email,
+            //     '$slug' => $slug,
+            //     '$meta' => $meta,
+            //     '$roles' => $roles,
+            //     '$privileges' => $privileges,
+            //     // '$config' => $config,
+            //     // '$model' => $model->toArray(),
+            //     '$model' => $model,
             // ]);
 
             // Reset the password
-            $model->password = $password;
+            $model->setAttribute('password', $password);
             $model->save();
         }
     }
