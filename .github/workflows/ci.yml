@@ -43,29 +43,29 @@ jobs:
                   type: "plain_text"
                   text: ":runner: CI Build Status for site-playground-integration"
               - type: "section"
-                  fields:
-                    - type: "mrkdwn"
-                      text: "*Start:* <!date^${{ steps.timer_start.outputs.TIMESTAMP_START }}^{date} at {time}|${{ steps.timer_start.outputs.DATE_START }}>"
-                    - type: "mrkdwn"
-                      text: "*End:* --"
+                fields:
+                  - type: "mrkdwn"
+                    text: "*Start:* <!date^${{ steps.timer_start.outputs.TIMESTAMP_START }}^{date} at {time}|${{ steps.timer_start.outputs.DATE_START }}>"
+                  - type: "mrkdwn"
+                    text: "*End:* --"
               - type: "section"
-                  fields:
-                    - type: "mrkdwn"
-                      text: "*Status:* IN PROGRESS"
-                    - type: "mrkdwn"
-                      text: ":timer_clock: --"
+                fields:
+                  - type: "mrkdwn"
+                    text: "*Status:* IN PROGRESS"
+                  - type: "mrkdwn"
+                    text: ":timer_clock: --"
               - type: "actions"
-                  elements:
-                    - type: "button"
-                      text:
-                        - type: "plain_text"
-                          text: "Merge/Pull Request"
-                      url: "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-                    - type: "button"
-                      text:
-                        - type: "plain_text"
-                          text: "Build: ${{ github.run_id }}"
-                      url: "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                elements:
+                  - type: "button"
+                    text:
+                      - type: "plain_text"
+                        text: "Merge/Pull Request"
+                    url: "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                  - type: "button"
+                    text:
+                      - type: "plain_text"
+                        text: "Build: ${{ github.run_id }}"
+                    url: "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
       - uses: actions/checkout@v4
       - name: Run php-actions/composer@v6
         uses: php-actions/composer@v6
