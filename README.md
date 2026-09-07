@@ -2,11 +2,11 @@
 
 [![Playground CI Workflow](https://github.com/gammamatrix/site-playground-integration/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/site-playground-integration/testing/develop/testdox.txt)
 [![Test Coverage](https://img.shields.io/badge/coverage-%2087%25-brightgreen)]([tests](https://raw.githubusercontent.com/gammamatrix/site-playground-integration/testing/develop/testdox.txt))
-[![PHPStan Level 9 src and tests](https://img.shields.io/badge/PHPStan-level%209-brightgreen)](.github/workflows/ci.yml#L120)
+[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-level%2010-brightgreen)](.github/workflows/ci.yml#L128)
 <!-- [![Playground on Packagist](https://img.shields.io/packagist/v/gammamatrix/site-playground-integration)](https://packagist.org/packages/gammamatrix/site-playground-integration) -->
 
 
-Site: Playground Integration Package for [Laravel v11](https://laravel.com/docs/11.x) applications.
+Site: Playground Integration Package for [Laravel v13](https://laravel.com/docs/13.x) applications.
 
 Read more on using [Site: Playground Integration at Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/applications/site-playground-integration.html)
 
