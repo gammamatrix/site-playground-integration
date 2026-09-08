@@ -129,7 +129,7 @@ jobs:
                 fields:
                   - type: "mrkdwn"
                     text: "*Start:* <!date^${{ steps.timer_start.outputs.TIMESTAMP_START }}^{date} at {time}|${{ steps.timer_start.outputs.DATE_START }}>"
-                  - type: "mrkdwn",
+                  - type: "mrkdwn"
                     text: "*End:* <!date^${{ steps.timer_end.outputs.TIMESTAMP_END }}^{date} at {time}|${{ steps.timer_end.outputs.DATE_END }}>"
               - type: "section"
                 fields:
@@ -175,8 +175,8 @@ jobs:
                 fields:
                   - type: "mrkdwn"
                     text: "*Status:* FAILED"
-              - type: "mrkdwn"
-                text: ":timer_clock: ${{ steps.timer_end.outputs.DURATION_PHRASE }}"
+                  - type: "mrkdwn"
+                    text: ":timer_clock: ${{ steps.timer_end.outputs.DURATION_PHRASE }}"
             - type: "actions"
               elements:
                 - type: "button"
