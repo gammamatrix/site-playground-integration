@@ -123,8 +123,8 @@ jobs:
             blocks:
               - type: "header"
                 text:
-                  - type: "plain_text"
-                    text: ":white_check_mark: CI Build Status for site-playground-integration"
+                  type: "plain_text"
+                  text: ":white_check_mark: CI Build Status for site-playground-integration"
 #                - type: "section"
 #                  fields:
 #                    - type: "mrkdwn"
@@ -150,8 +150,6 @@ jobs:
 #                          text: "Build: ${{ github.run_id }}"
 #                      style: "primary"
 #                      url: "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       - name: "Send a notification for failures"
         if: ${{ failure() }}
         uses: slackapi/slack-github-action@v4.0.0
