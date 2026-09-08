@@ -42,12 +42,12 @@ jobs:
                 text:
                   type: "plain_text"
                   text: ":runner: CI Build Status for site-playground-integration"
-#              - type: "section"
-#                fields:
-#                  - type: "mrkdwn"
-#                    text: "*Start:* <!date^${{ steps.timer_start.outputs.TIMESTAMP_START }}^{date} at {time}|${{ steps.timer_start.outputs.DATE_START }}>"
-#                  - type: "mrkdwn"
-#                    text: "*End:* --"
+              - type: "section"
+                fields:
+                  - type: "mrkdwn"
+                    text: "*Start:* <!date^${{ steps.timer_start.outputs.TIMESTAMP_START }}^{date} at {time}|${{ steps.timer_start.outputs.DATE_START }}>"
+                  - type: "mrkdwn"
+                    text: "*End:* --"
 #              - type: "section"
 #                fields:
 #                  - type: "mrkdwn"
