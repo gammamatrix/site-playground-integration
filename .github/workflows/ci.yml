@@ -125,31 +125,31 @@ jobs:
                 text:
                   type: "plain_text"
                   text: ":white_check_mark: CI Build Status for site-playground-integration"
-#                - type: "section"
-#                  fields:
-#                    - type: "mrkdwn"
-#                      text: "*Start:* <!date^${{ steps.timer_start.outputs.TIMESTAMP_START }}^{date} at {time}|${{ steps.timer_start.outputs.DATE_START }}>"
-#                    - type: "mrkdwn",
-#                      text: "*End:* <!date^${{ steps.timer_end.outputs.TIMESTAMP_END }}^{date} at {time}|${{ steps.timer_end.outputs.DATE_END }}>"
-#                - type: "section"
-#                  fields:
-#                    - type: "mrkdwn"
-#                      text: "*Status:* Success"
-#                    - type: "mrkdwn"
-#                      text: ":timer_clock: ${{ steps.timer_end.outputs.DURATION_PHRASE }}"
-#                - type: "actions"
-#                  elements:
-#                    - type: "button"
-#                      text:
-#                        - type: "plain_text"
-#                          text: "Merge/Pull Request"
-#                      url: "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-#                    - type: "button"
-#                      text:
-#                        - type: "plain_text"
-#                          text: "Build: ${{ github.run_id }}"
-#                      style: "primary"
-#                      url: "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                - type: "section"
+                  fields:
+                    - type: "mrkdwn"
+                      text: "*Start:* <!date^${{ steps.timer_start.outputs.TIMESTAMP_START }}^{date} at {time}|${{ steps.timer_start.outputs.DATE_START }}>"
+                    - type: "mrkdwn",
+                      text: "*End:* <!date^${{ steps.timer_end.outputs.TIMESTAMP_END }}^{date} at {time}|${{ steps.timer_end.outputs.DATE_END }}>"
+                - type: "section"
+                  fields:
+                    - type: "mrkdwn"
+                      text: "*Status:* Success"
+                    - type: "mrkdwn"
+                      text: ":timer_clock: ${{ steps.timer_end.outputs.DURATION_PHRASE }}"
+                - type: "actions"
+                  elements:
+                    - type: "button"
+                      text:
+                        type: "plain_text"
+                        text: "Merge/Pull Request"
+                      url: "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                    - type: "button"
+                      text:
+                        type: "plain_text"
+                        text: "Build: ${{ github.run_id }}"
+                      style: "primary"
+                      url: "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
       - name: "Send a notification for failures"
         if: ${{ failure() }}
         uses: slackapi/slack-github-action@v4.0.0
@@ -160,34 +160,33 @@ jobs:
             channel: "C068A06PV43"
             ts: ${{ steps.slack.outputs.ts }}
             text: "CI Build Status for site-playground-integration: FAILED\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-#              blocks:
-#                - type: "header"
-#                  text:
-#                    - type: "plain_text"
-#                      text: ":warning: CI Build Status for site-playground-integration"
-#                - type: "section"
-#                  fields:
-#                    - type: "mrkdwn"
-#                      text: "*Start:* <!date^${{ steps.timer_start.outputs.TIMESTAMP_START }}^{date} at {time}|${{ steps.timer_start.outputs.DATE_START }}>"
-#                    - type: "mrkdwn"
-#                      text: "*End:* <!date^${{ steps.timer_end.outputs.TIMESTAMP_END }}^{date} at {time}|${{ steps.timer_end.outputs.DATE_END }}>"
-#                - type: "section"
-#                  fields:
-#                    - type: "mrkdwn"
-#                      text: "*Status:* FAILED"
-#                - type: "mrkdwn"
-#                  text: ":timer_clock: ${{ steps.timer_end.outputs.DURATION_PHRASE }}"
-#              - type: "actions"
-#                elements:
-#                  - type: "button"
-#                    text:
-#                    type: "plain_text"
-#                    text: "Merge/Pull Request"
-#                    url: "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-#                  - type: "button"
-#                    text:
-#                    - type: "plain_text"
-#                      text: "Build: ${{ github.run_id }}"
-#                    style: "danger"
-#                    url: "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-
+              blocks:
+                - type: "header"
+                  text:
+                    - type: "plain_text"
+                      text: ":warning: CI Build Status for site-playground-integration"
+                - type: "section"
+                  fields:
+                    - type: "mrkdwn"
+                      text: "*Start:* <!date^${{ steps.timer_start.outputs.TIMESTAMP_START }}^{date} at {time}|${{ steps.timer_start.outputs.DATE_START }}>"
+                    - type: "mrkdwn"
+                      text: "*End:* <!date^${{ steps.timer_end.outputs.TIMESTAMP_END }}^{date} at {time}|${{ steps.timer_end.outputs.DATE_END }}>"
+                - type: "section"
+                  fields:
+                    - type: "mrkdwn"
+                      text: "*Status:* FAILED"
+                - type: "mrkdwn"
+                  text: ":timer_clock: ${{ steps.timer_end.outputs.DURATION_PHRASE }}"
+              - type: "actions"
+                elements:
+                  - type: "button"
+                    text:
+                      type: "plain_text"
+                      text: "Merge/Pull Request"
+                    url: "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                  - type: "button"
+                    text:
+                      type: "plain_text"
+                      text: "Build: ${{ github.run_id }}"
+                    style: "danger"
+                    url: "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
