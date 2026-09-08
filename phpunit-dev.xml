@@ -49,24 +49,24 @@
         <testsuite name="Feature">
             <directory>tests/Feature</directory>
             <directory>vendor/gammamatrix/playground/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-admin/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-admin-resource/tests/Feature</directory>
+<!--            <directory>vendor/gammamatrix/playground-admin/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-admin-resource/tests/Feature</directory>-->
             <directory>vendor/gammamatrix/playground-auth/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-blade/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-cms-api/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>
+<!--            <directory>vendor/gammamatrix/playground-cms-api/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>-->
             <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-directory-resource/tests/Feature</directory>
+<!--            <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-directory-resource/tests/Feature</directory>-->
             <directory>vendor/gammamatrix/playground-http/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-lead/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-lead-api/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-lead-resource/tests/Feature</directory>
+<!--            <directory>vendor/gammamatrix/playground-lead-api/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-lead-resource/tests/Feature</directory>-->
             <directory>vendor/gammamatrix/playground-login-blade/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-matrix/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-matrix-api/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-matrix-resource/tests/Feature</directory>
+<!--            <directory>vendor/gammamatrix/playground-matrix-api/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-matrix-resource/tests/Feature</directory>-->
             <directory>vendor/gammamatrix/playground-site-blade/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-test/tests/Feature</directory>
         </testsuite>
