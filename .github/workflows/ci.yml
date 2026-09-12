@@ -35,7 +35,7 @@ jobs:
           method: chat.postMessage
           token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: |
-            channel: "C068A06PV43"
+            channel: ${{ secrets.SLACK_CI_CHANNEL_ID }}
             text: "CI Build Status for site-playground-integration: IN PROGRESS\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
             blocks:
               - type: "header"
@@ -117,7 +117,7 @@ jobs:
           method: chat.update
           token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: |
-            channel: "C068A06PV43"
+            channel: ${{ secrets.SLACK_CI_CHANNEL_ID }}
             ts: ${{ steps.slack.outputs.ts }}
             text: "CI Build Status for site-playground-integration: DONE\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
             blocks:
@@ -157,14 +157,14 @@ jobs:
           method: chat.update
           token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: |
-            channel: "C068A06PV43"
+            channel: ${{ secrets.SLACK_CI_CHANNEL_ID }}
             ts: ${{ steps.slack.outputs.ts }}
             text: "CI Build Status for site-playground-integration: FAILED\n${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
             blocks:
               - type: "header"
                 text:
-                  - type: "plain_text"
-                    text: ":warning: CI Build Status for site-playground-integration"
+                  type: "plain_text"
+                  text: ":warning: CI Build Status for site-playground-integration"
               - type: "section"
                 fields:
                   - type: "mrkdwn"
@@ -177,16 +177,16 @@ jobs:
                     text: "*Status:* FAILED"
                   - type: "mrkdwn"
                     text: ":timer_clock: ${{ steps.timer_end.outputs.DURATION_PHRASE }}"
-            - type: "actions"
-              elements:
-                - type: "button"
-                  text:
-                    type: "plain_text"
-                    text: "Merge/Pull Request"
-                  url: "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-                - type: "button"
-                  text:
-                    type: "plain_text"
-                    text: "Build: ${{ github.run_id }}"
-                  style: "danger"
-                  url: "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+              - type: "actions"
+                elements:
+                  - type: "button"
+                    text:
+                      type: "plain_text"
+                      text: "Merge/Pull Request"
+                    url: "${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                  - type: "button"
+                    text:
+                      type: "plain_text"
+                      text: "Build: ${{ github.run_id }}"
+                    style: "danger"
+                    url: "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

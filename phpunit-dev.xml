@@ -49,13 +49,13 @@
         <testsuite name="Feature">
             <directory>tests/Feature</directory>
             <directory>vendor/gammamatrix/playground/tests/Feature</directory>
-<!--            <directory>vendor/gammamatrix/playground-admin/tests/Feature</directory>-->
+            <directory>vendor/gammamatrix/playground-admin/tests/Feature</directory>
 <!--            <directory>vendor/gammamatrix/playground-admin-resource/tests/Feature</directory>-->
             <directory>vendor/gammamatrix/playground-auth/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-blade/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>
 <!--            <directory>vendor/gammamatrix/playground-cms-api/tests/Feature</directory>-->
-<!--            <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>-->
+            <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>
 <!--            <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-directory-resource/tests/Feature</directory>-->
