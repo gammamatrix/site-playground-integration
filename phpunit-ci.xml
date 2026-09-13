@@ -57,8 +57,8 @@
             <directory>vendor/gammamatrix/playground-cms-api/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>
-<!--            <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>-->
-<!--            <directory>vendor/gammamatrix/playground-directory-resource/tests/Feature</directory>-->
+            <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>
+            <directory>vendor/gammamatrix/playground-directory-resource/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-http/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-lead/tests/Feature</directory>
 <!--            <directory>vendor/gammamatrix/playground-lead-api/tests/Feature</directory>-->
