@@ -12,14 +12,6 @@ Read more on using [Site: Playground Integration at Read the Docs: Playground Do
 
 **FYI:** *This is an integration testing site for Playground packages and the composer.json will be updated frequently. This site repository may be renamed.*
 
-To use a Playground Site that is already set up, see:
-
-| A Laravel installation | GitHub |
-|------------------------|--------|
-| A base Laravel install with `user.id increments` | [gammamatrix/site-laravel](https://github.com/gammamatrix/site-laravel) |
-| A base Laravel install with `user.id UUID` | [gammamatrix/site-playground](https://github.com/gammamatrix/site-playground) |
-| Or just use Laravel and add the Playground packages you need | [laravel/laravel](https://github.com/laravel) |
-
 **NOTE:** Playground uses `declare(strict_types=1);`
 
 **NOTE:** This package is meant to be forked, cloned or used `composer create-project`
@@ -39,6 +31,10 @@ Installed Playground Packages
 | [playground-admin-resource](https://github.com/gammamatrix/playground-admin-resource) | Provide the Admin UI to manage users and settings. |
 | [playground-cms-api](https://github.com/gammamatrix/playground-cms-api) | Provide the CMS API, without a UI for the Playground Content Management System. |
 | [playground-cms-resource](https://github.com/gammamatrix/playground-cms-resource) | Provide the CMS UI for the Playground Content Management System. |
+| [playground-directory-api](https://github.com/gammamatrix/playground-directory-api) | Provide System. |
+| [playground-directory-resource](https://github.com/gammamatrix/playground-directory-resource) | Provide System. |
+| [playground-lead-api](https://github.com/gammamatrix/playground-lead-api) | Provide System. |
+| [playground-lead-resource](https://github.com/gammamatrix/playground-lead-resource) | Provide System. |
 | [playground-login-blade](https://github.com/gammamatrix/playground-login-blade) | Provides endpoints a Blade UI for authentication, authorization, verification and credential management. |
 | [playground-matrix-api](https://github.com/gammamatrix/playground-matrix-api) | Provide the API, without a UI for the Playground Matrix Project Management System. |
 | [playground-matrix-resource](https://github.com/gammamatrix/playground-matrix-resource) | Provide the UI for the Playground Matrix Project Management System. |
@@ -52,15 +48,17 @@ Installed Support Playground Packages
 | [playground-admin](https://github.com/gammamatrix/playground-admin) | Provide the Settings models for `playground-admin-resource`. |
 | [playground-auth](https://github.com/gammamatrix/playground-auth) | Provide authentication and authorization handling for Laravel applications. Allows using Sanctum. |
 | [playground-blade](https://github.com/gammamatrix/playground-blade) | Provides Blade UI handling for login, resource and site packages. |
-| [playground-cms](https://github.com/gammamatrix/playground-cms) | Provide the CMS models for `playground-cms-resource`. |
+| [playground-cms](https://github.com/gammamatrix/playground-cms) | Provide the CMS models for `playground-cms-api` and `playground-cms-resource`. |
+| [playground-directory](https://github.com/gammamatrix/playground-directory) | Provide the directory models for `playground-directory-api` and `playground-directory-resource`. |
+| [playground-lead](https://github.com/gammamatrix/playground-lead) | Provide the lead models for `playground-lead-api` and `playground-lead-resource`. |
 | [playground-http](https://github.com/gammamatrix/playground-http) | Provide HTTP content and filter handling for controllers and requests. |
-| [playground-matrix](https://github.com/gammamatrix/playground-matrix) | Provide the Matrix models for the Playground Matrix Project Management System. |
+| [playground-matrix](https://github.com/gammamatrix/playground-matrix) | Provide the Matrix models for the `playground-matrix-api` and `playground-matrix-resource`. |
 | [playground-test](https://github.com/gammamatrix/playground-test) | A test helper for Playground packages. |
 
 ## Testing
 
 This application supports running integration tests with the installed Playground packages.
-- Currently, [2,393 tests Unit and Feature tests, with 34,611 assertions are run.](https://raw.githubusercontent.com/gammamatrix/site-playground-integration/testing/develop/testdox.txt)
+- Currently, [5,099 tests Unit and Feature tests, with 85,393 assertions are run.](https://raw.githubusercontent.com/gammamatrix/site-playground-integration/testing/develop/testdox.txt)
 
 
 <details>
@@ -68,54 +66,84 @@ This application supports running integration tests with the installed Playgroun
 <summary>PHPUnit Test Suites and Code Coverage</summary>
 
 ```xml
-<testsuites>
-  <testsuite name="Unit">
-    <directory>tests/Unit</directory>
-    <directory>vendor/gammamatrix/playground/tests/Unit</directory>
-    <directory>vendor/gammamatrix/playground-auth/tests/Unit</directory>
-    <directory>vendor/gammamatrix/playground-blade/tests/Unit</directory>
-    <directory>vendor/gammamatrix/playground-admin/tests/Unit</directory>
-    <directory>vendor/gammamatrix/playground-admin-resource/tests/Unit</directory>
-    <directory>vendor/gammamatrix/playground-cms/tests/Unit</directory>
-    <directory>vendor/gammamatrix/playground-cms-resource/tests/Unit</directory>
-    <directory>vendor/gammamatrix/playground-http/tests/Unit</directory>
-    <directory>vendor/gammamatrix/playground-test/tests/Unit</directory>
-  </testsuite>
-  <testsuite name="Feature">
-    <directory>tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-auth/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-blade/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-admin/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-admin-resource/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-login-blade/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-http/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-matrix/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-matrix-resource/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-site-blade/tests/Feature</directory>
-    <directory>vendor/gammamatrix/playground-test/tests/Feature</directory>
-  </testsuite>
+    <testsuites>
+    <testsuite name="Unit">
+        <directory>tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-admin/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-admin-resource/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-auth/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-blade/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-cms/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-cms-api/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-cms-resource/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-directory/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-directory-api/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-directory-resource/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-http/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-lead/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-lead-api/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-lead-resource/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-matrix/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-matrix-api/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-matrix-resource/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-test/tests/Unit</directory>
+    </testsuite>
+    <testsuite name="Feature">
+        <directory>tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-admin/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-admin-resource/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-auth/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-blade/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-cms-api/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-directory-resource/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-http/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-lead/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-lead-api/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-lead-resource/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-login-blade/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-matrix/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-matrix-api/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-matrix-resource/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-site-blade/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-test/tests/Feature</directory>
+    </testsuite>
 </testsuites>
-
+<logging>
+<teamcity outputFile="output/teamcity.txt"/>
+<testdoxHtml outputFile="output/testdox.html"/>
+<testdoxText outputFile="output/testdox.txt"/>
+</logging>
 <source>
-  <include>
+<include>
     <directory>app</directory>
     <directory suffix=".php">vendor/gammamatrix/playground/src</directory>
-    <directory suffix=".php">vendor/gammamatrix/playground-auth/src</directory>
-    <directory suffix=".php">vendor/gammamatrix/playground-blade/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-admin/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-admin-resource/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-auth/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-blade/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-cms/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-cms-api/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-cms-resource/src</directory>
-    <directory suffix=".php">vendor/gammamatrix/playground-login-blade/src</directory>
-    <directory suffix=".php">vendor/gammamatrix/playground-site-blade/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-directory/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-directory-api/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-directory-resource/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-http/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-lead/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-lead-api/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-lead-resource/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-login-blade/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-matrix/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-matrix-api/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-matrix-resource/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-site-blade/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-test/src</directory>
-  </include>
+</include>
 </source>
 ```
 
@@ -190,7 +218,7 @@ Code Coverage for Site Playground: GammaMatrix Packages:
 
 ## PHPStan
 
-Tests at level 9 on:
+Tests at level 10 on:
 - `app/`
 - `config/`
 - `database/`
