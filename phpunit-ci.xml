@@ -27,13 +27,16 @@
         <testsuite name="Unit">
             <directory>tests/Unit</directory>
             <directory>vendor/gammamatrix/playground/tests/Unit</directory>
-            <directory>vendor/gammamatrix/playground-admin/tests/Unit</directory>
-            <directory>vendor/gammamatrix/playground-admin-resource/tests/Unit</directory>
+<!--            <directory>vendor/gammamatrix/playground-admin/tests/Unit</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-admin-resource/tests/Unit</directory>-->
             <directory>vendor/gammamatrix/playground-auth/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-blade/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-cms/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-cms-api/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-cms-resource/tests/Unit</directory>
+            <directory>vendor/gammamatrix/playground-crm/tests/Unit</directory>
+            <directory>vendor/gammamatrix/playground-crm-api/tests/Unit</directory>
+            <directory>vendor/gammamatrix/playground-crm-resource/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-directory/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-directory-api/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-directory-resource/tests/Unit</directory>
@@ -49,13 +52,16 @@
         <testsuite name="Feature">
             <directory>tests/Feature</directory>
             <directory>vendor/gammamatrix/playground/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-admin/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-admin-resource/tests/Feature</directory>
+<!--            <directory>vendor/gammamatrix/playground-admin/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-admin-resource/tests/Feature</directory>-->
             <directory>vendor/gammamatrix/playground-auth/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-blade/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-cms-api/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>
+            <directory>vendor/gammamatrix/playground-crm/tests/Feature</directory>
+            <directory>vendor/gammamatrix/playground-crm-api/tests/Feature</directory>
+            <directory>vendor/gammamatrix/playground-crm-resource/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-directory-resource/tests/Feature</directory>
@@ -81,13 +87,16 @@
         <include>
             <directory>app</directory>
             <directory suffix=".php">vendor/gammamatrix/playground/src</directory>
-            <directory suffix=".php">vendor/gammamatrix/playground-admin/src</directory>
-            <directory suffix=".php">vendor/gammamatrix/playground-admin-resource/src</directory>
+<!--            <directory suffix=".php">vendor/gammamatrix/playground-admin/src</directory>-->
+<!--            <directory suffix=".php">vendor/gammamatrix/playground-admin-resource/src</directory>-->
             <directory suffix=".php">vendor/gammamatrix/playground-auth/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-blade/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-cms/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-cms-api/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-cms-resource/src</directory>
+            <directory suffix=".php">vendor/gammamatrix/playground-crm/src</directory>
+            <directory suffix=".php">vendor/gammamatrix/playground-crm-api/src</directory>
+            <directory suffix=".php">vendor/gammamatrix/playground-crm-resource/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-directory/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-directory-api/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-directory-resource/src</directory>

@@ -34,6 +34,9 @@
             <directory>vendor/gammamatrix/playground-cms/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-cms-api/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-cms-resource/tests/Unit</directory>
+            <directory>vendor/gammamatrix/playground-crm/tests/Unit</directory>
+            <directory>vendor/gammamatrix/playground-crm-api/tests/Unit</directory>
+            <directory>vendor/gammamatrix/playground-crm-resource/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-directory/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-directory-api/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-directory-resource/tests/Unit</directory>
@@ -56,6 +59,9 @@
 <!--            <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-cms-api/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-crm/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-crm-api/tests/Feature</directory>-->
+<!--            <directory>vendor/gammamatrix/playground-crm-resource/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>-->
 <!--            <directory>vendor/gammamatrix/playground-directory-resource/tests/Feature</directory>-->
@@ -103,6 +109,9 @@
             <directory suffix=".php">vendor/gammamatrix/playground-cms/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-cms-api/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-cms-resource/src</directory>
+            <directory suffix=".php">vendor/gammamatrix/playground-crm/src</directory>
+            <directory suffix=".php">vendor/gammamatrix/playground-crm-api/src</directory>
+            <directory suffix=".php">vendor/gammamatrix/playground-crm-resource/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-directory/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-directory-api/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-directory-resource/src</directory>
@@ -114,6 +123,7 @@
             <directory suffix=".php">vendor/gammamatrix/playground-matrix/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-matrix-api/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-matrix-resource/src</directory>
+            <directory suffix=".php">vendor/gammamatrix/playground-site-blade/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-test/src</directory>
         </include>
     </source>

@@ -31,8 +31,10 @@ Installed Playground Packages
 | [playground-admin-resource](https://github.com/gammamatrix/playground-admin-resource) | Provide the Admin UI to manage users and settings. |
 | [playground-cms-api](https://github.com/gammamatrix/playground-cms-api) | Provide the CMS API, without a UI for the Playground Content Management System. |
 | [playground-cms-resource](https://github.com/gammamatrix/playground-cms-resource) | Provide the CMS UI for the Playground Content Management System. |
-| [playground-directory-api](https://github.com/gammamatrix/playground-directory-api) | Provide System. |
-| [playground-directory-resource](https://github.com/gammamatrix/playground-directory-resource) | Provide System. |
+| [playground-crm-api](https://github.com/gammamatrix/playground-crm-api) | Provide the CRM API, without a UI for the Playground Client Resource Management System. |
+| [playground-crm-resource](https://github.com/gammamatrix/playground-crm-resource) | Provide the CRM UI for the Playground Client Resource Management System. |
+| [playground-directory-api](https://github.com/gammamatrix/playground-directory-api) | Provide the directory API, without a UI for the Playground Directory Management System. |
+| [playground-directory-resource](https://github.com/gammamatrix/playground-directory-resource) | Provide the directory UI for the Playground Directory Management System. |
 | [playground-lead-api](https://github.com/gammamatrix/playground-lead-api) | Provide System. |
 | [playground-lead-resource](https://github.com/gammamatrix/playground-lead-resource) | Provide System. |
 | [playground-login-blade](https://github.com/gammamatrix/playground-login-blade) | Provides endpoints a Blade UI for authentication, authorization, verification and credential management. |
@@ -49,6 +51,7 @@ Installed Support Playground Packages
 | [playground-auth](https://github.com/gammamatrix/playground-auth) | Provide authentication and authorization handling for Laravel applications. Allows using Sanctum. |
 | [playground-blade](https://github.com/gammamatrix/playground-blade) | Provides Blade UI handling for login, resource and site packages. |
 | [playground-cms](https://github.com/gammamatrix/playground-cms) | Provide the CMS models for `playground-cms-api` and `playground-cms-resource`. |
+| [playground-crm](https://github.com/gammamatrix/playground-crm) | Provide the CMS models for `playground-crm-api` and `playground-crm-resource`. |
 | [playground-directory](https://github.com/gammamatrix/playground-directory) | Provide the directory models for `playground-directory-api` and `playground-directory-resource`. |
 | [playground-lead](https://github.com/gammamatrix/playground-lead) | Provide the lead models for `playground-lead-api` and `playground-lead-resource`. |
 | [playground-http](https://github.com/gammamatrix/playground-http) | Provide HTTP content and filter handling for controllers and requests. |
@@ -77,6 +80,9 @@ This application supports running integration tests with the installed Playgroun
         <directory>vendor/gammamatrix/playground-cms/tests/Unit</directory>
         <directory>vendor/gammamatrix/playground-cms-api/tests/Unit</directory>
         <directory>vendor/gammamatrix/playground-cms-resource/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-crm/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-crm-api/tests/Unit</directory>
+        <directory>vendor/gammamatrix/playground-crm-resource/tests/Unit</directory>
         <directory>vendor/gammamatrix/playground-directory/tests/Unit</directory>
         <directory>vendor/gammamatrix/playground-directory-api/tests/Unit</directory>
         <directory>vendor/gammamatrix/playground-directory-resource/tests/Unit</directory>
@@ -99,6 +105,9 @@ This application supports running integration tests with the installed Playgroun
         <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>
         <directory>vendor/gammamatrix/playground-cms-api/tests/Feature</directory>
         <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-crm/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-crm-api/tests/Feature</directory>
+        <directory>vendor/gammamatrix/playground-crm-resource/tests/Feature</directory>
         <directory>vendor/gammamatrix/playground-directory/tests/Feature</directory>
         <directory>vendor/gammamatrix/playground-directory-api/tests/Feature</directory>
         <directory>vendor/gammamatrix/playground-directory-resource/tests/Feature</directory>
@@ -130,6 +139,9 @@ This application supports running integration tests with the installed Playgroun
     <directory suffix=".php">vendor/gammamatrix/playground-cms/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-cms-api/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-cms-resource/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-crm/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-crm-api/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-crm-resource/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-directory/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-directory-api/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-directory-resource/src</directory>
